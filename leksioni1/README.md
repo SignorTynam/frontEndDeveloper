@@ -76,7 +76,9 @@ Faqet e webit përbëhen nga disa lloje file si dokumenti HTML, stilet CSS dhe i
 
 #### HTML dhe Markup
 
-HTML është një gjuhë shenjash/shënimesh (markup) e krijuar për dokumente me lidhje hiperteksti. Markup-i përfshin etiketa që përcaktojnë strukturën dhe elementet e faqes. Një shembull i thjeshtë i një dokumenti HTML mund të përfshijë:
+HTML është një gjuhë shenjash/shënimesh (markup) e krijuar për dokumente me lidhje hiperteksti. Markup-i përfshin etiketa që përcaktojnë strukturën dhe elementet e faqes. Një shembull i thjeshtë i një dokumenti HTML mund të përfshijë si më poshtë.
+
+**Shiko skedarin [structure.html](structure.html)**
 
 ```html
 <!DOCTYPE html>
@@ -86,7 +88,7 @@ HTML është një gjuhë shenjash/shënimesh (markup) e krijuar për dokumente m
     </head>
     <body>
         <h1>Mirë se vini në Faqen Tonë</h1>
-        <p>Kjo është një përshkrim për faqen tonë.</p>
+        <p>Kjo është një përshkrim për faqen tonë.<p>
     </body>
 </html>
 ```
@@ -231,6 +233,68 @@ Figura 5 tregon strukturën minimale të një dokumenti HTML5. Është mirë që
         </body>
    </html>
    ```
+
+   Në HTML, etiketat `h1` deri te `h6` përdoren për të shfaqur tituj të hierarkive të ndryshme, ndërsa etiketa `p` përdoret për të krijuar paragrafë të tekstit. 
+
+## Etiketat `h1` deri te `h6`
+
+**Shiko skedarin [headings.html](headings.html)**
+
+
+- **`<h1>`** është për titullin kryesor, zakonisht më i rëndësishëm dhe më i madh në madhësi.
+- **`<h2>`** deri **`<h6>`** shërbejnë për titujt më të vegjël, duke ndjekur hierarkinë në zvogëlim të rëndësisë dhe madhësisë.
+
+```html
+<h1>Kjo është një Titull Kryesor</h1>
+<h2>Kjo është një Nëntitull</h2>
+<h3>Kjo është një Nëntitull më i Vogël</h3>
+<h4>Kjo është një Niveli i Katërt</h4>
+<h5>Kjo është një Niveli i Pestë</h5>
+<h6>Kjo është një Niveli i Gjashtë</h6>
+```
+
+### Etiketa `p`
+
+**Shiko skedarin [paragraphs.html](paragraphs.html)**
+
+Etiketa `<p>` përdoret për të krijuar paragrafë të thjeshtë dhe të veçuar teksti. Kjo etiketa është ideale për përmbajtjen kryesore, duke përfshirë fjalë të lidhura logjikisht brenda një paragrafi.
+
+```html
+<p>Kjo është një paragraf që përmban disa fjali. Ai shfaqet si një njësi e veçantë e tekstit dhe përfshin përmbajtje që lidhet logjikisht brenda tij.</p>
+```
+
+### Shembull i Kombinuar
+
+**Shiko skedarin [basicTags.html](basicTags.html)**
+
+```html
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <title>Shembull HTML</title>
+</head>
+<body>
+
+<h1>Mirë se Vini në Faqen Time</h1>
+<p>Kjo faqe përmban informacion rreth HTML dhe etiketave kryesore si <code>h1</code> deri te <code>h6</code>, si dhe <code>p</code>.</p>
+
+<h2>Hierarkia e Titujve</h2>
+<p>Etiketat <code>h1</code> deri <code>h6</code> përdoren për të ndarë titujt në nivele të ndryshme.</p>
+
+<h3>Rëndësia e Etiketave të Titujve</h3>
+<p>Secili nivel i titullit tregon një rëndësi të veçantë dhe strukturon përmbajtjen në mënyrë logjike.</p>
+
+</body>
+</html>
+```
+
+Kështu, etiketa `h1` deri `h6` dhe etiketa `p` ndihmojnë për strukturimin dhe organizimin e tekstit në HTML për një pamje të pastër dhe të lexueshme.
+
+## Ushtrime
+
+> **Kliko skedarin [ushtrime.md](ushtrime.md)** për të zgjidhur ushtrimet për leksionin e parë.
+
 
 ## Përmbledhje
 
