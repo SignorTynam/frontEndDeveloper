@@ -10,7 +10,7 @@
 
 | No. | Tema | Linku Regjistrimi | Data e Zhvillimit |
 |-----|------|-------------------|-------------------|
-|  1  | [Hyrje në Front End Developer. Bazat në HTML](leksioni1/README.md) | [](#) | 9 Nëntor 2024 |
+|  1  | [Hyrje në Front End Developer. Bazat në HTML](leksioni1/README.md) | [](#) | 10 Nëntor 2024 |
 
 
 ## Çfarë bën një web dizajner?
