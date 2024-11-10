@@ -10,7 +10,8 @@
 
 | No. | Tema | Linku Regjistrimi | Data e Zhvillimit |
 |-----|------|-------------------|-------------------|
-|  1  | [Hyrje në Front End Developer. Bazat në HTML](leksioni1/README.md) | [](#) | 10 Nëntor 2024 |
+|  1  | [Hyrje në Front End Developer. Bazat në HTML](leksioni1/README.md) | [Leksioni 1](https://www.youtube.com/playlist?list=PLYO89vdz7M65HgP1yPnRqPHliRdWRlyHg) | 10 Nëntor 2024 |
+|  2  | [Bazat në HTML (2). Elemenëtë bazë semantikë]() | []() | |
 
 
 ## Çfarë bën një web dizajner?
@@ -36,8 +37,8 @@ User Experience është thelbësor për mënyrën se si një faqe do të funksio
 Një pjesë e madhe e procesit të web design përfshin krijimin dhe përpunimin e dokumenteve, *styling* dhe *scripting* që përbëjnë një faqe. Zhvillimi ndahet në disa disiplina kryesore:
 
 - **Authoring/Markup.** Authoring përfshin përgatitjen e përmbajtjes për shfaqjen në web, përfshirë përpunimin e saj me **HTML** për të përshkruar përmbajtjen dhe funksionin e saj. Njohuritë në HTML janë të domosdoshme për një web developer/front end developer dhe kërkohet të mbahen të përditësuara me specifikimet dhe praktikat më të fundit.
-- **Styling.** Pamja e një faqeje në shfletues kontrollohet nga **CSS (Cascading Style Sheets)**. CSS ndan paraqitjen vizuale të faqes nga struktura e saj HTML, duke mundësuar ndryshime të lehta në stilizimin e elementeve të shumta me vetëm një modifikim të *stylesheet*. CSS është një *must* thelbësore për zhvilluesit e faqeve të internetit, për të siguruar që faqet të funksionojnë mirë në web broswer të ndryshëm dhe pajisje.
-- **Scripting and Programming.** Në zhvillimin e faqeve dinamike dhe aplikacioneve, **JavaScript** është gjuha që shton sjellje dhe funksionalitete për elementet në faqe dhe dritaren e shfletuesit. Përveç JavaScript-it, gjuhë të tjera programimi si **PHP**, **Ruby**, **Python**, dhe **ASP.NET** përdoren për të procesuar të dhëna në server dhe për të ofruar faqe dinamike për përdoruesit.
+- **Styling.** Pamja e një faqeje në browser kontrollohet nga **CSS (Cascading Style Sheets)**. CSS ndan paraqitjen vizuale të faqes nga struktura e saj HTML, duke mundësuar ndryshime të lehta në stilizimin e elementeve të shumta me vetëm një modifikim të *stylesheet*. CSS është një *must* thelbësore për zhvilluesit e faqeve të internetit, për të siguruar që faqet të funksionojnë mirë në web broswer të ndryshëm dhe pajisje.
+- **Scripting and Programming.** Në zhvillimin e faqeve dinamike dhe aplikacioneve, **JavaScript** është gjuha që shton sjellje dhe funksionalitete për elementet në faqe dhe dritaren e browser-it. Përveç JavaScript-it, gjuhë të tjera programimi si **PHP**, **Ruby**, **Python**, dhe **ASP.NET** përdoren për të procesuar të dhëna në server dhe për të ofruar faqe dinamike për përdoruesit.
 
 ---
 
@@ -45,7 +46,7 @@ Një pjesë e madhe e procesit të web design përfshin krijimin dhe përpunimin
 
 Termat **Frontend** dhe **Backend** ndahen në dy pjesë kryesore të zhvillimit të faqeve:
 
-- **Frontend**: Përfshin çdo aspekt të dizajnit që shfaqet në shfletues. Frontend përfshin **dizajnin grafik**, **dizajnin e ndërfaqes**, **HTML**, **CSS**, dhe **JavaScript**.
+- **Frontend**: Përfshin çdo aspekt të dizajnit që shfaqet në browser. Frontend përfshin **dizajnin grafik**, **dizajnin e ndërfaqes**, **HTML**, **CSS**, dhe **JavaScript**.
   
 - **Backend**: Ka të bëjë me programet dhe skriptet që funksionojnë në server për të bërë faqet dinamike dhe interaktive. Detyra si **procesimi i formave**, **programimi i bazave të të dhënave**, dhe **sistemet e menaxhimit të përmbajtjes** kryhen në Backend.
 
@@ -135,12 +136,12 @@ VS Code mbështet shumë gjuhë për Front End, si **HTML**, **CSS**, **JavaScri
    - **IntelliSense**: Ndihmon me autocomplete për kodin tuaj, duke sugjeruar tags dhe stile për HTML dhe CSS dhe funksione për JavaScript.
    - **Snippets**: Ofron blloqe të kodit të gatshme për gjuhë të ndryshme (p.sh., `html:5` për të krijuar një strukturë HTML).
    - **Emmet**: Lehtëson krijimin e strukturës së HTML-së dhe CSS-së me shkurtesa të shpejta.
-   - **Live Server**: Kjo extension e popullarizuar ju lejon të shihni ndryshimet e kodit tuaj në kohë reale në shfletues.
+   - **Live Server**: Kjo extension e popullarizuar ju lejon të shihni ndryshimet e kodit tuaj në kohë reale në browser.
 
 #### 2. **Debugging**
 
    - **Debugger i Integruar**: VS Code ka një debugger të integruar për JavaScript, i cili ju ndihmon të identifikoni dhe riparoni gabimet në kodin tuaj.
-   - **DevTools Integration**: Për Front End, zakonisht përdoret DevTools i shfletuesit për debugging të përparuar, por VS Code ofron disa shtesa që mund të sjellin DevTools brenda editorit.
+   - **DevTools Integration**: Për Front End, zakonisht përdoret DevTools i browser-it për debugging të përparuar, por VS Code ofron disa shtesa që mund të sjellin DevTools brenda editorit.
 
 #### 3. **Extensions për Front End**
 
