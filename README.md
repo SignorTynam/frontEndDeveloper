@@ -4,13 +4,15 @@
 
 **Linku në Microsoft Teams:** [Front End Developer - Eva](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NmQ3NmIzN2ItYjZmOS00NTgxLWFiOTItNTUzYjE1NTE3NGI4%40thread.v2/0?context=%7b%22Tid%22%3a%22e99647dc-1b08-454a-bf8c-699181b389ab%22%2c%22Oid%22%3a%22cb57021c-611d-4909-a520-d4db3584864b%22%7d)
 
-**Linku në YouTube:** []()
+**Linku në YouTube:** [#FrontEndDeveloper](https://www.youtube.com/playlist?list=PLYO89vdz7M65HgP1yPnRqPHliRdWRlyHg)
+
+**Linku në GitHub:** [GitHub page](https://github.com/SignorTynam/frontEndDeveloper/tree/main)
 
 ## Leksionet e zhvilluara
 
 | No. | Tema | Linku Regjistrimi | Data e Zhvillimit |
 |-----|------|-------------------|-------------------|
-|  1  | [Hyrje në Front End Developer. Bazat në HTML](leksioni1/README.md) | [Leksioni 1](https://www.youtube.com/playlist?list=PLYO89vdz7M65HgP1yPnRqPHliRdWRlyHg) | 10 Nëntor 2024 |
+|  1  | [Hyrje në Front End Developer. Bazat në HTML](leksioni1/README.md) | [Leksioni 1](https://www.youtube.com/watch?v=KwvW_h_mIiI&list=PLYO89vdz7M65HgP1yPnRqPHliRdWRlyHg&index=1&t=3s) | 10 Nëntor 2024 |
 |  2  | [Bazat në HTML (2). Elemenëtë bazë semantikë]() | []() | |
 
 
