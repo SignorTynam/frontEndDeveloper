@@ -1,4 +1,4 @@
-# Leksioni 1: Hyrje në Front End Developer/ Bazat më HTML
+# Leksioni 1: Hyrje në Front End Developer. Bazat më HTML
 
 ## **Çfarë do të mësojmë në këtë leksion?**
 
@@ -311,4 +311,104 @@ Në këtë leksion, kemi eksploruar bazat e internetit, web-it dhe HTML-it. Kemi
 Duke kuptuar këto koncepte themelore, ju keni vendosur themelin për të mësuar më shumë rreth krijimit të faqeve web. Në leksionet e ardhshme, do të shpjegojmë në detaje të tjera se si të përdorni HTML për të krijuar struktura më komplekse dhe për të shtuar stil me CSS.
 
 
-> **Mos harroni:** Praktika e vazhdueshme është çelësi për të mësuar një gjuhë programimi. Krijoni projekte të vogla, eksperimentoni me kodin dhe mos kini frikë të bëni gabime. 
+> **Mos harroni:** Praktika e vazhdueshme është çelësi për të mësuar një gjuhë programimi. Krijoni projekte të vogla, eksperimentoni me kodin dhe mos kini frikë të bëni gabime.
+
+
+## Ushtrime
+
+### **Ushtrimi 1: Ndryshimi midis Internetit dhe Web-it**
+1. Çfarë është ndryshimi kryesor midis Internetit dhe Web-it? Jepni përkufizimin dhe një shembull për secilin.
+
+**Përgjigje:**
+- **Interneti** është një rrjet global i kompjuterëve të ndërlidhur që ndajnë informacion përmes protokolleve të ndryshme si email, FTP, etj. Shembull: Dërgimi i një emaili.
+- **Web-i** është një nënndarje e internetit që përdor protokollin HTTP për të shkëmbyer dokumente hiperteksti. Shembull: Vizitimi i një faqeje web si www.example.com.
+
+### **Ushtrimi 2: Roli i Serverëve dhe Browserëve**
+2. Çfarë është një server dhe cilat janë funksionet e tij kryesore?
+
+**Përgjigje:**
+- **Serveri** është një kompjuter ose program që ofron shërbime dhe burime për kompjuterët e tjerë në rrjet. Funksionet kryesore përfshijnë pritjen dhe përgjigjen ndaj kërkesave për dokumente, ruajtjen e të dhënave dhe menaxhimin e trafikut të rrjetit.
+
+### **Ushtrimi 3: Strukturat e URL-ve**
+
+3. Shpjegoni tre komponentët kryesorë të një URL-je. Jepni një shembull të një URL-je të plotë dhe shpjegoni secilën pjesë.
+
+**Përgjigje:**
+- **Protokolli**: Mënyra e komunikimit me serverin (p.sh., HTTP ose HTTPS).
+- **Emri i faqes**: Domaini ku ndodhet faqja (p.sh., www.example.com).
+- **Path-i i plotë i dokumentit**: Lokacioni specifik i dokumentit brenda direktorisë së serverit (p.sh., /2021/samples/faqja.html).
+
+Shembull: `https://www.example.com/2021/samples/faqja.html`
+- `https://` është protokolli.
+- `www.example.com` është emri i faqes.
+- `/2021/samples/faqja.html` është path-i i plotë i dokumentit.
+
+4. Çfarë është një "default file" dhe si lidhet me kërkesat për dokumente në një server?
+
+**Përgjigje:**
+- Një "default file" është një dokument që serveri shfaq automatikisht kur një URL përfundon me emrin e një direktorie dhe jo një file specifik. Zakonisht është `index.html`.
+
+### **Ushtrimi 4: Komponentët e HTML-it**
+
+5. Çfarë janë etiketa (tags) në HTML? Jepni shembuj të disa etiketave themelore të përdorura për tituj, paragrafë dhe lidhje.
+
+**Përgjigje:**
+- Etiketa (tags) në HTML janë fjalë kyçe të rrethuar nga kënde katrore (`<` dhe `>`) që tregojnë fillimin dhe fundin e një elementi. Shembuj:
+   - Titulli kryesor: `<h1></h1>`
+   - Paragrafi: `<p></p>`
+   - Lidhja: `<a href="url"></a>`
+
+### **Ushtrimi 5: Lidhja e Web-it dhe Serverëve me DNS**
+
+6. Çfarë është DNS dhe si e ndihmon përdoruesin të lidhet me një faqe web pa pasur nevojë të mbajë mend adresat IP?
+
+**Përgjigje:**
+- DNS (Domain Name System) është një sistem që përkthen emrat e domain-eve në adresa IP. Kjo lejon përdoruesit të përdorin emra të lehtë për t'u mbajtur mend (p.sh., www.example.com) në vend të adresave numerike IP.
+
+7. Pse është e rëndësishme të përdorim IPv6 për adresat IP? (Kërko online)
+
+**Përgjigje:**
+- IPv6 është i rëndësishëm sepse ofron një numër shumë më të madh adresash IP sesa IPv4, duke përmbushur nevojat e rritura për adresa unike në internet për pajisje të ndryshme.
+
+### **Ushtrimi 6: Krijimi i një Dokumenti HTML të Thjeshtë**
+
+8. Krijoni një dokument HTML të thjeshtë që përmban:
+      - Një titull për faqen,
+      - Një titull kryesor (`<h1>`) që thotë "Mirë se vini!",
+      - Një paragraf që përshkruan qëllimin e faqes.
+
+**Përgjigje:**
+```html
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+      <meta charset="UTF-8">
+      <title>Faqja Ime</title>
+</head>
+<body>
+      <h1>Mirë se vini!</h1>
+      <p>Kjo faqe përshkruan qëllimin e saj dhe ofron informacion të dobishëm.</p>
+</body>
+</html>
+```
+
+### **Ushtrimi 7: Struktura e një Faqeje Webi**
+
+9. Nëse një faqe web ka disa burime si imazhe dhe skripte, si i përpunon ato browser-i? Shpjegoni se si ndodhin kërkesat për çdo burim dhe si shfaqen ato në ekranin e përdoruesit.
+
+**Përgjigje:**
+- Browser-i bën kërkesa të veçanta HTTP për çdo burim të specifikuar në dokumentin HTML (p.sh., imazhe, skripte). Pasi të marrë përgjigjet nga serveri, browser-i përpunon dhe shfaq burimet në vendet e duhura në ekranin e përdoruesit.
+
+### **Ushtrimi 8: Përdorimi i Protokollit HTTP**
+
+10. Shpjegoni rolin e protokollit HTTP në dërgimin e kërkesave dhe përgjigjeve mes browser-it dhe serverit.
+
+**Përgjigje:**
+- Protokolli HTTP përcakton mënyrën se si browser-i dhe serveri komunikojnë. Browser-i dërgon kërkesa HTTP për dokumente dhe burime, dhe serveri përgjigjet me dokumentet e kërkuara ose mesazhe gabimi.
+
+### **Bonus**
+
+11. Cili është ndryshimi midis një serveri Apache dhe një serveri IIS? Si ndihmojnë këto servera në shërbimin e faqeve web? (Kërko online)
+
+**Përgjigje:**
+- **Apache** është një server open-source që funksionon në shumë platforma, përfshirë Unix dhe Windows. **IIS (Internet Information Services)** është një server i zhvilluar nga Microsoft për Windows. Të dy serverat ndihmojnë në shërbimin e faqeve web duke pritur dhe përgjigjur ndaj kërkesave HTTP.
