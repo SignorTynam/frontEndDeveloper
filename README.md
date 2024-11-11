@@ -13,7 +13,7 @@
 | No. | Tema | Linku Regjistrimi | Data e Zhvillimit |
 |-----|------|-------------------|-------------------|
 |  1  | [Hyrje në Front End Developer. Bazat në HTML](leksioni1/README.md) | [Leksioni 1](https://www.youtube.com/watch?v=KwvW_h_mIiI&list=PLYO89vdz7M65HgP1yPnRqPHliRdWRlyHg&index=1&t=3s) | 10 Nëntor 2024 |
-|  2  | [Bazat në HTML (2). Elemenëtë bazë semantikë]() | []() | |
+|  2  | [Bazat në HTML (2). Elemenëtë bazë semantikë](leksioni2/README.md) | ~~[Leksioni 2]()~~ | 12 Novembre 2024 |
 
 
 ## Çfarë bën një web dizajner?
