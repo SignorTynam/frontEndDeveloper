@@ -137,7 +137,9 @@ Në versionet e mëparshme të HTML, `<hr>` përkufizohej si një "rregull horiz
 
 Shpesh, titujt kanë nën-tituj ose shpjegime sqaruese. Për shembull, titulli i leksionit për sot është: "Të punojmë me tekset". Në të kaluarën, për t’i grupuar titujt dhe nën-titujt, ishte paksa problematike. Linja e parë, "Creating a Simple Page," është një `h1`, por nëse e bëni rreshtin e dytë një `h2`, kjo mund të sjellë një nivel të padëshiruar në strukturën e dokumentit. Alternativa më e mirë ishte ta trajtonit si paragraf, por kjo nuk ka kuptim semantik.
 
-Për këtë arsye, HTML5 përfshin elementin `<hgroup>` për të identifikuar një grup titujsh si një grup. Browser-at që mbështesin `<hgroup>` e njohin vetëm titullin e nivelit më të lartë në strukturë dhe injorojnë të tjerët. Ja si mund të përdoret elementi `<hgroup>` për të shënuar titullin. Me këtë shënim, vetëm `h1`, "Creating a Simple Page," do të përfaqësohet në strukturën e dokumentit:
+Për këtë arsye, HTML5 përfshin elementin `<hgroup>` për të identifikuar një grup titujsh si një grup. Browser-at që mbështesin `<hgroup>` e njohin vetëm titullin e nivelit më të lartë në strukturë dhe injorojnë të tjerët. Ja si mund të përdoret elementi `<hgroup>` për të shënuar titullin. Me këtë shënim, vetëm `h1`, "Creating a Simple Page," do të përfaqësohet në strukturën e dokumentit.
+
+**Shiko skedarin [hgroups.html](hgroups.html)**
 
 ```html
 <hgroup>
@@ -225,6 +227,9 @@ Elementi `<em>` përdoret për të treguar një theks më të lehtë që ndrysho
 <p>Mendoj se Ivy ishte e para <em>e para</em>.</p>
 ```
 
+**Shiko skedarin [formatime.html](formatime.html)**
+
+
 ## Citate
 ### Citate të Gjatë
 ```html
@@ -251,6 +256,8 @@ Elementi `<q>` përdoret për citate të shkurtra që janë brenda një paragraf
 ```html
 <p>Siç thotë John: <q>Çdo moment është një shans për të ndryshuar gjithçka.</q></p>
 ```
+
+**Shiko skedarin [citate.html](citate.html)**
 
 ## Shkurtesa dhe Akronime
 ```html
@@ -337,7 +344,7 @@ Kjo përmbajtje do të shfaqet në një font me gjerësi konstante, duke ruajtur
 <p>Një <dfn>robot</dfn> është një makinë që mund të kryejë detyra automatike.</p>
 ```
 
-**Shpjegim:** Ky tag tregon se "robot" është një term i ri që po shpjegohet në këtë moment. Disa shfletues mund ta shfaqin këtë term në italik për të theksuar që është një term i ri.
+**Shpjegim:** Ky tag tregon se "robot" është një term i ri që po shpjegohet në këtë moment. Disa browser mund ta shfaqin këtë term në italik për të theksuar që është një term i ri.
 
 ### 3. **`<ins>` dhe `<del>`**
 **Përdorimi:** Përdoren për të shënuar ndryshimet që janë bërë në një dokument, si shtimi (`<ins>`) ose fshirja (`<del>`) e pjesëve të caktuara të tij.
@@ -367,7 +374,7 @@ Kjo përmbajtje do të shfaqet në një font me gjerësi konstante, duke ruajtur
 <p>Shikoni seksionin për <mark>SEO</mark> për të mësuar më shumë rreth optimizimit të motorëve të kërkimit.</p>
 ```
 
-**Shpjegim:** Ky tag përdoret për të theksuar një pjesë të tekstit. Në shumicën e shfletuesve, ky tekst shfaqet me një sfond ngjyrë të verdhë, duke e bërë të dukshme për përdoruesin.
+**Shpjegim:** Ky tag përdoret për të theksuar një pjesë të tekstit. Në shumicën e browser-ave, ky tekst shfaqet me një sfond ngjyrë të verdhë, duke e bërë të dukshme për përdoruesin.
 
 ### 6. **`<code>`**
 **Përdorimi:** Përdoret për të shënuar pjesë të kodit të programimit që është i ndarë nga përmbajtja e zakonshme e faqeve HTML.
