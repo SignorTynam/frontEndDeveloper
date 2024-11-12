@@ -2,20 +2,32 @@
 
 **Instruktor:** Alion Emini - *Universita di Bologna - Campus di Cesena*
 
-**Linku në Microsoft Teams:** [Front End Developer - Eva](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NmQ3NmIzN2ItYjZmOS00NTgxLWFiOTItNTUzYjE1NTE3NGI4%40thread.v2/0?context=%7b%22Tid%22%3a%22e99647dc-1b08-454a-bf8c-699181b389ab%22%2c%22Oid%22%3a%22cb57021c-611d-4909-a520-d4db3584864b%22%7d)
-
-**Linku në YouTube:** [#FrontEndDeveloper](https://www.youtube.com/playlist?list=PLYO89vdz7M65HgP1yPnRqPHliRdWRlyHg)
-
-**Linku në GitHub:** [GitHub page](https://github.com/SignorTynam/frontEndDeveloper/tree/main)
+- **Linku në Microsoft Teams:** [Front End Developer - Eva](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NmQ3NmIzN2ItYjZmOS00NTgxLWFiOTItNTUzYjE1NTE3NGI4%40thread.v2/0?context=%7b%22Tid%22%3a%22e99647dc-1b08-454a-bf8c-699181b389ab%22%2c%22Oid%22%3a%22cb57021c-611d-4909-a520-d4db3584864b%22%7d)
+- **Linku në YouTube:** [#FrontEndDeveloper](https://www.youtube.com/playlist?list=PLYO89vdz7M65HgP1yPnRqPHliRdWRlyHg)
+- **Linku në GitHub:** [GitHub page](https://github.com/SignorTynam/frontEndDeveloper/tree/main)
+- **Linku në W3SCHOOLS për koncepte teorike:** [Leksione](https://www.w3schools.com/html/default.asp)
+- **Linku në W3SCHOOLS për ushtrime:** [Ushtrime](https://www.w3schools.com/html/html_exercises.asp)
 
 ## Leksionet e zhvilluara
 
 | No. | Tema | Linku Regjistrimi | Data e Zhvillimit |
 |-----|------|-------------------|-------------------|
 |  1  | [Hyrje në Front End Developer. Bazat në HTML](leksioni1/README.md) | [Leksioni 1](https://www.youtube.com/watch?v=KwvW_h_mIiI&list=PLYO89vdz7M65HgP1yPnRqPHliRdWRlyHg&index=1&t=3s) | 10 Nëntor 2024 |
-|  2  | [Bazat në HTML (2). Elemenëtë bazë semantikë](leksioni2/README.md) | ~~[Leksioni 2]()~~ | 12 Novembre 2024 |
+|  2  | [Bazat në HTML (2). Elemenëtë bazë semantikë](leksioni2/README.md) | [Leksioni 2](https://www.youtube.com/watch?v=5lN9WYEzw9c) | 12 Nëntor 2024 |
+|  3  | ~~[Listat dhe links në HTML]()~~ | ~~[Leksioni 3]()~~ | ~~16 Nëntor 2024~~ |
+| 4 | | | |
+
+## Laboratoret e zhvilluara
+
+| No. | Tema e laboratorit     | Data e caktimit | Data e dorezimit |
+|-----|------------------------|-----------------|------------------|
+| 1   | Krijimi i një CV-je    | 2024-11-12      | [nuk eshte dorezuar] |
+| 2   |  |       |  |
 
 
+<br>
+
+- **Laboratori 1 -** Krijo një CV duke përdorur të gjitha elementët që kemi marrë gjatë *Leksionit 1* dhe *Leksionit 2.*
 ## Çfarë bën një web dizajner?
 
 Me kalimin e viteve, termi *web design* është bërë një përmbledhje për disa disiplina të ndryshme të tilla si: UI, UX dhe IxD. Roli i një *web designer* mund të ndryshojë në varësi të madhësisë së projektit dhe nevojave specifike. Nëse po dizajnoni një faqe të vogël në mënyrë të pavarur, mund të përfshini një gamë të gjerë përgjegjësish që në projekte më të mëdha janë të ndara mes specialistëve.
