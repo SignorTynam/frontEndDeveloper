@@ -347,8 +347,8 @@ Në këtë shembull:
 
 ### Vërejtje për Pamjen e Listave të Folezuara
 
-- **Indentimi**: Shfletuesit zakonisht e tregojnë listën e folezuar me një indentim të shtuar, për të bërë të dallueshme listën e folezuar nga lista prindërore.
-- **Stilet e Shenjave**: Për listat të parenditura, shfletuesi automatikisht ndryshon stilin e shenjave (p.sh., nga pika të mbushura në pika të zbrazëta) për të dalluar listën e folezuar.
+- **Indentimi**: Browser-it zakonisht e tregojnë listën e folezuar me një indentim të shtuar, për të bërë të dallueshme listën e folezuar nga lista prindërore.
+- **Stilet e Shenjave**: Për listat të parenditura, browser-i automatikisht ndryshon stilin e shenjave (p.sh., nga pika të mbushura në pika të zbrazëta) për të dalluar listën e folezuar.
 
 ## Links në HTML
 
