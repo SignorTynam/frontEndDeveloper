@@ -385,18 +385,15 @@ Shpesh përdoren termat si **URI** (Uniform Resource Identifier) dhe **URL** (Un
 ![Figura 1](img/1.png)<br>
 *Figura 1: Një shembull i një URL-je të gjatë.*
 
-### Linking to Pages on the Web
+### Lidhja midis faqeve të web-it
 
-!!! Hello
-    !!! danger
-        Në shumë raste, mund të dëshironi të krijoni një lidhje për një faqe që keni gjetur në internet. Ky lloj lidhjeje quhet **external link**, sepse drejtohet në një faqe jashtë serverit ose faqes tuaj. Për të krijuar një lidhje eksternale, përdorni **URL-në absolute**, e cila fillon me **`http://`** (protokolli). Kjo i thotë browser-it, **"Shko në internet dhe merr dokumentin e mëposhtëm."**
+Në shumë raste, mund të dëshironi të krijoni një lidhje për një faqe që keni gjetur në internet. Ky lloj lidhjeje quhet **external link**, sepse drejtohet në një faqe jashtë serverit ose faqes tuaj. Për të krijuar një lidhje eksternale, përdorni **URL-në absolute**, e cila fillon me **`http://`** (protokolli). Kjo i thotë browser-it, **"Shko në internet dhe merr dokumentin e mëposhtëm."**
 
-### Shembull i Lidhjes Eksternale në Faqen e "Jen’s Kitchen"
 
-Në këtë shembull, do të shtojmë një lidhje eksternale për **"The Food Network"** në faqen kryesore të "Jen’s Kitchen" (siç është treguar në figurën 6-3).
+Në këtë shembull, do të shtojmë një lidhje eksternale për **"The Food Network"** në faqen kryesore të "Jen’s Kitchen".
 
 1. **Krijimi i lidhjes me përdorimin e elementeve të listës**: 
-   Fillimisht, do të krijojmë një listë dhe brenda saj vendosim lidhjen për "The Food Network". Elementët **`<a>`** (anxhor) do të vendosen brenda një elementi **`<li>`** (list item), sepse vetëm **`<li>`** mund të jetë fëmijë i një **`<ul>`** (unordered list). Vendosja e një elementi **`<a>`** direkt brenda një **`<ul>`** do të ishte HTML i pavlefshëm.
+   Fillimisht, do të krijojmë një listë dhe brenda saj vendosim lidhjen për "The Food Network". Elementët **`<a>`** do të vendosen brenda një elementi **`<li>`** (list item), sepse vetëm **`<li>`** mund të jetë fëmijë i një **`<ul>`** (unordered list). Vendosja e një elementi **`<a>`** direkt brenda një **`<ul>`** do të ishte e pavlefshme.
 
    ```html
    <li><a>The Food Network</a></li>
@@ -412,23 +409,18 @@ Në këtë shembull, do të shtojmë një lidhje eksternale për **"The Food Net
 3. **Rezultati**: 
    Tani, kur dikush klikoni ose prek tekstin **"The Food Network"**, ata do të drejtohen në faqen përkatëse të **www.foodnetwork.com**.
 
-Ky është një shembull i thjeshtë që tregon si të krijoni një lidhje eksternale në një faqe web. Për të praktikuar, mund të bëni **EXERCISE 6-1** për të krijuar lidhje të tjera eksternale.
-
-## Linkimi Brënda Faqes Suaj
+### Linkimi brenda faaqes suaj
 
 Në ndërtimin e një faqeje web, shpesh do të lidheni nga një faqe e faqes tuaj në tjetrën—nga faqja kryesore në faqet e seksioneve, nga faqet e seksioneve në faqet me përmbajtje, etj. Në këto raste, **mund të përdorni një URL relative** që referohet në një dokument të pranishëm në serverin tuaj.
 
-#### Terminologji: Folders vs. Directories
+> Në zhvillimin web, termi "directory" përdoret shpesh për të përshkruar dosjet në të cilat organizohen skedarët dhe faqet. Termi "folder" shpesh përshkruan të njëjtën gjë, por me një ikonë vizuale.
 
-Në zhvillimin web, termi "directory" përdoret shpesh për të përshkruar dosjet në të cilat organizohen skedarët dhe faqet. Termi "folder" shpesh përshkruan të njëjtën gjë, por me një ikonë vizuale.
-
-### Rregulla të Rëndësishme për Shkrimin e Shtegut të URL-së
 
 PATH-i relativ tregon se si të arrihet dokumenti i lidhur duke filluar nga pozicioni i dokumentit aktual. Kjo bëhet duke përdorur shenjën **`/` për të ndarë direktorite dhe emrat e skedarëve**. Disa rregulla janë të rëndësishme për të shmangur gabimet kur përdorni këto shtigje:
 
 1. **Mos përdorni shenjën `\`** (backslash). Në URL-të web përdoret vetëm ` / ` (forward slash).
   
-2. **Mos përfshini emrin e diskut** (p.sh., C:, D:) për fillimin e URL-së. Këto funksionojnë vetëm në kompjuterin tuaj lokal dhe do të thyejnë lidhjet kur faqja ngarkohet në server.
+2. **Mos përfshini emrin e diskut** (p.sh., C:, D:) për fillimin e URL-së. Këto funksionojnë vetëm në kompjuterin tuaj lokal dhe do të prishin lidhjet kur faqja ngarkohet në server.
 
 3. **Mos përdorni `file://`** në fillim të URL-së, pasi kjo tregon që skedari është lokal dhe do të shkaktojë gabime kur ngarkohet në server.
 
@@ -466,4 +458,298 @@ Në shembullin e faqes "Jen's Kitchen", rrënja e faqes është dosja **`jenskit
   <a href="tapenade.html">Receta Tapenade</a>
   ```
 
-Këto shembuj përdorin shtigje relative për të përshkruar vendndodhjen e faqeve dhe skedarëve brenda të njëjtit server. Kjo është një praktikë standarde në zhvillimin web dhe lejon që lidhjet të funksionojnë siç duhet edhe pas ngarkimit të faqes në një server të ri.
+Këto shembuj përdorin PATH-e relative për të përshkruar vendndodhjen e faqeve dhe skedarëve brenda të njëjtit server. Kjo është një praktikë standarde në zhvillimin web dhe lejon që lidhjet të funksionojnë siç duhet edhe pas ngarkimit të faqes në një server të ri.
+
+## Bookmark në HTML
+
+A e dini që mund të lidheni me një pikë të caktuar brenda një faqeje në internet? Kjo është e dobishme për të siguruar shkurtore për informacionin në fund të një faqeje të gjatë ose për t'u kthyer në krye të faqes me një klikim ose prekje. Lidhja me një pikë specifike brenda faqes njihet gjithashtu si **lidhja me një fragment dokumenti** ose **Bookmark**.  
+
+> **SHËNIM**
+Lidhja me një vend tjetër brenda të njëjtës faqe funksionon mirë për faqe të gjata, por efekti mund të humbasë në faqe të shkurtra.  
+
+## Procesi në Dy Faza për Lidhjen me një Pikë të Caktuar:  
+
+1. **Identifikimi i Destinacionit:**  
+   Fillimisht, caktohet një destinacion duke përdorur atributin `id` për të dhënë një emër unik elementit të synuar në dokument. Ky është identifikuesi i fragmentit.  
+
+   **Shembull:** Për të lejuar përdoruesit të lidhen drejtpërdrejt me seksionin "H" të një fjalori, mund të shtojmë një atribut `id` te titulli:  
+   ```html
+   <h2 id="startH">H</h2>
+   ```  
+
+2. **Krijimi i Lidhjes:**  
+   Pastaj, krijohet një lidhje duke përdorur simbolin `#` përpara emrit të fragmentit.  
+   **Shembull:**  
+   ```html
+   <p>... F | G | <a href="#startH">H</a> | I | J ...</p>
+   ```  
+   Kur klikoni në "H", browser-i do të kalojë te seksioni me id-në `startH`.  
+
+
+### Lidhja me një Fragment në një Dokument Tjetër  
+
+Për të krijuar një lidhje me një fragment në një dokument tjetër, shtoni emrin e fragmentit në fund të URL-së.  
+**Shembull:**  
+```html
+<a href="glossary.html#startH">Shiko Glossary, shkronja H</a>
+```  
+
+Gjithashtu, mund të lidheni me fragmente në faqe të tjera duke përdorur URL absolut:  
+```html
+<a href="http://www.example.com/glossary.html#startH">Shiko Glossary, shkronja H</a>
+```  
+
+
+### Këshilla për Përdorshmëri:  
+- **Lidhje në Krye:** Nëse faqja është e gjatë, shtoni një lidhje në fund të çdo seksioni që të çon përsëri në krye.  
+  **Shembull:**  
+  ```html
+  <p><a href="#top">Kthehu në krye</a></p>
+  ```  
+
+
+### Hapja e Lidhjeve në një Dritare ose Tab të Ri  
+
+Për të hapur një lidhje në një dritare ose tab të ri, përdorni atributin `target` në elementin `<a>`.  
+- Për të hapur një dritare të re çdo herë:  
+  ```html
+  <a href="http://www.oreilly.com" target="_blank">O'Reilly</a>
+  ```  
+- Për të përdorur të njëjtën dritare për disa lidhje:  
+  ```html
+  <a href="http://www.oreilly.com" target="display">O'Reilly</a>
+  ```  
+
+
+### Lidhjet e Postës Elektronike  
+
+Mund të krijoni një lidhje për të hapur një email të ri duke përdorur protokollin `mailto`:  
+```html
+<a href="mailto:example@example.com">Kontakto</a>
+```  
+**Kujdes:** Vendosja e adresave të emailit në HTML mund t'i ekspozojë ato ndaj spam-it. Për të shmangur këtë, përdorni një formular kontakti ose enkriptim të adresës me JavaScript.  
+
+
+### Lidhje për Telefon  
+
+Në pajisjet mobile, mund të krijoni lidhje që mundësojnë thirrje telefonike duke përdorur protokollin `tel`:  
+```html
+<a href="tel:+355123456789">Thirrni Tani</a>
+```  
+
+Këto janë disa nga teknikat dhe konsideratat kryesore për të krijuar lidhje efektive dhe të përshtatshme për përdoruesit.
+
+## Çfarë trajtuam në këtë leksion?
+
+### 1. **Elementët Block dhe Inline në HTML**
+- **Elementët Block**:
+  - Zënë një rresht të plotë horizontalisht.
+  - Zgjaten për të mbushur gjithë gjerësinë e kontejnerit.
+  - Përdoren për të strukturuar dhe ndarë përmbajtjen.
+  - Shembuj: `<div>`, `<p>`, `<h1>` deri në `<h6>`, `<ul>`, `<ol>`, etj.
+  
+- **Elementët Inline**:
+  - Nuk krijojnë ndarje në rresht të ri; qëndrojnë përkrah elementëve të tjerë.
+  - Marrin vetëm hapësirën e nevojshme për përmbajtjen e tyre.
+  - Shembuj: `<span>`, `<a>`, `<strong>`, `<em>`, etj.
+
+---
+
+### 2. **Listat në HTML**
+- **Listat e Renditura (`<ol>`)**:
+  - Shfaqin elementët me numërim.
+  - Përdoren për përmbajtje me rend logjik ose hap pas hapi.
+
+- **Listat e Parenditura (`<ul>`)**:
+  - Përdorin pika (bullets) për të shfaqur elementët.
+  - Ideale për lista pa rend specifik.
+
+- **Elementët e Listave (`<li>`)**:
+  - Përdoren brenda listave të renditura dhe të parenditura për të shtuar artikuj.
+
+---
+
+### 3. **Lidhjet në HTML**
+- **Elementi `<a>`**:
+  - Përdoret për të krijuar lidhje.
+  - Atributi `href` përcakton URL-në e destinacionit.
+  - Shembuj: Lidhje te faqe të tjera, dokumente, ose seksione brenda të njëjtës faqe (`#anchor`).
+
+## Ushtrime 
+
+Më poshtë janë disa ushtrime praktike në HTML që lidhen me tematikën e leksionit. Ato janë të organizuara sipas niveleve të vështirësisë për të ndihmuar studentin të ushtrojë dhe kuptojë më mirë konceptet.
+
+### Ushtrimi 1: Krijo një listë të parenditur
+Krijo një listë të parenditur që përmban ushqimet e preferuara, si p.sh.:
+- Pizza  
+- Sallatë  
+- Hamburger  
+
+**Rezultati i pritur në HTML**:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista e Ushqimeve</title>
+</head>
+<body>
+    <h1>Ushqimet e Mia të Preferuara</h1>
+    <ul>
+        <li>Pizza</li>
+        <li>Sallatë</li>
+        <li>Hamburger</li>
+    </ul>
+</body>
+</html>
+```
+
+### Ushtrimi 2: Krijo një listë të renditur për hapat e një recete
+Përshkruaj një recetë ku secili hap tregohet me një numër. P.sh.:
+1. Prit përbërësit.  
+2. Gatuaj në zjarr mesatar.  
+3. Shërbe në pjatë.
+
+**Rezultati i pritur në HTML**:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Receta e Supës</title>
+</head>
+<body>
+    <h1>Hapat për Supë</h1>
+    <ol>
+        <li>Prit përbërësit.</li>
+        <li>Gatuaj në zjarr mesatar.</li>
+        <li>Shërbe në pjatë.</li>
+    </ol>
+</body>
+</html>
+```
+
+### Ushtrimi 3: Kombino një listë të renditur dhe të parenditur
+Krijo një listë për të treguar planin e një udhëtimi:
+1. Përgatit gjërat që do të marrësh:
+   - Rroba
+   - Dokumente
+   - Pajisje elektronike
+2. Rezervo biletat.  
+3. Shijo udhëtimin!
+
+**Rezultati i pritur në HTML**:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plani i Udhëtimit</title>
+</head>
+<body>
+    <h1>Plani i Udhëtimit</h1>
+    <ol>
+        <li>
+            Përgatit gjërat që do të marrësh:
+            <ul>
+                <li>Rroba</li>
+                <li>Dokumente</li>
+                <li>Pajisje elektronike</li>
+            </ul>
+        </li>
+        <li>Rezervo biletat.</li>
+        <li>Shijo udhëtimin!</li>
+    </ol>
+</body>
+</html>
+```
+
+### Ushtrimi 4: Krijo lidhje që navigojnë te seksione brenda faqes
+Krijo një faqe me tre seksione (Hyrje, Rreth Nesh, dhe Kontakt), ku një menu navigimi në krye të faqes të lejojë kalimin te secili seksion.
+
+**Rezultati i pritur në HTML**:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Faqja Ime</title>
+</head>
+<body>
+    <h1>Faqja Ime</h1>
+    <nav>
+        <a href="#hyrje">Hyrje</a> |
+        <a href="#rreth-nesh">Rreth Nesh</a> |
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <h2 id="hyrje">Hyrje</h2>
+    <p>Mirë se vini në faqen tonë!</p>
+
+    <h2 id="rreth-nesh">Rreth Nesh</h2>
+    <p>Ne jemi një kompani që ofrojmë shërbime cilësore.</p>
+
+    <h2 id="kontakt">Kontakt</h2>
+    <p>Na kontaktoni në: info@shembull.com</p>
+</body>
+</html>
+```
+
+### Ushtrimi 5: Krijo një faqe për një dyqan me kategori të organizuara
+Krijo një listë të parenditur për kategoritë e një dyqani (p.sh. Rroba, Elektronikë, Ushqime). Çdo kategori duhet të përmbajë një listë të renditur me produkte specifike.
+
+**Rezultati i pritur në HTML**:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dyqani Ynë</title>
+</head>
+<body>
+    <h1>Dyqani Ynë</h1>
+    <ul>
+        <li>Rroba
+            <ol>
+                <li>Këmisha</li>
+                <li>Pantallona</li>
+                <li>Jaketa</li>
+            </ol>
+        </li>
+        <li>Elektronikë
+            <ol>
+                <li>Telefona</li>
+                <li>Televizorë</li>
+                <li>Laptopë</li>
+            </ol>
+        </li>
+        <li>Ushqime
+            <ol>
+                <li>Fruta</li>
+                <li>Perime</li>
+                <li>Pije</li>
+            </ol>
+        </li>
+    </ul>
+</body>
+</html>
+```
+
+### Ushtrimi 6: Krijo një menu navigimi me lidhje të jashtme
+Krijo një faqe me një menu navigimi që përmban lidhje te faqet e tjera të njohura, si p.sh.:
+- Google  
+- YouTube  
+- Wikipedia  
+
+**Rezultati i pritur në HTML**:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menuja Naviguese</title>
+</head>
+<body>
+    <h1>Faqet e Njohura</h1>
+    <nav>
+        <a href="https://www.google.com" target="_blank">Google</a> |
+        <a href="https://www.youtube.com" target="_blank">YouTube</a> |
+        <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a>
+    </nav>
+</body>
+</html>
+```
