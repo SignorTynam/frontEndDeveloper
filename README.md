@@ -1,4 +1,4 @@
-# Welcome - Front End Developer
+# Kursi i **Front End Developer [2024-2025]**
 
 **Instruktor:** Alion Emini - *Universita di Bologna - Campus di Cesena*
 
