@@ -1,6 +1,6 @@
 # Leksioni 3: Listat dhe links në HTML
 
-## Elementër block dhe inline
+## Elementët block dhe inline
 
 Në HTML, termat **"block elements"** dhe **"inline elements"** përshkruajnë sjelljen e elementëve kur ata shfaqen në një faqe web. Këto kategori përcaktojnë si vendosen elementët përkrah njëri-tjetrit, si zënë hapësirën dhe si ndikojnë në rrjedhën e përmbajtjes në faqe.
 
@@ -54,7 +54,7 @@ Në HTML, termat **"block elements"** dhe **"inline elements"** përshkruajnë s
 
 HTML ofron elemente për krijimin e tre llojeve të listave që përputhen me mënyrën natyrore të njerëzve për të organizuar informacionin:
 
-1. **Listat e parregulluara (unordered lists)** – Përdoren për grupe elementesh pa një renditje specifike.
+1. **Listat e parenditura (unordered lists)** – Përdoren për grupe elementesh pa një renditje specifike.
 2. **Listat e renditura (ordered lists)** – Përdoren kur renditja e elementeve ka rëndësi.
 3. **Listat e përshkrimeve (description lists)** – Për çifte term-vlerë, të tilla si terma dhe përkufizime.
 
@@ -62,12 +62,12 @@ Të gjitha elementet e listave janë të tipit *block element*, pra fillojnë n�
 
 ---
 
-## Listat e Parregulluara (Unordered Lists)
+## Listat e Parenditura (Unordered Lists)
 
 Këto lista përfshijnë elemente që nuk ndjekin një rend të caktuar. Në mënyrë të paracaktuar, secili element i listës shfaqet me një shenjë rrethore (bullet).
 
-#### Sintaksa për Listën e Parregulluar
-- Përdorni elementin `<ul>` për të krijuar një listë të parregulluar.
+#### Sintaksa për Listën e Parenditura
+- Përdorni elementin `<ul>` për të krijuar një listë të arenditur.
 - Çdo element i listës duhet të vendoset brenda tag-ave `<li>`.
 - Browser-i e shton automatikisht simbolin rrethor.
 
@@ -82,7 +82,7 @@ Këto lista përfshijnë elemente që nuk ndjekin një rend të caktuar. Në më
 </ul>
 ```
 
-> **Kujdes:** Brenda një liste të parregulluar lejohet vetëm vendosja e elementeve `<li>`. Nuk mund të fusni elemente të tjera apo tekst jashtë këtyre elementeve.
+> **Kujdes:** Brenda një liste të parenditur lejohet vetëm vendosja e elementeve `<li>`. Nuk mund të fusni elemente të tjera apo tekst jashtë këtyre elementeve.
 
 Për tag-un `<ul>`, ka vetëm disa atribute të mundshme për të ndryshuar pamjen dhe funksionalitetin e listës pa përdorur CSS. Këto atribute janë të kufizuara dhe përfshijnë vetëm disa opsione të thjeshta.
 

@@ -21,13 +21,15 @@
 
 | No. | Tema e laboratorit     | Data e caktimit | Data e dorezimit |
 |-----|------------------------|-----------------|------------------|
-| 1   | Krijimi i një CV-je    | 2024-11-12      | [nuk eshte dorezuar] |
-| 2   |  |       |  |
+| 1   | Krijimi i një CV-je (1) | 2024-11-12      | [nuk eshte dorezuar] |
+| 2   | Krijimi i një CV-je (2) | 2024-11-17      | [nuk eshte dorezuar] |
 
 
 <br>
 
 - **Laboratori 1 -** Krijo një CV duke përdorur të gjitha elementët që kemi marrë gjatë *Leksionit 1* dhe *Leksionit 2.*
+- **Laboratori 2 -** Përditëso CV-in e laboratorit 1 duke përdorur elementët e reja që janë trajtuar në *Leksionin 3.*
+ 
 ## Çfarë bën një web dizajner?
 
 Me kalimin e viteve, termi *web design* është bërë një përmbledhje për disa disiplina të ndryshme të tilla si: UI, UX dhe IxD. Roli i një *web designer* mund të ndryshojë në varësi të madhësisë së projektit dhe nevojave specifike. Nëse po dizajnoni një faqe të vogël në mënyrë të pavarur, mund të përfshini një gamë të gjerë përgjegjësish që në projekte më të mëdha janë të ndara mes specialistëve.
