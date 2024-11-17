@@ -14,8 +14,10 @@
 |-----|------|-------------------|-------------------|
 |  1  | [Hyrje në Front End Developer. Bazat në HTML](leksioni1/README.md) | [Leksioni 1](https://www.youtube.com/watch?v=KwvW_h_mIiI&list=PLYO89vdz7M65HgP1yPnRqPHliRdWRlyHg&index=1&t=3s) | 10 Nëntor 2024 |
 |  2  | [Bazat në HTML (2). Elemenëtë bazë semantikë](leksioni2/README.md) | [Leksioni 2](https://www.youtube.com/watch?v=5lN9WYEzw9c) | 12 Nëntor 2024 |
-|  3  | [Listat dhe links në HTML](leksioni3/README.md) | ~~[Leksioni 3]()~~ | ~~16 Nëntor 2024~~ |
-| 4 | | | |
+|  3  | [Listat dhe links në HTML](leksioni3/README.md) | [Leksioni 3](https://www.youtube.com/watch?v=2v_-9mB8Pto&list=PLYO89vdz7M65HgP1yPnRqPHliRdWRlyHg&index=3&t=2051s) | 17 Nëntor 2024 |
+|  4  | ~~[Imazhet dhe Tabelat në HTML]()~~ | ~~[Leksioni4]()~~ | ~~21 Nëntor 2024~~ |
+| 5 | | | |
+
 
 ## Laboratoret e zhvilluara
 
