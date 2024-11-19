@@ -2,7 +2,7 @@
 
 ## **Çfarë do të mësojmë në këtë leksion?**
 
-Në këtë leksion, do të bëjmë një zhytje të thellë në botën e zhvillimit të web-it. Do të fillojmë nga themelet e internetit dhe do të zbulojmë se si funksionojnë faqet web që vizitojmë çdo ditë. 
+Në këtë leksion, do të bëjmë një zhytje të thellë në botën e zhvillimit të web-it. Do të fillojmë nga themelet e internetit dhe do të zbulojmë se si funksionojnë faqet web që vizitojmë çdo ditë.
 
 **Në fund të këtij leksioni, ju do të jeni në gjendje të:**
 
@@ -30,12 +30,15 @@ Web-i (fillimisht i quajtur *World Wide Web*, ja përse gjendet "www" në adresa
 Le të flasim më shumë për kompjuterët që përbëjnë Internetin. Pasi ata “shërbejnë” dokumente kur kërkohen, këto kompjuterë quhen **servera.** Më saktë, serveri është programi që bën të mundur komunikimin e kompjuterit me kompjuterë të tjerë; megjithatë, zakonisht fjala “server” i referohet dhe kompjuterit vetë. Roli i softuerit të serverit është të presë një kërkesë për informacion, ta kërkojë dhe ta dërgojë atë sa më shpejt të jetë e mundur.
 
 ### Historia e Web-it
+
 Web-i lindi në një laborator fizikash bërthamore (CERN) në Gjenevë, Zvicër, në vitin 1989. Aty, një specialist kompjuterik, Tim Berners-Lee, propozoi një sistem të menaxhimit të informacionit që përdorte një proces "hiperteksti" për të lidhur dokumente të ngjashme mbi një rrjet. Ai dhe partneri i tij, Robert Cailliau, krijuan një prototip dhe e liruan për shqyrtim. Për disa vite, faqet web ishin vetëm me tekst. Në vitin 1992, në botë kishte vetëm rreth 50 servera web në total. Popullariteti i Web-it mori hov kur në vitin 1992 u prezantua browser-i i parë grafik (NCSA Mosaic), dhe Web-i u përhap nga kërkimet shkencore në masë.
 
 ### Servera të Njohur
+
 Serverat më të njohur janë *Apache (open-source software)* dhe *Microsoft Internet Information Services (IIS)*. Apache është i disponueshëm për kompjuterët Unix dhe instalohet automatikisht në Mac OS X. Ekziston dhe një version për Windows. IIS është pjesë e zgjidhjeve serverike të Microsoft-it.
 
 ### Adresat IP dhe DNS
+
 Çdo kompjuter dhe pajisje e lidhur në Internet ka një adresë unike numerike IP (Internet Protocol). Për shembull, kompjuteri që mban faqen *google.com* ka adresën IP 208.201.239.100. Për të shmangur të mbajturit mend të gjithë këtyre numrave, është zhvilluar *Domain Name System (DNS)* që na lejon të përdorim emra domain si *google.com*. Kjo bën që IP-të numerike të shihen nga softueri i kompjuterit, ndërsa emrat e domain-it janë më të kuptueshëm për njerëzit.
 
 > **Nuk ka më Adresa IP (IPv4)**  
@@ -47,7 +50,6 @@ Browser-i është pjesa që bën kërkesën për informacion. Një Browser ësht
 
 > **Terminologji**  
 "Client-side" dhe "Server-side" janë terma që tregojnë se cila makinë bën procesimin: aplikacionet client-side ekzekutohen në kompjuterin e përdoruesit, ndërsa ato server-side përdorin fuqinë e përpunimit të serverit.
-
 
 ## Adresat e faqeve web (URL)
 
@@ -107,8 +109,8 @@ Për të përmbyllur hyrjen tonë në mënyrën se si funksionon interneti, le t
 
 3. **Përgjigja nga Serveri**  
    Serveri kërkon skedarin e kërkuar dhe dërgon një përgjigje HTTP.
-   - a. Nëse faqeja nuk mund të gjendet, serveri kthen një mesazh gabimi. Mesazhi zakonisht thotë “404 Not Found”, megjithatë mund të jepen mesazhe më mikpritëse të gabimit.
-   - b. Nëse dokumenti gjendet, serveri e merr skedarin dhe e dërgon atë në browser.
+   * a. Nëse faqeja nuk mund të gjendet, serveri kthen një mesazh gabimi. Mesazhi zakonisht thotë “404 Not Found”, megjithatë mund të jepen mesazhe më mikpritëse të gabimit.
+   * b. Nëse dokumenti gjendet, serveri e merr skedarin dhe e dërgon atë në browser.
 
 4. **Përpunimi i Dokumentit HTML nga Browser-i**  
    Browser-i përpunon dokumentin HTML. Nëse faqja përmban imazhe (të shënuara me elementin HTML `img`) ose burime të tjera të jashtme si skriptet, browser-i bën sërish kërkesa për secilën burim të specifikuar në shënimin HTML.
@@ -124,31 +126,35 @@ Për të përmbyllur hyrjen tonë në mënyrën se si funksionon interneti, le t
 HTML është një gjuhë shënimesh që përdor elementë për të përshkruar strukturën e një faqeje web. Çdo element përbëhet nga një *tag hapës*, *përmbajtja* dhe *tagu përmbyllës*. Këta elementë ndihmojnë në organizimin e përmbajtjes dhe ofrojnë informacion se si duhet shfaqur në browser.
 
 ### Struktura e Tagëve HTML
-- **Tagu Hapës**: `<element name>` i thotë browser-it të nisë një element të ri.
-- **Përmbajtja**: Informacioni që gjendet brenda tagut hapës dhe tagut përmbyllës.
-- **Tagu Përmbyllës**: `</element name>` tregon fundin e një elementi.
+
+* **Tagu Hapës**: `<element name>` i thotë browser-it të nisë një element të ri.
+* **Përmbajtja**: Informacioni që gjendet brenda tagut hapës dhe tagut përmbyllës.
+* **Tagu Përmbyllës**: `</element name>` tregon fundin e një elementi.
 
 ![Figura 3 - Tag-u.](img/3.png)<br>
 *Figura 3 - Tag-u.*
 
 Për shembull:
-- Tagu `<html>` tregon që gjithçka që gjendet mes `<html>` dhe `</html>` është kod HTML.
-- Tagu `<body>` tregon që gjithçka që është mes tagut `<body>` dhe `</body>` duhet të shfaqet në dritaren kryesore të browser-it.
-- Tagu `<h1>` përfaqëson një titull kryesor, dhe teksti që ndodhet brenda tij shfaqet si titulli i faqes.
-- Tagu `<p>` përdoret për të mbyllur paragrafët e tekstit.
-- Tagu `<h2>` përdoret për nën-tituj, duke ofruar një nivel të dytë të titujve.
+
+* Tagu `<html>` tregon që gjithçka që gjendet mes `<html>` dhe `</html>` është kod HTML.
+* Tagu `<body>` tregon që gjithçka që është mes tagut `<body>` dhe `</body>` duhet të shfaqet në dritaren kryesore të browser-it.
+* Tagu `<h1>` përfaqëson një titull kryesor, dhe teksti që ndodhet brenda tij shfaqet si titulli i faqes.
+* Tagu `<p>` përdoret për të mbyllur paragrafët e tekstit.
+* Tagu `<h2>` përdoret për nën-tituj, duke ofruar një nivel të dytë të titujve.
 
 ### Një Pamje Më e Afërt e Tagëve
 
 Tagët HTML përdorin karaktere speciale për të përcaktuar strukturën e tyre:
-- **Një kënd i majtë `<`**: Shënon fillimin e një tagu.
-- **Një kënd i djathtë `>`**: Shënon përfundimin e një tagu.
-- **Slash `/`**: Përdoret në tagun përmbyllës për të treguar fundin e një elementi.
+
+* **Një kënd i majtë `<`**: Shënon fillimin e një tagu.
+* **Një kënd i djathtë `>`**: Shënon përfundimin e një tagu.
+* **Slash `/`**: Përdoret në tagun përmbyllës për të treguar fundin e një elementi.
 
 Për shembull:
-- Tagu hapës për një paragraf është `<p>`, dhe tagu përmbyllës është `</p>`.
-- Tagu hapës për titullin kryesorë është `<h1>`, dhe tagu përmbyllës është `</h1>`.
-- Tagët shpesh quhen **elemente**, të cilat përfshijnë tagun hapës, përmbajtjen dhe tagun përmbyllës.
+
+* Tagu hapës për një paragraf është `<p>`, dhe tagu përmbyllës është `</p>`.
+* Tagu hapës për titullin kryesorë është `<h1>`, dhe tagu përmbyllës është `</h1>`.
+* Tagët shpesh quhen **elemente**, të cilat përfshijnë tagun hapës, përmbajtjen dhe tagun përmbyllës.
 
 ![Figura 4 - Tag-u.](img/4.png)<br>
 *Figura 4 - Tag-u.*
@@ -158,14 +164,15 @@ Për shembull:
 Atributet ofrojnë informacione shtesë rreth përmbajtjes së një elementi dhe vendosen brenda tagut hapës. Një atribut përbëhet nga një emër dhe një vlerë, të ndara nga një barazim.
 
 Për shembull:
+
 ```html
 <p lang="en-us">Paragraf në anglisht</p>
 ```
 
 Në këtë rast:
-- `lang` është emri i atributit.
-- `"en-us"` është vlera e atributit, e cila tregon që paragrafi është në gjuhën angleze.
 
+* `lang` është emri i atributit.
+* `"en-us"` është vlera e atributit, e cila tregon që paragrafi është në gjuhën angleze.
 
 Shumica e atributeve mund të përdoren vetëm me elementë të caktuar, megjithatë disa atribute (si `lang`) mund të përdoren me çdo element. Vlera e një atributi zakonisht është e paracaktuar dhe ndjek një format të caktuar që kuptohet nga të gjithë browser-at.
 
@@ -180,7 +187,7 @@ Ja një përshkrim i dokumentit HTML të thjeshtuar në Markdown dhe në shqip:
 
 Figura 5 tregon strukturën minimale të një dokumenti HTML5. Është mirë që dokumentet të organizohen në mënyrë të qartë dhe me shënime strukturore të duhur. Po ashtu, nëse po shkruani në XHTML më të rreptë, të gjithë elementët përveç **meta** duhet të përfshihen për të qenë të vlefshëm.
 
-### Hapat e Struktura e Dokumentit:
+### Hapat e Struktura e Dokumentit
 
 1. **Deklarata DOCTYPE**:  
    Ky nuk është një element, por një deklaratë që identifikon dokumentin si HTML5. Inkludimi i kësaj deklarate bën që browser-i modernë ta interpretojnë dokumentin sipas specifikimit HTML5.
@@ -199,7 +206,7 @@ Figura 5 tregon strukturën minimale të një dokumenti HTML5. Është mirë që
    ```
 
 3. **Elementi `<head>`**:  
-   Ky element përmban informacionin për dokumentin si titulli, stilet që përdor, skriptet, dhe të dhëna të tjera metadate. 
+   Ky element përmban informacionin për dokumentin si titulli, stilet që përdor, skriptet, dhe të dhëna të tjera metadate.
 
    ```html
    <html>
@@ -217,7 +224,7 @@ Figura 5 tregon strukturën minimale të një dokumenti HTML5. Është mirë që
    ```
 
 5. **Elementi `<title>`**:  
-   Ky element është i detyrueshëm dhe përmban titullin e dokumentit, i cili shfaqet në shiritin e titujve të browser-it. 
+   Ky element është i detyrueshëm dhe përmban titullin e dokumentit, i cili shfaqet në shiritin e titujve të browser-it.
 
    ```html
    <title>Title here</title>
@@ -234,15 +241,14 @@ Figura 5 tregon strukturën minimale të një dokumenti HTML5. Është mirë që
    </html>
    ```
 
-   Në HTML, etiketat `h1` deri te `h6` përdoren për të shfaqur tituj të hierarkive të ndryshme, ndërsa etiketa `p` përdoret për të krijuar paragrafë të tekstit. 
+   Në HTML, etiketat `h1` deri te `h6` përdoren për të shfaqur tituj të hierarkive të ndryshme, ndërsa etiketa `p` përdoret për të krijuar paragrafë të tekstit.
 
 ## Etiketat `h1` deri te `h6`
 
 **Shiko skedarin [headings.html](headings.html)**
 
-
-- **`<h1>`** është për titullin kryesor, zakonisht më i rëndësishëm dhe më i madh në madhësi.
-- **`<h2>`** deri **`<h6>`** shërbejnë për titujt më të vegjël, duke ndjekur hierarkinë në zvogëlim të rëndësisë dhe madhësisë.
+* **`<h1>`** është për titullin kryesor, zakonisht më i rëndësishëm dhe më i madh në madhësi.
+* **`<h2>`** deri **`<h6>`** shërbejnë për titujt më të vegjël, duke ndjekur hierarkinë në zvogëlim të rëndësisë dhe madhësisë.
 
 ```html
 <h1>Kjo është një Titull Kryesor</h1>
@@ -295,7 +301,6 @@ Kështu, etiketa `h1` deri `h6` dhe etiketa `p` ndihmojnë për strukturimin dhe
 
 > **Kliko skedarin [ushtrime.md](ushtrime.md)** për të zgjidhur ushtrimet për leksionin e parë.
 
-
 ## Përmbledhje
 
 Në këtë leksion, kemi eksploruar bazat e internetit, web-it dhe HTML-it. Kemi mësuar se:
@@ -310,74 +315,83 @@ Në këtë leksion, kemi eksploruar bazat e internetit, web-it dhe HTML-it. Kemi
 
 Duke kuptuar këto koncepte themelore, ju keni vendosur themelin për të mësuar më shumë rreth krijimit të faqeve web. Në leksionet e ardhshme, do të shpjegojmë në detaje të tjera se si të përdorni HTML për të krijuar struktura më komplekse dhe për të shtuar stil me CSS.
 
-
 > **Mos harroni:** Praktika e vazhdueshme është çelësi për të mësuar një gjuhë programimi. Krijoni projekte të vogla, eksperimentoni me kodin dhe mos kini frikë të bëni gabime.
-
 
 ## Ushtrime
 
 ### **Ushtrimi 1: Ndryshimi midis Internetit dhe Web-it**
+
 1. Çfarë është ndryshimi kryesor midis Internetit dhe Web-it? Jepni përkufizimin dhe një shembull për secilin.
 
 **Përgjigje:**
-- **Interneti** është një rrjet global i kompjuterëve të ndërlidhur që ndajnë informacion përmes protokolleve të ndryshme si email, FTP, etj. Shembull: Dërgimi i një emaili.
-- **Web-i** është një nënndarje e internetit që përdor protokollin HTTP për të shkëmbyer dokumente hiperteksti. Shembull: Vizitimi i një faqeje web si www.example.com.
+
+* **Interneti** është një rrjet global i kompjuterëve të ndërlidhur që ndajnë informacion përmes protokolleve të ndryshme si email, FTP, etj. Shembull: Dërgimi i një emaili.
+* **Web-i** është një nënndarje e internetit që përdor protokollin HTTP për të shkëmbyer dokumente hiperteksti. Shembull: Vizitimi i një faqeje web si <www.example.com>.
 
 ### **Ushtrimi 2: Roli i Serverëve dhe Browserëve**
+
 2. Çfarë është një server dhe cilat janë funksionet e tij kryesore?
 
 **Përgjigje:**
-- **Serveri** është një kompjuter ose program që ofron shërbime dhe burime për kompjuterët e tjerë në rrjet. Funksionet kryesore përfshijnë pritjen dhe përgjigjen ndaj kërkesave për dokumente, ruajtjen e të dhënave dhe menaxhimin e trafikut të rrjetit.
+
+* **Serveri** është një kompjuter ose program që ofron shërbime dhe burime për kompjuterët e tjerë në rrjet. Funksionet kryesore përfshijnë pritjen dhe përgjigjen ndaj kërkesave për dokumente, ruajtjen e të dhënave dhe menaxhimin e trafikut të rrjetit.
 
 ### **Ushtrimi 3: Strukturat e URL-ve**
 
 3. Shpjegoni tre komponentët kryesorë të një URL-je. Jepni një shembull të një URL-je të plotë dhe shpjegoni secilën pjesë.
 
 **Përgjigje:**
-- **Protokolli**: Mënyra e komunikimit me serverin (p.sh., HTTP ose HTTPS).
-- **Emri i faqes**: Domaini ku ndodhet faqja (p.sh., www.example.com).
-- **Path-i i plotë i dokumentit**: Lokacioni specifik i dokumentit brenda direktorisë së serverit (p.sh., /2021/samples/faqja.html).
+
+* **Protokolli**: Mënyra e komunikimit me serverin (p.sh., HTTP ose HTTPS).
+* **Emri i faqes**: Domaini ku ndodhet faqja (p.sh., <www.example.com>).
+* **Path-i i plotë i dokumentit**: Lokacioni specifik i dokumentit brenda direktorisë së serverit (p.sh., /2021/samples/faqja.html).
 
 Shembull: `https://www.example.com/2021/samples/faqja.html`
-- `https://` është protokolli.
-- `www.example.com` është emri i faqes.
-- `/2021/samples/faqja.html` është path-i i plotë i dokumentit.
+
+* `https://` është protokolli.
+* `www.example.com` është emri i faqes.
+* `/2021/samples/faqja.html` është path-i i plotë i dokumentit.
 
 4. Çfarë është një "default file" dhe si lidhet me kërkesat për dokumente në një server?
 
 **Përgjigje:**
-- Një "default file" është një dokument që serveri shfaq automatikisht kur një URL përfundon me emrin e një direktorie dhe jo një file specifik. Zakonisht është `index.html`.
+
+* Një "default file" është një dokument që serveri shfaq automatikisht kur një URL përfundon me emrin e një direktorie dhe jo një file specifik. Zakonisht është `index.html`.
 
 ### **Ushtrimi 4: Komponentët e HTML-it**
 
 5. Çfarë janë etiketa (tags) në HTML? Jepni shembuj të disa etiketave themelore të përdorura për tituj, paragrafë dhe lidhje.
 
 **Përgjigje:**
-- Etiketa (tags) në HTML janë fjalë kyçe të rrethuar nga kënde katrore (`<` dhe `>`) që tregojnë fillimin dhe fundin e një elementi. Shembuj:
-   - Titulli kryesor: `<h1></h1>`
-   - Paragrafi: `<p></p>`
-   - Lidhja: `<a href="url"></a>`
+
+* Etiketa (tags) në HTML janë fjalë kyçe të rrethuar nga kënde katrore (`<` dhe `>`) që tregojnë fillimin dhe fundin e një elementi. Shembuj:
+  * Titulli kryesor: `<h1></h1>`
+  * Paragrafi: `<p></p>`
+  * Lidhja: `<a href="url"></a>`
 
 ### **Ushtrimi 5: Lidhja e Web-it dhe Serverëve me DNS**
 
 6. Çfarë është DNS dhe si e ndihmon përdoruesin të lidhet me një faqe web pa pasur nevojë të mbajë mend adresat IP?
 
 **Përgjigje:**
-- DNS (Domain Name System) është një sistem që përkthen emrat e domain-eve në adresa IP. Kjo lejon përdoruesit të përdorin emra të lehtë për t'u mbajtur mend (p.sh., www.example.com) në vend të adresave numerike IP.
+
+* DNS (Domain Name System) është një sistem që përkthen emrat e domain-eve në adresa IP. Kjo lejon përdoruesit të përdorin emra të lehtë për t'u mbajtur mend (p.sh., <www.example.com>) në vend të adresave numerike IP.
 
 7. Pse është e rëndësishme të përdorim IPv6 për adresat IP? (Kërko online)
 
 **Përgjigje:**
-- IPv6 është i rëndësishëm sepse ofron një numër shumë më të madh adresash IP sesa IPv4, duke përmbushur nevojat e rritura për adresa unike në internet për pajisje të ndryshme.
+
+* IPv6 është i rëndësishëm sepse ofron një numër shumë më të madh adresash IP sesa IPv4, duke përmbushur nevojat e rritura për adresa unike në internet për pajisje të ndryshme.
 
 ### **Ushtrimi 6: Krijimi i një Dokumenti HTML të Thjeshtë**
 
 8. Krijoni një dokument HTML të thjeshtë që përmban:
-      - Një titull për faqen,
-      - Një titull kryesor (`<h1>`) që thotë "Mirë se vini!",
-      - Një paragraf që përshkruan qëllimin e faqes.
+      * Një titull për faqen,
+      * Një titull kryesor (`<h1>`) që thotë "Mirë se vini!",
+      * Një paragraf që përshkruan qëllimin e faqes.
 
 **Përgjigje:**
+
 ```html
 <!DOCTYPE html>
 <html lang="sq">
@@ -397,18 +411,21 @@ Shembull: `https://www.example.com/2021/samples/faqja.html`
 9. Nëse një faqe web ka disa burime si imazhe dhe skripte, si i përpunon ato browser-i? Shpjegoni se si ndodhin kërkesat për çdo burim dhe si shfaqen ato në ekranin e përdoruesit.
 
 **Përgjigje:**
-- Browser-i bën kërkesa të veçanta HTTP për çdo burim të specifikuar në dokumentin HTML (p.sh., imazhe, skripte). Pasi të marrë përgjigjet nga serveri, browser-i përpunon dhe shfaq burimet në vendet e duhura në ekranin e përdoruesit.
+
+* Browser-i bën kërkesa të veçanta HTTP për çdo burim të specifikuar në dokumentin HTML (p.sh., imazhe, skripte). Pasi të marrë përgjigjet nga serveri, browser-i përpunon dhe shfaq burimet në vendet e duhura në ekranin e përdoruesit.
 
 ### **Ushtrimi 8: Përdorimi i Protokollit HTTP**
 
 10. Shpjegoni rolin e protokollit HTTP në dërgimin e kërkesave dhe përgjigjeve mes browser-it dhe serverit.
 
 **Përgjigje:**
-- Protokolli HTTP përcakton mënyrën se si browser-i dhe serveri komunikojnë. Browser-i dërgon kërkesa HTTP për dokumente dhe burime, dhe serveri përgjigjet me dokumentet e kërkuara ose mesazhe gabimi.
+
+* Protokolli HTTP përcakton mënyrën se si browser-i dhe serveri komunikojnë. Browser-i dërgon kërkesa HTTP për dokumente dhe burime, dhe serveri përgjigjet me dokumentet e kërkuara ose mesazhe gabimi.
 
 ### **Bonus**
 
 11. Cili është ndryshimi midis një serveri Apache dhe një serveri IIS? Si ndihmojnë këto servera në shërbimin e faqeve web? (Kërko online)
 
 **Përgjigje:**
-- **Apache** është një server open-source që funksionon në shumë platforma, përfshirë Unix dhe Windows. **IIS (Internet Information Services)** është një server i zhvilluar nga Microsoft për Windows. Të dy serverat ndihmojnë në shërbimin e faqeve web duke pritur dhe përgjigjur ndaj kërkesave HTTP.
+
+* **Apache** është një server open-source që funksionon në shumë platforma, përfshirë Unix dhe Windows. **IIS (Internet Information Services)** është një server i zhvilluar nga Microsoft për Windows. Të dy serverat ndihmojnë në shërbimin e faqeve web duke pritur dhe përgjigjur ndaj kërkesave HTTP.

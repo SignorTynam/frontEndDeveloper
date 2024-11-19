@@ -5,34 +5,42 @@
 Në HTML, termat **"block elements"** dhe **"inline elements"** përshkruajnë sjelljen e elementëve kur ata shfaqen në një faqe web. Këto kategori përcaktojnë si vendosen elementët përkrah njëri-tjetrit, si zënë hapësirën dhe si ndikojnë në rrjedhën e përmbajtjes në faqe.
 
 ### Block Elements
+
 "Block elements" janë elementë që:
+
 - **Zënë një rresht të plotë horizontalisht**: Çdo element tjetër që vjen pas tyre shfaqet në një rresht të ri, duke krijuar një ndarje vizuale.
 - **Zgjaten për të zënë të gjithë gjerësinë** e kontejnerit të tyre (p.sh., `div`, `body`, ose një kontejner tjetër block).
 - **Përdoren për struktura dhe ndarje të përmbajtjes**: Shpesh përdoren për ndarjen e seksioneve në një faqe për t’i bërë ato të organizuara dhe të lexueshme.
 
-#### Shembuj të Block Elements:
+#### Shembuj të Block Elements
+
 1. **`<div>`**: Kontejner që përdoret për të grupuar elementë të ndryshëm dhe për të krijuar seksione.
 2. **`<p>`**: Përdoret për paragrafe teksti.
 3. **`<h1>`, `<h2>`,... `<h6>`**: Tituj që tregojnë nivele të ndryshme hierarkike të përmbajtjes.
 4. **`<ul>`, `<ol>`, `<li>`**: Elementët e listave të renditura dhe të parenditura.
 
-#### Karakteristika të tjera:
+#### Karakteristika të tjera
+
 - **Përdorin atribute si** `width`, `height`, `margin`, dhe `padding` për të menaxhuar madhësinë dhe pozicionimin.
 - **Nisin në një vijë të re** dhe e mbajnë përmbajtjen tjetër poshtë.
 
 ### Inline Elements
+
 "Inline elements" janë elementë që:
+
 - **Zënë vetëm aq hapësirë sa përmbajtja e tyre**: Ndryshe nga block elements, inline elements nuk zënë një linjë të plotë.
 - **Nuk ndërpresin rrjedhën e tekstit**: Shfaqen pranë elementëve të tjerë në të njëjtin rresht, duke krijuar një rrjedhë të pandërprerë.
 - **Përdoren shpesh për stilizim të brendshëm ose për theksim të tekstit**: Për shembull, për të vendosur links, theksuar fjalë ose për të stilizuar pjesë të veçanta të tekstit.
 
-#### Shembuj të Inline Elements:
+#### Shembuj të Inline Elements
+
 1. **`<span>`**: Një kontejner për stilizimin e pjesëve të tekstit brenda një blloku.
 2. **`<a>`**: Elementi për lidhje hipertext.
 3. **`<strong>`, `<em>`**: Për të theksuar ose italicizuar pjesë të tekstit.
 4. **`<img>`**: Për futjen e imazheve.
 
-#### Karakteristika të tjera:
+#### Karakteristika të tjera
+
 - **Inline elements nuk lejojnë** `width` ose `height` të ndryshojë madhësinë e tyre.
 - **Stilizohen kryesisht përmes** `color`, `font-size`, `margin` (vetëm majtas dhe djathtas), dhe `padding` (në pjesë të kufizuara).
 
@@ -44,7 +52,6 @@ Në HTML, termat **"block elements"** dhe **"inline elements"** përshkruajnë s
 | Sjellja e rreshtit | Nisin në vijë të re                    | Qëndrojnë në të njëjtën linjë          |
 | Shembuj            | `<div>`, `<p>`, `<h1>` - `<h6>`       | `<span>`, `<a>`, `<strong>`, `<em>`    |
 | Kontrolli CSS      | Mund të kontrollohen `width`, `height` | Stilet kufizohen kryesisht në tekst    |
-
 
 ## Listat në HTML
 
@@ -64,7 +71,8 @@ Këto lista përfshijnë elemente që nuk ndjekin një rend të caktuar. Në më
 - Çdo element i listës duhet të vendoset brenda tag-ave `<li>`.
 - Browser-i e shton automatikisht simbolin rrethor.
 
-**Shembull:**
+**Shembull:** Shiko skedarin [`lista_ul.html`](listat_ul.html)
+
 ```html
 <ul>
     <li>Gjuhë Shqipe</li>
@@ -99,7 +107,7 @@ Për tag-un `<ul>`, ka vetëm disa atribute të mundshme për të ndryshuar pamj
 
 2. **`id`**
    - Atributi `id` përdoret për të dhënë një identifikues unik për listën. Ky atribut nuk ndikon drejtpërdrejt në pamjen vizuale, por mund të përdoret për të dalluar listën kur është e nevojshme për qëllime të ndryshme në JavaScript ose stilizim të mëtejshëm.
-   
+
    **Shembull:**
 
    ```html
@@ -137,7 +145,8 @@ Për tag-un `<ul>`, ka vetëm disa atribute të mundshme për të ndryshuar pamj
 
 Këto lista përdoren për elemente me renditje specifike, si për shembull udhëzime hap-pas-hapi. Përdorni elementin `<ol>` për të krijuar një listë të renditur. Browser-i shton numra automatikisht për çdo element të listës.
 
-**Shembull:**
+**Shembull:** Shiko skedarin [`lista_ol.html`](listat_ol.html)
+
 ```html
 <ol>
     <li>Kliko butonin PRINT.</li>
@@ -147,6 +156,7 @@ Këto lista përdoren për elemente me renditje specifike, si për shembull udh�
 ```
 
 #### Atributet për listat `<ol>`
+
 Tag-u `<ol>` ka disa atribute që mund të përdoren për të kontrolluar numërimin dhe stilin e listave të renditura në HTML.
 
 1. **`type`**
@@ -208,7 +218,8 @@ Lista përshkruese përdoren për të paraqitur çifte çelës-vlerë, si terma 
 
 - Lista duhet të përmbajë vetëm elementet `<dt>` dhe `<dd>`.
 
-**Shembull:**
+**Shembull:** Shiko skedarin [`lista_dl.html`](listat_dl.html)
+
 ```html
 <dl>
     <dt>Linotype</dt>
@@ -230,6 +241,7 @@ Listat përshkruese (`<dl>`, `<dt>`, dhe `<dd>`) në HTML kanë disa atribute t�
    - Atributi `title` tregon një tekst ndihmues që shfaqet kur përdoruesi e kalon kursorin mbi elementin.
 
    **Shembull:**
+
    ```html
    <dl title="Lista përshkruese">
        <dt title="Një teknologji për shtypshkrim">Linotype</dt>
@@ -241,6 +253,7 @@ Listat përshkruese (`<dl>`, `<dt>`, dhe `<dd>`) në HTML kanë disa atribute t�
    - Ky atribut përdoret për të specifikuar gjuhën e përmbajtjes së elementit, e cila mund të jetë e dobishme për lexuesit e ekranit dhe për motorët e kërkimit.
 
    **Shembull:**
+
    ```html
    <dl lang="sq">
        <dt>Linotype</dt>
@@ -252,13 +265,13 @@ Listat përshkruese (`<dl>`, `<dt>`, dhe `<dd>`) në HTML kanë disa atribute t�
    - Atributi `dir` përcakton drejtimin e tekstit dhe mund të ketë vlera `ltr` (majtas-djathtas) ose `rtl` (djathtas-majtas).
 
    **Shembull:**
+
    ```html
    <dl dir="ltr">
        <dt>Fotokompozimi</dt>
        <dd>Tekstet shfaqen në filma dhe projektuesit rregullojnë madhësinë.</dd>
    </dl>
    ```
-
 
 ## Krijimi i Listave të mbivendosura
 
@@ -268,6 +281,8 @@ Në HTML, krijimi i listave të mbivendosura (ose "nested lists") bëhet duke ve
 - **Lista të mbivendosura të parenditura** (`<ul>`): Kur futni një listë të parenditur (`<ul>`) brenda një elementi `<li>`, shenjat e listës (`bullet points`) të listës së brendshme ndryshojnë automatikisht në një stil të ri për të dalluar nivelet.
 
 ### Shembull: **Listë renditur me një listë të parenditur të mbevendosur**
+
+Shiko skedarin [`lista_nested.html`](lista_nested.html)
 
 ```html
 <ol>
@@ -285,6 +300,7 @@ Në HTML, krijimi i listave të mbivendosura (ose "nested lists") bëhet duke ve
 ```
 
 Në këtë shembull:
+
 - Kemi një listë të renditur (`<ol>`) me tre elemente kryesore.
 - Elementi i dytë (`Pjata kryesore`) përmban një listë të parenditur (`<ul>`), e cila shton nënkategoritë si `Pasta`, `Pizza`, dhe `Risotto`.
 
@@ -307,10 +323,12 @@ Në këtë shembull:
 ```
 
 Në këtë shembull:
+
 - Lista e parenditur (`<ul>`) ka tre kategori kryesore.
 - E dyta, `Pastries`, përmban një listë të parenditur të mbivendosur me artikuj të ndryshëm.
 
-> ### Vërejtje për pamjen e listave të mbivendosura:
+> ### Vërejtje për pamjen e listave të mbivendosura
+>
 > - **Indentimi**: Browser-it zakonisht e tregojnë listën e mbivendosur me një indentim të shtuar, për të bërë të dallueshme listën e mbivendosur nga lista prindërore.
 > - **Stilet e Shenjave**: Për listat të parenditura, browser-i automatikisht ndryshon stilin e shenjave (p.sh., nga pika të mbushura në pika të zbrazëta) për të dalluar listën e mbivendosur.
 
@@ -325,6 +343,8 @@ Për të krijuar një link në tekst, duhet të vendosim tekstin brenda tag-ave 
 ```html
 <a href="http://www.oreilly.com">Shko te faqja O'Reilly Media</a>
 ```
+
+Shiko skedarin [`links.html`](links.html)
 
 ### Atributi `href`
 
@@ -353,32 +373,30 @@ Shpesh përdoren termat si **URI** (Uniform Resource Identifier) dhe **URL** (Un
 
 Në shumë raste, mund të dëshironi të krijoni një lidhje për një faqe që keni gjetur në internet. Ky lloj lidhjeje quhet **external link**, sepse drejtohet në një faqe jashtë serverit ose faqes tuaj. Për të krijuar një lidhje eksternale, përdorni **URL-në absolute**, e cila fillon me **`http://`** (protokolli). Kjo i thotë browser-it, **"Shko në internet dhe merr dokumentin e mëposhtëm."**
 
-
 Në këtë shembull, do të shtojmë një lidhje eksternale për **"The Food Network"** në faqen kryesore të "Jen’s Kitchen".
 
-1. **Krijimi i lidhjes me përdorimin e elementeve të listës**: 
+1. **Krijimi i lidhjes me përdorimin e elementeve të listës**:
    Fillimisht, do të krijojmë një listë dhe brenda saj vendosim lidhjen për "The Food Network". Elementët **`<a>`** do të vendosen brenda një elementi **`<li>`** (list item), sepse vetëm **`<li>`** mund të jetë fëmijë i një **`<ul>`** (unordered list). Vendosja e një elementi **`<a>`** direkt brenda një **`<ul>`** do të ishte e pavlefshme.
 
    ```html
    <li><a>The Food Network</a></li>
    ```
 
-2. **Shtimi i atributit `href` për URL-në absolute**: 
-   Tani, për të bërë lidhjen funksionale, shtojmë atributin **`href`** me URL-në e plotë të faqes që duam të lidhim (për këtë rast, **www.foodnetwork.com**):
+2. **Shtimi i atributit `href` për URL-në absolute**:
+   Tani, për të bërë lidhjen funksionale, shtojmë atributin **`href`** me URL-në e plotë të faqes që duam të lidhim (për këtë rast, **<www.foodnetwork.com>**):
 
    ```html
    <li><a href="http://www.foodnetwork.com">The Food Network</a></li>
    ```
 
-3. **Rezultati**: 
-   Tani, kur dikush klikoni ose prek tekstin **"The Food Network"**, ata do të drejtohen në faqen përkatëse të **www.foodnetwork.com**.
+3. **Rezultati**:
+   Tani, kur dikush klikoni ose prek tekstin **"The Food Network"**, ata do të drejtohen në faqen përkatëse të **<www.foodnetwork.com>**.
 
 ### Linkimi brenda faaqes suaj
 
 Në ndërtimin e një faqeje web, shpesh do të lidheni nga një faqe e faqes tuaj në tjetrën—nga faqja kryesore në faqet e seksioneve, nga faqet e seksioneve në faqet me përmbajtje, etj. Në këto raste, **mund të përdorni një URL relative** që referohet në një dokument të pranishëm në serverin tuaj.
 
 > Në zhvillimin web, termi "directory" përdoret shpesh për të përshkruar dosjet në të cilat organizohen skedarët dhe faqet. Termi "folder" shpesh përshkruan të njëjtën gjë, por me një ikonë vizuale.
-
 
 PATH-i relativ tregon se si të arrihet dokumenti i lidhur duke filluar nga pozicioni i dokumentit aktual. Kjo bëhet duke përdorur shenjën **`/` për të ndarë direktorite dhe emrat e skedarëve**. Disa rregulla janë të rëndësishme për të shmangur gabimet kur përdorni këto shtigje:
 
@@ -395,10 +413,9 @@ Në shembullin e faqes "Jen's Kitchen", rrënja e faqes është dosja **`jenskit
 ![Figura 2](img/2.png) <br>
 *Figura 2 - Struktura e website-it jenskitche.n*
 
-
 ### Shembuj të PATH-ve Relative
 
-- **Për të lidhur nga `index.html` te `about.html`**: 
+- **Për të lidhur nga `index.html` te `about.html`**:
 
   ```html
   <a href="about.html">Rreth Nesh</a>
@@ -425,28 +442,33 @@ Në shembullin e faqes "Jen's Kitchen", rrënja e faqes është dosja **`jenskit
 ### Hapja e një link në një dritare ose Tab të ri  
 
 Për të hapur një lidhje në një dritare ose tab të ri, përdorni atributin `target` në elementin `<a>`.  
+
 - Për të hapur një dritare të re çdo herë:  
+
   ```html
   <a href="http://www.oreilly.com" target="_blank">O'Reilly</a>
   ```  
+
 - Për të përdorur të njëjtën dritare për disa lidhje:  
+
   ```html
   <a href="http://www.oreilly.com" target="display">O'Reilly</a>
   ```  
 
-
 ### Lidhjet e Postës Elektronike  
 
 Mund të krijoni një lidhje për të hapur një email të ri duke përdorur protokollin `mailto`:  
+
 ```html
 <a href="mailto:example@example.com">Kontakto</a>
 ```  
-**Kujdes:** Vendosja e adresave të emailit në HTML mund t'i ekspozojë ato ndaj spam-it. Për të shmangur këtë, përdorni një formular kontakti ose enkriptim të adresës me JavaScript.  
 
+**Kujdes:** Vendosja e adresave të emailit në HTML mund t'i ekspozojë ato ndaj spam-it. Për të shmangur këtë, përdorni një formular kontakti ose enkriptim të adresës me JavaScript.  
 
 ### Lidhje për Telefon  
 
 Në pajisjet mobile, mund të krijoni lidhje që mundësojnë thirrje telefonike duke përdorur protokollin `tel`:  
+
 ```html
 <a href="tel:+355123456789">Thirrni Tani</a>
 ```  
@@ -458,7 +480,9 @@ Këto janë disa nga teknikat dhe konsideratat kryesore për të krijuar lidhje 
 A e dini që mund të lidheni me një pikë të caktuar brenda një faqeje në internet? Kjo është e dobishme për të siguruar shkurtore për informacionin në fund të një faqeje të gjatë ose për t'u kthyer në krye të faqes me një klikim ose prekje. Lidhja me një pikë specifike brenda faqes njihet gjithashtu si **lidhja me një fragment dokumenti** ose **Bookmark**.  
 
 > **SHËNIM**
-Lidhja me një vend tjetër brenda të njëjtës faqe funksionon mirë për faqe të gjata, por efekti mund të humbasë në faqe të shkurtra.  
+Lidhja me një vend tjetër brenda të njëjtës faqe funksionon mirë për faqe të gjata, por efekti mund të humbasë në faqe të shkurtra.
+
+Shiko skedarin [`bookmarks.html`](bookmarks.html)
 
 ### Procesi për të krijuarn një Bookmark  
 
@@ -466,6 +490,7 @@ Lidhja me një vend tjetër brenda të njëjtës faqe funksionon mirë për faqe
    Fillimisht, caktohet një destinacion duke përdorur atributin `id` për të dhënë një emër unik elementit të synuar në dokument. Ky është identifikuesi i fragmentit.  
 
    **Shembull:** Për të lejuar përdoruesit të lidhen drejtpërdrejt me seksionin "H" të një fjalori, mund të shtojmë një atribut `id` te titulli:  
+
    ```html
    <h2 id="startH">H</h2>
    ```  
@@ -473,21 +498,24 @@ Lidhja me një vend tjetër brenda të njëjtës faqe funksionon mirë për faqe
 2. **Krijimi i Lidhjes:**  
    Pastaj, krijohet një lidhje duke përdorur simbolin `#` përpara emrit të fragmentit.  
    **Shembull:**  
+
    ```html
    <p>... F | G | <a href="#startH">H</a> | I | J ...</p>
    ```  
-   Kur klikoni në "H", browser-i do të kalojë te seksioni me id-në `startH`.  
 
+   Kur klikoni në "H", browser-i do të kalojë te seksioni me id-në `startH`.  
 
 ### Lidhja me Bookmark në një Dokument tjetër  
 
 Për të krijuar një lidhje me një fragment në një dokument tjetër, shtoni emrin e fragmentit në fund të URL-së.  
 **Shembull:**  
+
 ```html
 <a href="glossary.html#startH">Shiko Glossary, shkronja H</a>
 ```  
 
 Gjithashtu, mund të lidheni me fragmente në faqe të tjera duke përdorur URL absolut:  
+
 ```html
 <a href="http://www.example.com/glossary.html#startH">Shiko Glossary, shkronja H</a>
 ```  
@@ -495,6 +523,7 @@ Gjithashtu, mund të lidheni me fragmente në faqe të tjera duke përdorur URL 
 ## Çfarë trajtuam në këtë leksion?
 
 ### 1. **Elementët Block dhe Inline në HTML**
+
 - **Elementët Block**:
   - Zënë një rresht të plotë horizontalisht.
   - Zgjaten për të mbushur gjithë gjerësinë e kontejnerit.
@@ -509,6 +538,7 @@ Gjithashtu, mund të lidheni me fragmente në faqe të tjera duke përdorur URL 
 ---
 
 ### 2. **Listat në HTML**
+
 - **Listat e Renditura (`<ol>`)**:
   - Shfaqin elementët me numërim.
   - Përdoren për përmbajtje me rend logjik ose hap pas hapi.
@@ -523,22 +553,26 @@ Gjithashtu, mund të lidheni me fragmente në faqe të tjera duke përdorur URL 
 ---
 
 ### 3. **Lidhjet në HTML**
+
 - **Elementi `<a>`**:
   - Përdoret për të krijuar lidhje.
   - Atributi `href` përcakton URL-në e destinacionit.
   - Shembuj: Lidhje te faqe të tjera, dokumente, ose seksione brenda të njëjtës faqe (`#anchor`).
 
-## Ushtrime 
+## Ushtrime
 
 Më poshtë janë disa ushtrime praktike në HTML që lidhen me tematikën e leksionit. Ato janë të organizuara sipas niveleve të vështirësisë për të ndihmuar studentin të ushtrojë dhe kuptojë më mirë konceptet.
 
 ### Ushtrimi 1: Krijo një listë të parenditur
+
 Krijo një listë të parenditur që përmban ushqimet e preferuara, si p.sh.:
+
 - Pizza  
 - Sallatë  
 - Hamburger  
 
 **Rezultati i pritur në HTML**:
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -557,12 +591,15 @@ Krijo një listë të parenditur që përmban ushqimet e preferuara, si p.sh.:
 ```
 
 ### Ushtrimi 2: Krijo një listë të renditur për hapat e një recete
+
 Përshkruaj një recetë ku secili hap tregohet me një numër. P.sh.:
+
 1. Prit përbërësit.  
 2. Gatuaj në zjarr mesatar.  
 3. Shërbe në pjatë.
 
 **Rezultati i pritur në HTML**:
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -581,7 +618,9 @@ Përshkruaj një recetë ku secili hap tregohet me një numër. P.sh.:
 ```
 
 ### Ushtrimi 3: Kombino një listë të renditur dhe të parenditur
+
 Krijo një listë për të treguar planin e një udhëtimi:
+
 1. Përgatit gjërat që do të marrësh:
    - Rroba
    - Dokumente
@@ -590,6 +629,7 @@ Krijo një listë për të treguar planin e një udhëtimi:
 3. Shijo udhëtimin!
 
 **Rezultati i pritur në HTML**:
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -615,9 +655,11 @@ Krijo një listë për të treguar planin e një udhëtimi:
 ```
 
 ### Ushtrimi 4: Krijo lidhje që navigojnë te seksione brenda faqes
+
 Krijo një faqe me tre seksione (Hyrje, Rreth Nesh, dhe Kontakt), ku një menu navigimi në krye të faqes të lejojë kalimin te secili seksion.
 
 **Rezultati i pritur në HTML**:
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -645,9 +687,11 @@ Krijo një faqe me tre seksione (Hyrje, Rreth Nesh, dhe Kontakt), ku një menu n
 ```
 
 ### Ushtrimi 5: Krijo një faqe për një dyqan me kategori të organizuara
+
 Krijo një listë të parenditur për kategoritë e një dyqani (p.sh. Rroba, Elektronikë, Ushqime). Çdo kategori duhet të përmbajë një listë të renditur me produkte specifike.
 
 **Rezultati i pritur në HTML**:
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -684,12 +728,15 @@ Krijo një listë të parenditur për kategoritë e një dyqani (p.sh. Rroba, El
 ```
 
 ### Ushtrimi 6: Krijo një menu navigimi me lidhje të jashtme
+
 Krijo një faqe me një menu navigimi që përmban lidhje te faqet e tjera të njohura, si p.sh.:
+
 - Google  
 - YouTube  
 - Wikipedia  
 
 **Rezultati i pritur në HTML**:
+
 ```html
 <!DOCTYPE html>
 <html>

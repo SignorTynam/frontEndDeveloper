@@ -2,10 +2,9 @@
 
 Ky kapitull prezanton elementët që keni për të zgjedhur për të modifikuar përmbajtjen e tekstit. Ndoshta nuk ka aq shumë sa mund të mendoni, dhe në të vërtetë vetëm disa janë elementët që do t'i përdorni rregullisht. Megjithatë, ky kapitull është i madh dhe mbulon shumë terren.
 
-Ndërsa fillojmë turneun tonë të elementëve, dua të ritheksoj sa e rëndësishme është të zgjidhni elementët në mënyrë semantike, domethënë, në një mënyrë që përshkruan më saktë kuptimin e përmbajtjes. 
+Ndërsa fillojmë turneun tonë të elementëve, dua të ritheksoj sa e rëndësishme është të zgjidhni elementët në mënyrë semantike, domethënë, në një mënyrë që përshkruan më saktë kuptimin e përmbajtjes.
 
 Një dokument i formatuar semantikisht siguron që përmbajtja juaj të jetë e disponueshme dhe e qasshme në gamën më të gjerë të mjediseve të browser-ave, nga kompjuterët desktop dhe pajisjet mobile deri te lexuesit ndihmës të ekranit. Gjithashtu lejon lexuesit jo-njerëzorë, si programet e indeksimit të motorëve të kërkimit, të analizojnë saktë përmbajtjen tuaj dhe të marrin vendime për rëndësinë relative të elementëve në faqe.
-
 
 ## Çfarë do të trajtojmë në këtë leksion?
 
@@ -27,6 +26,7 @@ Në këtë leksion, do të mësojmë për elementët bazë të HTML që përdore
 Ky leksion do t'ju ndihmojë të kuptoni dhe të përdorni këto elementë për të krijuar përmbajtje të strukturuar dhe të qartë në faqet tuaja web.
 
 ## Paragrafët
+
 ```html
 <p>...</p>
 ```
@@ -48,6 +48,7 @@ Browser-it zakonisht shfaqin paragrafe në rreshta të rinj, duke vendosur pak h
 Në HTML, është e mundur që të mos e vendosni tagun mbyllës `</p>`. Browser-i supozon automatikisht se paragrafi është mbyllur kur has një element të ri bllok. Megjithatë, shumë zhvillues, përfshirë edhe mua, preferojnë t’i mbyllin paragrafët dhe të gjitha elementët, madje edhe në HTML, për hir të qëndrueshmërisë dhe qartësisë. Unë ju rekomandoj juve, që sapo po mësoni HTML, të bëni të njëjtën gjë.
 
 ## Titujt
+
 ```html
 <h1>...</h1>
 <h2>...</h2>
@@ -59,7 +60,7 @@ Në HTML, është e mundur që të mos e vendosni tagun mbyllës `</p>`. Browser
 
 ### **Elementët e titullit**
 
-Në leksionin e kaluar, përdorëm elementët `h1` dhe `h2` për të treguar titujt e faqes. Në fakt, ekzistojnë gjashtë nivele të titujve, nga `h1` deri te `h6`. Kur shtoni tituj në përmbajtje, browser-i i përdor ato për të krijuar një kontur dokumenti për faqen. Pajisjet për lexim ndihmës, si lexuesit e ekranit, e përdorin këtë kontur për të ndihmuar përdoruesit të skanojnë dhe të navigojnë shpejt nëpër një faqe. 
+Në leksionin e kaluar, përdorëm elementët `h1` dhe `h2` për të treguar titujt e faqes. Në fakt, ekzistojnë gjashtë nivele të titujve, nga `h1` deri te `h6`. Kur shtoni tituj në përmbajtje, browser-i i përdor ato për të krijuar një kontur dokumenti për faqen. Pajisjet për lexim ndihmës, si lexuesit e ekranit, e përdorin këtë kontur për të ndihmuar përdoruesit të skanojnë dhe të navigojnë shpejt nëpër një faqe.
 
 Për më tepër, motorët e kërkimit i marrin parasysh nivelet e titujve si pjesë e algoritmeve të tyre (informacioni në nivelet më të larta të titujve mund të ketë më shumë peshë). Për këto arsye, është praktikë e mirë të fillohet me titullin e Nivelit 1 (`h1`) dhe të vazhdohet sipas radhës numerike, duke krijuar një strukturë logjike dhe një kontur për dokumentin.
 
@@ -108,6 +109,7 @@ Markup-i në këtë shembull do të krijonte strukturën e mëposhtme të dokume
 Si parazgjedhje, titujt në shembullin tonë do të shfaqen me tekst të trashë, duke filluar me madhësi shumë të madhe për `h1`, me secilin nivel pasues në tekst më të vogël. Ju mund të përdorni një fletë stili për të ndryshuar pamjen e tyre.
 
 ## Shift in Themes
+
 ```html
 <hr>
 ```
@@ -129,6 +131,7 @@ Në versionet e mëparshme të HTML, `<hr>` përkufizohej si një "rregull horiz
 ```
 
 ## Grupet e Titujve
+
 ```html
 <hgroup>...</hgroup>
 ```
@@ -151,6 +154,7 @@ Për këtë arsye, HTML5 përfshin elementin `<hgroup>` për të identifikuar nj
 Kjo strukturë e bën dokumentin më të organizuar dhe të kuptueshëm për përdoruesit dhe për motorët e kërkimit.
 
 ## Bold dhe Italic
+
 ```html
 <b>...</b> dhe <i>...</i>
 ```
@@ -173,6 +177,7 @@ Për tekstin **italic**, vendosim fjalët brenda tag-eve `<i>` dhe `</i>`. Ky el
 ```
 
 ## Superscript dhe Subscript
+
 ```html
 <sup>...</sup> dhe <sub>...</sub>
 ```
@@ -185,9 +190,11 @@ Elementi `<sup>` përdoret për karaktere që duhet të shfaqen si **superscript
 ```
 
 ### Hapësira e Bardhë
+
 Për të bërë kodin më të lehtë për t’u lexuar, autorët shpesh shtojnë hapësira ose vendosin elemente në rreshta të rinj. Browser-i kur ndeshet me dy ose më shumë hapësira rresht, e paraqet vetëm si një hapësirë të vetme. Në mënyrë të ngjashme, një ndarje rreshti trajtohet gjithashtu si një hapësirë e vetme, një efekt i njohur si **kolapsi i hapësirës së bardhë**.
 
 ## Breaking lines
+
 ```html
 <br />
 ```
@@ -203,6 +210,7 @@ Ky tag është i dobishëm kur dëshironi të kontrolloni ndarjen e rreshtave br
 ## Strong dhe Emphasis
 
 ### Strong
+
 ```html
 <strong>...</strong>
 ```
@@ -215,6 +223,7 @@ Përdorimi i elementit `<strong>` tregon se përmbajtja e tij ka një rëndësi 
 ```
 
 ### Emphasis
+
 ```html
 <em>...</em>
 ```
@@ -229,9 +238,10 @@ Elementi `<em>` përdoret për të treguar një theks më të lehtë që ndrysho
 
 **Shiko skedarin [formatime.html](formatime.html)**
 
-
 ## Citate
+
 ### Citate të Gjatë
+
 ```html
 <blockquote>...</blockquote>
 ```
@@ -247,6 +257,7 @@ Kur keni një citat të gjatë, dëshminë e dikujt, ose një pjesë nga një bu
 ```
 
 ### Citate të Shkurtra
+
 ```html
 <q>...</q>
 ```
@@ -260,6 +271,7 @@ Elementi `<q>` përdoret për citate të shkurtra që janë brenda një paragraf
 **Shiko skedarin [citate.html](citate.html)**
 
 ## Shkurtesa dhe Akronime
+
 ```html
 <abbr title="...">...</abbr>
 ```
@@ -274,6 +286,7 @@ Kur përdorni një shkurtesë ose një akronim, elementi `<abbr>` mund të përd
 Në HTML, **atributi** është një pjesë e informacionit shtesë që përdoret për të specifikuar cilësi të veçanta ose të dhëna për një element të caktuar. Çdo atribut është një **çift emër-vlerë** që i shtohet një elementi për të përcaktuar më mirë sjelljen, stilin ose funksionalitetin e tij.
 
 ### Si përdoret një atribut?
+
 Atributet shkruhen gjithmonë brenda etiketës hapëse të një elementi HTML dhe zakonisht ndjekin këtë strukturë:
 
 ```html
@@ -291,6 +304,7 @@ Le të shohim një shembull të thjeshtë me një element `abbr` për të shtuar
 ### Roli i atributeve në HTML
 
 Atributet janë shumë të rëndësishme sepse:
+
 1. **Personalizojnë sjelljen dhe funksionalitetin e elementit** – duke e bërë secilin element HTML të kryejë një funksion specifik.
 2. **Përcaktojnë pamjen dhe stilin** – disa atribute ndikojnë në mënyrën se si shfaqet përmbajtja. Atributi `style`, për shembull, mund të përdoret për të aplikuar stile specifike mbi një element të vetëm.
 
@@ -306,8 +320,8 @@ Atributet janë shumë të rëndësishme sepse:
 
 4. **Përmirësojnë aksesueshmërinë dhe përvojën e përdoruesit** – atribute të tilla si `alt` te imazhet dhe `aria-label` në HTML5 përmirësojnë aksesin për njerëzit me aftësi të kufizuara.
 
-
 ## Teksti i Paraformatuar
+
 ```html
 <pre>...</pre>
 ```
@@ -327,9 +341,11 @@ Kjo përmbajtje do të shfaqet në një font me gjerësi konstante, duke ruajtur
 ## Citatet dhe Përcaktimi i Terminologjisë
 
 ### 1. **`<cite>`**
+
 **Përdorimi:** Përdoret për të shënuar tituj të veprave si libra, artikuj, ose filma. Ky tag është një mënyrë për të identifikuar një burim të caktuar.
 
 **Shembull:**
+
 ```html
 <p><cite>Harry Potter and the Sorcerer's Stone</cite> është një libër shumë i njohur nga J.K. Rowling.</p>
 ```
@@ -337,9 +353,11 @@ Kjo përmbajtje do të shfaqet në një font me gjerësi konstante, duke ruajtur
 **Shpjegim:** Ky tag përdoret për të theksuar një titull të një vepre të njohur. Përdorimi i tag-ut `<cite>` ndihmon që të tregon se ky është titulli i një vepre letrare, dhe zakonisht shfaqet në format italik.
 
 ### 2. **`<dfn>`**
+
 **Përdorimi:** Përdoret për të shënuar një term ose koncept që po përcaktohet për herë të parë në një tekst.
 
 **Shembull:**
+
 ```html
 <p>Një <dfn>robot</dfn> është një makinë që mund të kryejë detyra automatike.</p>
 ```
@@ -347,9 +365,11 @@ Kjo përmbajtje do të shfaqet në një font me gjerësi konstante, duke ruajtur
 **Shpjegim:** Ky tag tregon se "robot" është një term i ri që po shpjegohet në këtë moment. Disa browser mund ta shfaqin këtë term në italik për të theksuar që është një term i ri.
 
 ### 3. **`<ins>` dhe `<del>`**
+
 **Përdorimi:** Përdoren për të shënuar ndryshimet që janë bërë në një dokument, si shtimi (`<ins>`) ose fshirja (`<del>`) e pjesëve të caktuara të tij.
 
 **Shembull:**
+
 ```html
 <p>Çmimi për <del>telefonin e vjetër</del> <ins>modelin e ri</ins> është më i lartë.</p>
 ```
@@ -357,9 +377,11 @@ Kjo përmbajtje do të shfaqet në një font me gjerësi konstante, duke ruajtur
 **Shpjegim:** Ky tag përdoret për të shënuar ndryshime në një tekst. Teksti i fshirë shfaqet me vijë të kaluar mbi të, ndërsa teksti i shtuar shfaqet zakonisht nënvizuar. Ky është përdorur shpesh për të treguar modifikime në përmbajtjen e një faqeje.
 
 ### 4. **`<s>`**
+
 **Përdorimi:** Përdoret për të treguar një tekst që ka humbur kuptimin ose është tashmë i pavlefshëm, por që ende do të shfaqet në dokument.
 
 **Shembull:**
+
 ```html
 <p>Laptopi që ne po shesim është <s>Ishte 1000$</s> tani vetëm 750$.</p>
 ```
@@ -367,9 +389,11 @@ Kjo përmbajtje do të shfaqet në një font me gjerësi konstante, duke ruajtur
 **Shpjegim:** Ky tag tregon që një informacion është më i vjetër ose tashmë i pavlefshëm. Përdorimi i tij mund të jetë i dobishëm kur tregon informacion të vjetër në një kontekst të ndryshuar.
 
 ### 5. **`<mark>`**
+
 **Përdorimi:** Përdoret për të theksuar një pjesë të tekstit që është e rëndësishme ose që është gjetur në një kërkim.
 
 **Shembull:**
+
 ```html
 <p>Shikoni seksionin për <mark>SEO</mark> për të mësuar më shumë rreth optimizimit të motorëve të kërkimit.</p>
 ```
@@ -377,9 +401,11 @@ Kjo përmbajtje do të shfaqet në një font me gjerësi konstante, duke ruajtur
 **Shpjegim:** Ky tag përdoret për të theksuar një pjesë të tekstit. Në shumicën e browser-ave, ky tekst shfaqet me një sfond ngjyrë të verdhë, duke e bërë të dukshme për përdoruesin.
 
 ### 6. **`<code>`**
+
 **Përdorimi:** Përdoret për të shënuar pjesë të kodit të programimit që është i ndarë nga përmbajtja e zakonshme e faqeve HTML.
 
 **Shembull:**
+
 ```html
 <p>Për të krijuar një funksion në Java, mund të përdorni këtë kod: <code>public void helloWorld()</code>.</p>
 ```
@@ -387,9 +413,11 @@ Kjo përmbajtje do të shfaqet në një font me gjerësi konstante, duke ruajtur
 **Shpjegim:** Ky tag përdoret për të shënuar se diçka është kod dhe do të shfaqet në një font monospace (si Courier), duke ndihmuar që kodi të dallohet nga përmbajtja e zakonshme tekstuale.
 
 ### 7. **`<var>`**
+
 **Përdorimi:** Përdoret për të shënuar një variabël që mund të përdoret në kontekstin e një kodi ose matematike.
 
 **Shembull:**
+
 ```html
 <p>Formula e zonës së një rrethi është <var>A = πr^2</var>, ku A është zona dhe r është rrezja.</p>
 ```
@@ -397,9 +425,11 @@ Kjo përmbajtje do të shfaqet në një font me gjerësi konstante, duke ruajtur
 **Shpjegim:** Ky tag përdoret për të theksuar një variabël. Shpesh është i dobishëm kur po diskutoni formula matematike ose variabla të përdorura në një kontekst teknologjik.
 
 ### 8. **`<samp>`**
+
 **Përdorimi:** Përdoret për të shënuar një shembull të output-it të një programi ose një aplikacioni.
 
 **Shembull:**
+
 ```html
 <p>Pas ekzekutimit të programit, mund të shihni këtë rezultat: <samp>Hello, World!</samp></p>
 ```
@@ -407,9 +437,11 @@ Kjo përmbajtje do të shfaqet në një font me gjerësi konstante, duke ruajtur
 **Shpjegim:** Ky tag tregon një rezultat të mundshëm që mund të shfaqet nga një program ose aplikacion. Output-i është i shfaqur në një font të veçantë, që ndihmon përdoruesit të kuptojnë se është rezultat i një komande të ekzekutuar.
 
 ### 9. **`<kbd>`**
+
 **Përdorimi:** Përdoret për të shënuar hyrjen që bëhet nga përdoruesi me tastierë.
 
 **Shembull:**
+
 ```html
 <p>Për të kopjuar tekstin, përdorni <kbd>Ctrl</kbd> + <kbd>C</kbd>.</p>
 ```
@@ -446,10 +478,10 @@ Kjo përmbajtje do të shfaqet në një font me gjerësi konstante, duke ruajtur
 | `<samp>`   | Përdoret për të shënuar një shembull të output-it të një programi ose një aplikacioni.                | `<samp>Hello, World!</samp>`                                                                 |
 | `<kbd>`    | Përdoret për të shënuar hyrjen që bëhet nga përdoruesi me tastierë.                                   | `<kbd>Ctrl</kbd> + <kbd>C</kbd>`                                                             |
 
-
 ## Ushtrime Praktike
 
 ### Ushtrimi 1: Krijo një Paragraf dhe një Titull
+
 Krijo një dokument HTML që përmban një titull të nivelit 1 dhe një paragraf që përshkruan një libër të preferuar.
 
 ```html
@@ -468,6 +500,7 @@ Krijo një dokument HTML që përmban një titull të nivelit 1 dhe një paragra
 ```
 
 ### Ushtrimi 2: Përdorimi i Elementit `<strong>` dhe `<em>`
+
 Krijo një paragraf që përmban një fjali ku disa fjalë janë të theksuara me `<strong>` dhe disa të tjera me `<em>`.
 
 ```html
@@ -485,6 +518,7 @@ Krijo një paragraf që përmban një fjali ku disa fjalë janë të theksuara m
 ```
 
 ### Ushtrimi 3: Krijo një Citat të Gjatë
+
 Përdor elementin `<blockquote>` për të krijuar një citat të gjatë nga një person i famshëm.
 
 ```html
@@ -504,6 +538,7 @@ Përdor elementin `<blockquote>` për të krijuar një citat të gjatë nga një
 ```
 
 ### Ushtrimi 4: Përdorimi i Elementit `<abbr>`
+
 Krijo një paragraf që përmban një shkurtesë të shpjeguar me elementin `<abbr>`.
 
 ```html
@@ -521,6 +556,7 @@ Krijo një paragraf që përmban një shkurtesë të shpjeguar me elementin `<ab
 ```
 
 ### Ushtrimi 5: Krijo një Listë me Tituj dhe Paragrafe
+
 Krijo një dokument HTML që përmban një titull të nivelit 2 dhe disa nën-tituj të nivelit 3, secili me një paragraf përkatës.
 
 ```html
@@ -544,6 +580,7 @@ Krijo një dokument HTML që përmban një titull të nivelit 2 dhe disa nën-ti
 ```
 
 ### Ushtrimi 6: Përdorimi i Elementit `<pre>`
+
 Krijo një dokument HTML që përmban një shembull të kodit të paraformatuar duke përdorur elementin `<pre>`.
 
 ```html
@@ -565,6 +602,7 @@ function helloWorld() {
 ```
 
 ### Ushtrimi 7: Përdorimi i Elementit `<mark>`
+
 Krijo një paragraf që përmban një fjalë të theksuar me elementin `<mark>`.
 
 ```html
@@ -582,6 +620,7 @@ Krijo një paragraf që përmban një fjalë të theksuar me elementin `<mark>`.
 ```
 
 ### Ushtrimi 8: Përdorimi i Elementit `<code>`
+
 Krijo një paragraf që përmban një pjesë të kodit të programimit duke përdorur elementin `<code>`.
 
 ```html
@@ -599,6 +638,7 @@ Krijo një paragraf që përmban një pjesë të kodit të programimit duke për
 ```
 
 ### Ushtrimi 9: Përdorimi i Elementit `<sup>` dhe `<sub>`
+
 Krijo një paragraf që përmban karaktere të shfaqura si **superscript** dhe **subscript**.
 
 ```html
@@ -617,6 +657,7 @@ Krijo një paragraf që përmban karaktere të shfaqura si **superscript** dhe *
 ```
 
 ### Ushtrimi 10: Përdorimi i Elementit `<kbd>`
+
 Krijo një paragraf që përmban një komandë të tastierës duke përdorur elementin `<kbd>`.
 
 ```html
