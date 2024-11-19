@@ -1,5 +1,28 @@
 # Leksioni 3: Listat dhe links në HTML
 
+## Çfarë do të mësojmë në këtë leksion?
+
+Në këtë leksion, do të mësojmë për:
+
+1. **Elementët Block dhe Inline në HTML**:
+    - Dallimet midis elementëve block dhe inline.
+    - Shembuj të elementëve block dhe inline.
+    - Karakteristikat dhe përdorimet e tyre.
+
+2. **Listat në HTML**:
+    - Krijimi i listave të renditura dhe të parenditura.
+    - Atributet e ndryshme për listat.
+    - Krijimi i listave të mbivendosura.
+
+3. **Links në HTML**:
+    - Krijimi i lidhjeve me elementin `<a>`.
+    - Përdorimi i URL-ve absolute dhe relative.
+    - Hapja e lidhjeve në dritare ose tab të ri.
+    - Krijimi i lidhjeve për email dhe telefon.
+    - Krijimi i bookmarks për të lidhur brenda të njëjtës faqe ose në faqe të tjera.
+
+Këto koncepte do t'ju ndihmojnë të krijoni faqe web më të strukturuara dhe të navigueshme.
+
 ## Elementët block dhe inline
 
 Në HTML, termat **"block elements"** dhe **"inline elements"** përshkruajnë sjelljen e elementëve kur ata shfaqen në një faqe web. Këto kategori përcaktojnë si vendosen elementët përkrah njëri-tjetrit, si zënë hapësirën dhe si ndikojnë në rrjedhën e përmbajtjes në faqe.

@@ -15,9 +15,8 @@
 |  1  | [Hyrje në Front End Developer. Bazat në HTML](leksioni1/README.md) | [Leksioni 1](https://www.youtube.com/watch?v=KwvW_h_mIiI&list=PLYO89vdz7M65HgP1yPnRqPHliRdWRlyHg&index=1&t=3s) | 10 Nëntor 2024 |
 |  2  | [Bazat në HTML (2). Elemenëtë bazë semantikë](leksioni2/README.md) | [Leksioni 2](https://www.youtube.com/watch?v=5lN9WYEzw9c) | 12 Nëntor 2024 |
 |  3  | [Listat dhe links në HTML](leksioni3/README.md) | [Leksioni 3](https://www.youtube.com/watch?v=2v_-9mB8Pto&list=PLYO89vdz7M65HgP1yPnRqPHliRdWRlyHg&index=3&t=2051s) | 17 Nëntor 2024 |
-|  4  | ~~[Imazhet dhe Tabelat në HTML]()~~ | ~~[Leksioni4]()~~ | ~~21 Nëntor 2024~~ |
+|  4  | [Imazhet dhe Tabelat në HTML](leksioni4/README.md) | ~~[Leksioni4]()~~ | ~~21 Nëntor 2024~~ |
 | 5 | | | |
-
 
 ## Laboratoret e zhvilluara
 
@@ -26,12 +25,11 @@
 | 1   | Krijimi i një CV-je (1) | 2024-11-12      | [nuk eshte dorezuar] |
 | 2   | Krijimi i një CV-je (2) | 2024-11-17      | [nuk eshte dorezuar] |
 
-
 <br>
 
 - **Laboratori 1 -** Krijo një CV duke përdorur të gjitha elementët që kemi marrë gjatë *Leksionit 1* dhe *Leksionit 2.*
 - **Laboratori 2 -** Përditëso CV-in e laboratorit 1 duke përdorur elementët e reja që janë trajtuar në *Leksionin 3.*
- 
+
 ## Çfarë bën një web dizajner?
 
 Me kalimin e viteve, termi *web design* është bërë një përmbledhje për disa disiplina të ndryshme të tilla si: UI, UX dhe IxD. Roli i një *web designer* mund të ndryshojë në varësi të madhësisë së projektit dhe nevojave specifike. Nëse po dizajnoni një faqe të vogël në mënyrë të pavarur, mund të përfshini një gamë të gjerë përgjegjësish që në projekte më të mëdha janë të ndara mes specialistëve.
@@ -42,13 +40,9 @@ Dizajni është një nga pjesët kryesore të krijimit të një faqeje. Edhe pse
 
 #### User Experience dhe User Interface
 
-User Experience është thelbësor për mënyrën se si një faqe do të funksionojë. Para se të zgjidhen ngjyrat dhe fontet, është e rëndësishme të identifikohen qëllimet e faqes, mënyra se si do të përdoret, dhe se si përdoruesit do të lëvizin përmes saj. Këto detyra bien nën disiplinat **Interaction Design (IxD)**, **User Interface (UI) Design**, dhe **User Experience (UX) Design**. 
-- IxD ka si synim të bëjë faqen sa më të lehtë dhe efikase për t'u përdorur. 
-- User Interface fokusohet në organizimin funksional të faqes dhe mjetet që përdoruesit përdorin për të naviguar.
+User Experience është thelbësor për mënyrën se si një faqe do të funksionojë. Para se të zgjidhen ngjyrat dhe fontet, është e rëndësishme të identifikohen qëllimet e faqes, mënyra se si do të përdoret, dhe se si përdoruesit do të lëvizin përmes saj. Këto detyra bien nën disiplinat **Interaction Design (IxD)**, **User Interface (UI) Design**, dhe **User Experience (UX) Design**.
 
 **User Experience Designer** merret me përvojën e përgjithshme dhe perceptimin e faqes nga përdoruesi. Sipas *Donald Norman*, termi "UX" përfshin të gjitha aspektet e ndërveprimit të përdoruesit me produktin, përfshirë dizajnin vizual, ndërfaqen e përdoruesit, cilësinë dhe mesazhin e përmbajtjes, dhe performancën e përgjithshme të faqes.
-
----
 
 ### Zhvillimi (Development)
 
@@ -58,8 +52,6 @@ Një pjesë e madhe e procesit të web design përfshin krijimin dhe përpunimin
 - **Styling.** Pamja e një faqeje në browser kontrollohet nga **CSS (Cascading Style Sheets)**. CSS ndan paraqitjen vizuale të faqes nga struktura e saj HTML, duke mundësuar ndryshime të lehta në stilizimin e elementeve të shumta me vetëm një modifikim të *stylesheet*. CSS është një *must* thelbësore për zhvilluesit e faqeve të internetit, për të siguruar që faqet të funksionojnë mirë në web broswer të ndryshëm dhe pajisje.
 - **Scripting and Programming.** Në zhvillimin e faqeve dinamike dhe aplikacioneve, **JavaScript** është gjuha që shton sjellje dhe funksionalitete për elementet në faqe dhe dritaren e browser-it. Përveç JavaScript-it, gjuhë të tjera programimi si **PHP**, **Ruby**, **Python**, dhe **ASP.NET** përdoren për të procesuar të dhëna në server dhe për të ofruar faqe dinamike për përdoruesit.
 
----
-
 ### Frontend dhe Backend
 
 Termat **Frontend** dhe **Backend** ndahen në dy pjesë kryesore të zhvillimit të faqeve:
@@ -68,13 +60,12 @@ Termat **Frontend** dhe **Backend** ndahen në dy pjesë kryesore të zhvillimit
   
 - **Backend**: Ka të bëjë me programet dhe skriptet që funksionojnë në server për të bërë faqet dinamike dhe interaktive. Detyra si **procesimi i formave**, **programimi i bazave të të dhënave**, dhe **sistemet e menaxhimit të përmbajtjes** kryhen në Backend.
 
----
-
 ### Gjuhët që duhen mësuar
 
 Nëse synoni të përfshiheni në front end developer, është e këshillueshme të keni njohuri në **HTML** dhe **CSS**. Nëse do të punoni në frontend, JavaScript është një *must*, ndërsa për ata që interesohen në backend, njohuritë në gjuhë server-side dhe baza të të dhënave janë shumë të vlefshme.
 
 Përmbledhje e Teknologjive të Ndërlidhura me Web-in:
+
 - **HTML (Hypertext Markup Language)**
 - **CSS (Cascading Style Sheets)**
 - **JavaScript dhe DOM scripting**
@@ -112,6 +103,7 @@ Git është një sistem versionimi i shpërndarë, që ju ndihmon të ruani dhe 
 ### Shembull Përdorimi për Projektet Front End
 
 1. **Fillimi i një Projekti me Git**
+
    ```bash
    git init
    git add .
@@ -119,6 +111,7 @@ Git është një sistem versionimi i shpërndarë, që ju ndihmon të ruani dhe 
    ```
 
 2. **Punë në një veçori të re në një degë të veçantë**
+
    ```bash
    git branch veçoria-e-re
    git checkout veçoria-e-re
@@ -128,12 +121,14 @@ Git është një sistem versionimi i shpërndarë, që ju ndihmon të ruani dhe 
    ```
 
 3. **Bashkimi i ndryshimeve në degën kryesore**
+
    ```bash
    git checkout main
    git merge veçoria-e-re
    ```
 
 4. **Ngarkimi i projektit në një depo të largët (GitHub)**
+
    ```bash
    git remote add origin https://github.com/emri-juaj/projekti-front-end.git
    git push -u origin main
@@ -143,32 +138,27 @@ Git është një sistem versionimi i shpërndarë, që ju ndihmon të ruani dhe 
 
 **Visual Studio Code (VS Code)** është një nga mjetet më të fuqishme dhe fleksibël për zhvillimin Front End. Ai ofron veçori për redaktimin e kodit, autocomplete, debugging, dhe një mori extensions që mund të lehtësojnë ndjeshëm punën tuaj si zhvillues. Një nga karakteristikat më të dobishme të VS Code është integrimi i tij i thellë me **Git**, i cili e bën menaxhimin e versioneve shumë më të lehtë. Këtu keni një udhëzues për përdorimin e VS Code dhe Git për zhvillim Front End.
 
----
-
 ### Përdorimi i Visual Studio Code për Front End
 
 #### 1. **Redaktimi i Kodit**
 
 VS Code mbështet shumë gjuhë për Front End, si **HTML**, **CSS**, **JavaScript**, dhe **TypeScript**. Disa nga veçoritë e dobishme për zhvillim Front End janë:
 
-   - **IntelliSense**: Ndihmon me autocomplete për kodin tuaj, duke sugjeruar tags dhe stile për HTML dhe CSS dhe funksione për JavaScript.
-   - **Snippets**: Ofron blloqe të kodit të gatshme për gjuhë të ndryshme (p.sh., `html:5` për të krijuar një strukturë HTML).
-   - **Emmet**: Lehtëson krijimin e strukturës së HTML-së dhe CSS-së me shkurtesa të shpejta.
-   - **Live Server**: Kjo extension e popullarizuar ju lejon të shihni ndryshimet e kodit tuaj në kohë reale në browser.
+- **IntelliSense**: Ndihmon me autocomplete për kodin tuaj, duke sugjeruar tags dhe stile për HTML dhe CSS dhe funksione për JavaScript.
+- **Snippets**: Ofron blloqe të kodit të gatshme për gjuhë të ndryshme (p.sh., `html:5` për të krijuar një strukturë HTML).
+- **Emmet**: Lehtëson krijimin e strukturës së HTML-së dhe CSS-së me shkurtesa të shpejta.
+- **Live Server**: Kjo extension e popullarizuar ju lejon të shihni ndryshimet e kodit tuaj në kohë reale në browser.
 
 #### 2. **Debugging**
 
-   - **Debugger i Integruar**: VS Code ka një debugger të integruar për JavaScript, i cili ju ndihmon të identifikoni dhe riparoni gabimet në kodin tuaj.
-   - **DevTools Integration**: Për Front End, zakonisht përdoret DevTools i browser-it për debugging të përparuar, por VS Code ofron disa shtesa që mund të sjellin DevTools brenda editorit.
+- **Debugger i Integruar**: VS Code ka një debugger të integruar për JavaScript, i cili ju ndihmon të identifikoni dhe riparoni gabimet në kodin tuaj.
+- **DevTools Integration**: Për Front End, zakonisht përdoret DevTools i browser-it për debugging të përparuar, por VS Code ofron disa shtesa që mund të sjellin DevTools brenda editorit.
 
 #### 3. **Extensions për Front End**
 
    Disa nga shtesat më të dobishme për zhvillim Front End janë:
 
-   - **Prettier**: Formatim automatik i kodit, që mban një strukturë të pastër.
-   - **ESLint**: Kontrollon gabimet dhe ndjek standardet e kodimit për JavaScript.
-   - **CSS Peek**: Ju lejon të shikoni dhe të kaloni direkt te deklaratat CSS për një element të zgjedhur HTML.
-   - **Auto Rename Tag**: Riemërton automatikisht tags HTML nëse ndryshoni tag-un hapës.
-
----
-
+- **Prettier**: Formatim automatik i kodit, që mban një strukturë të pastër.
+- **ESLint**: Kontrollon gabimet dhe ndjek standardet e kodimit për JavaScript.
+- **CSS Peek**: Ju lejon të shikoni dhe të kaloni direkt te deklaratat CSS për një element të zgjedhur HTML.
+- **Auto Rename Tag**: Riemërton automatikisht tags HTML nëse ndryshoni tag-un hapës.
