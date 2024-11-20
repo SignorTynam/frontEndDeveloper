@@ -544,3 +544,654 @@ Ja se si mund ta përdorni elementin `<figure>` dhe `<figcaption>` në një kont
 3. **SEO**: Motorët e kërkimit mund të lidhin më mirë përshkrimin me imazhin për një indeksim më të mirë të përmbajtjes.
 
 Në përmbledhje, HTML5 ka prezantuar elementët `<figure>` dhe `<figcaption>` për të përmirësuar organizimin dhe aksesueshmërinë e imazheve dhe përshkrimeve të tyre, duke e bërë më të lehtë për zhvilluesit të strukturojnë përmbajtjen multimedia në një mënyrë logjike.
+
+## Tabelat në HTML
+
+Tabelat në HTML janë krijuar për rastet kur ju duhet të shtoni material tabelar (të dhëna të organizuara në rreshta dhe kolona) në një faqe interneti. Ato mund të përdoren për të organizuar orare, krahasime produktesh, statistika ose informacione të tjera, siç tregohet në figurën 5. Vini re se "të dhëna" nuk do të thotë domosdoshmërisht numra. Një qelizë e tabelës mund të përmbajë çdo lloj informacioni, duke përfshirë numra, elemente teksti, imazhe ose objekte multimediale.
+
+![Figura 5](images/5.png)
+
+*Figura 5*
+
+Në browser-at vizualë, rregullimi i të dhënave në rreshta dhe kolona u jep lexuesve një kuptim të menjëhershëm të lidhjeve midis qelizave dhe etiketimeve të tyre përkatëse. Megjithatë, mbani parasysh se disa lexues mund të dëgjojnë të dhënat tuaja përmes një lexuesi ekrani ose t'i lexojnë ato me Braille. Në këtë kapitull do të diskutojmë masat që mund të ndërmerrni për të bërë përmbajtjen e tabelave të aksesueshme për përdoruesit që nuk përfitojnë nga paraqitja vizuale.
+
+Në të kaluarën, tabelat ishin mënyra e vetme për të krijuar paraqitje me shumë kolona ose për të kontrolluar rregullimet dhe hapësirat e bardha. Megjithatë, tabelat e ndërlikuara për paraqitje janë zëvendësuar nga teknikat moderne si CSS. Në vend të tabelave tradicionale, mund të përdorni **CSS Tables**, **Flexbox** ose **Grid Layout** për të arritur efekte të ngjashme, duke përdorur ndarje dhe stilizim përmes CSS.
+
+Pavarësisht kësaj, ky kapitull fokusohet te elementet e tabelave në HTML që shënojnë në mënyrë semantike rreshtat dhe kolonat e të dhënave sipas specifikimeve të HTML.
+
+### Struktura minimale e tabelës
+
+Për të kuptuar një tabelë, le të shohim një shembull të thjeshtë me tre rreshta dhe tre kolona që paraqet informacion ushqyes. Siç tregohet në figurën 5, të gjitha përmbajtjet e tabelës vendosen në qeliza të organizuara në rreshta. Qelizat përmbajnë ose informacione titulli (p.sh., "Kalori") ose të dhëna, të cilat mund të jenë çfarëdo përmbajtje.
+
+#### Shembull i Kodit HTML për një Tabelë të Thjeshtë
+
+Shiko skedarin [`tables.html`](code/tables.html)
+
+```html
+<table>
+  <tr>
+    <th>Menu item</th>
+    <th>Calories</th>
+    <th>Fat (g)</th>
+  </tr>
+  <tr>
+    <td>Chicken noodle soup</td>
+    <td>120</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>Caesar salad</td>
+    <td>400</td>
+    <td>26</td>
+  </tr>
+</table>
+```
+
+Në këtë kod:
+
+- **`<table>`** përcakton tabelën.
+- **`<tr>`** përcakton një rresht në tabelë.
+- **`<th>`** është për qelizat e titullit të kolonave.
+- **`<td>`** është për qelizat që përmbajnë të dhëna.
+- Numri i kolonave është i nënkuptuar nga numri i qelizave në secilin rresht.
+- Për një tabelë me katër kolona, çdo rresht duhet të përmbajë katër **`<td>`** ose **`<th>`**.
+
+![Figura 6](images/6.png)
+
+*Figura 6*
+
+#### Një shembull tjetër
+
+```html
+<table>
+  <tr>
+    <th>Burgers</th>
+    <td>Organic Grass-fed Beef</td>
+    <td>Black Bean Veggie</td>
+  </tr>
+  <tr>
+    <th>Fries</th>
+    <td>Hand-cut Idaho potato</td>
+    <td>Seasoned sweet potato</td>
+  </tr>
+</table>
+```
+
+Në këtë shembull, tabela ka:
+
+- **2 rreshta** (dy elemente **`<tr>`**).
+- **3 kolona**, pasi çdo rresht ka një **`<th>`** dhe dy **`<td>`**.
+
+### Titulli i tabelave
+
+Siç shihet nga shembujt e mësipërm, teksti i shënuar si tituj (elementet **`<th>`**) paraqitet ndryshe nga qelizat e tjera në tabelë (**`<td>`**). Ky ndryshim nuk është thjesht estetik; titujt e tabelave janë të rëndësishëm sepse ofrojnë kontekst për qelizat e rreshtave ose kolonave që pasojnë. Për shembull, lexuesit e ekranit mund të lexojnë titullin përpara çdo qelize të të dhënave (“Menu item: Caesar salad, Calories: 400, Fat-g: 26”), duke e bërë përmbajtjen e tabelës të aksesueshme.
+
+Pra, është e rëndësishme të përdorni elementin **`<th>`** për të shënuar titujt në mënyrë semantike, në vend që të përdorni **`<td>`** dhe të ndryshoni paraqitjen me stilizim.
+
+### Zgjerimi i qelizave (Spanning Cells)
+
+Një veçori themelore e tabelave është **aftësia për të zgjeruar një qelizë** që të mbulojë disa rreshta ose kolona, duke krijuar struktura më komplekse. Kjo realizohet duke përdorur atributet **colspan** dhe **rowspan**. Më poshtë janë disa shembuj.
+
+#### Zgjerimi i Kolonave (Column Spanning) [[`colspan.html`](code/colspan.html)]
+
+Atributi **colspan** përdoret në elementin **\<td\>** ose **\<th\>** për të shtrirë një qelizë në disa kolona. Për shembull:
+
+```html
+<table>
+  <tr>
+    <th colspan="2">Fat</th>
+  </tr>
+  <tr>
+    <td>Saturated Fat (g)</td>
+    <td>Unsaturated Fat (g)</td>
+  </tr>
+</table>
+```
+
+- Në rreshtin e parë (**\<tr\>**), qeliza me **colspan="2"** mbulon dy kolona.
+- Në rreshtin e dytë, dy qelizat **\<td\>** përmbushin strukturën e tabelës me dy kolona.
+
+#### Shembull tjetër me `colspan`
+
+Një orar me pesë kolona ku disa aktivitete zgjerohen mbi më shumë se një kolonë:
+
+```html
+<table>
+  <tr>
+    <th></th>
+    <th>9am</th>
+    <th>10am</th>
+    <th>11am</th>
+    <th>12am</th>
+  </tr>
+  <tr>
+    <th>Monday</th>
+    <td colspan="2">Geography</td>
+    <td>Math</td>
+    <td>Art</td>
+  </tr>
+  <tr>
+    <th>Tuesday</th>
+    <td colspan="3">Gym</td>
+    <td>Home Ec</td>
+  </tr>
+</table>
+```
+
+Këtu:
+
+- Qeliza “Geography” shtrihet mbi dy kolona (**colspan="2"**).
+- Qeliza “Gym” shtrihet mbi tre kolona (**colspan="3"**).
+
+#### Zgjerimi i Rreshtave (Row Spanning) [[`rowspan.html`](code/rowspan.html)]
+
+Atributi **rowspan** përdoret për të shtrirë një qelizë poshtë mbi disa rreshta. Për shembull:
+
+```html
+<table>
+  <tr>
+    <th rowspan="3">Serving Size</th>
+    <td>Small (8oz.)</td>
+  </tr>
+  <tr>
+    <td>Medium (16oz.)</td>
+  </tr>
+  <tr>
+    <td>Large (24oz.)</td>
+  </tr>
+</table>
+```
+
+- Në këtë shembull, qeliza e parë (**\<th rowspan="3"\>**) mbulon tre rreshta.
+- Nuk ka nevojë për qeliza shtesë në rreshtat pasardhës që janë mbuluar nga **rowspan**.
+
+#### Shembull tjetër me `rowspan`
+
+Një orar televiziv ku një film shtrihet mbi dy rreshta:
+
+```html
+<table>
+  <tr>
+    <th></th>
+    <th>ABC</th>
+    <th>BBC</th>
+    <th>CNN</th>
+  </tr>
+  <tr>
+    <th>6pm - 7pm</th>
+    <td rowspan="2">Movie</td>
+    <td>Comedy</td>
+    <td>News</td>
+  </tr>
+  <tr>
+    <th>7pm - 8pm</th>
+    <td>Sport</td>
+    <td>Current Affairs</td>
+  </tr>
+</table>
+```
+
+- Qeliza “Movie” shtrihet në dy rreshta (**rowspan="2"**).
+- Në rreshtin e dytë, mungon një qelizë për shkak të zgjerimit të qelizës “Movie”.
+
+## Table Accessibility
+
+Krijimi i tabelave të aksesueshme është thelbësor për t’i bërë faqet e internetit më miqësore për përdoruesit me aftësi të kufizuara të të parit. HTML ofron mjete për të përmirësuar përvojën e leximit dhe për të bërë përmbajtjen më të kuptueshme, veçanërisht për përdoruesit që përdorin lexues ekrani.
+
+Shiko skedarin [`table_accessibility.html`](code/table_accessibility.html)
+
+### **Përshkrimi i Përmbajtjes së Tabelës**
+
+#### **Elementi `<caption>`**
+
+Një nga mënyrat më të efektshme për të përshkruar përmbajtjen e tabelës për përdoruesit me vështirësi shikimi është përdorimi i elementit **\<caption\>**. Ky element jep një titull ose përshkrim për tabelën dhe shfaqet zakonisht mbi të.
+
+**Shembull:**
+
+```html
+<table>
+  <caption>Nutritional Information</caption>
+  <tr>
+    <th>Menu item</th>
+    <th>Calories</th>
+    <th>Fat (g)</th>
+  </tr>
+  <tr>
+    <td>Caesar Salad</td>
+    <td>400</td>
+    <td>26</td>
+  </tr>
+</table>
+```
+
+Për përshkrime më të gjata, tabela mund të futet brenda një elementi **`<figure>`** dhe të përdoret **`<figcaption>`** për përshkrim.
+
+### **Lidhja e Qelizave me Titujt (Connecting Cells and Headers)**
+
+Tabelat me struktura komplekse mund të jenë sfiduese për t’u lexuar nga pajisjet ndihmëse. Për ta bërë më të qartë lidhjen mes qelizave dhe titujve, përdoren atributet **scope** dhe **headers**.
+
+#### **Atributi `scope`**
+
+Atributi **`scope`** përcakton se cilat qeliza mbulon një titull **`<th>`**, duke specifikuar nëse titulli vlen për një:
+
+- **Rresht**: `scope="row"`
+- **Kolonë**: `scope="col"`
+- **Grup rreshtash**: `scope="rowgroup"`
+- **Grup kolonash**: `scope="colgroup"`
+
+**Shembull:**
+
+```html
+<tr>
+  <th scope="row">Mars</th>
+  <td>.95</td>
+  <td>.62</td>
+  <td>0</td>
+</tr>
+```
+
+- **Rekomandim:** Çdo element **\<th\>** duhet të ketë një atribut **scope** për qartësi më të madhe.
+
+#### **Atributi `headers`**
+
+Në tabela të ndërlikuara me qeliza të zgjeruara (përdorimi i **`rowspan`** ose **`colspan`**), përdorni atributin **`headers`** në elementin **`<td>`** për ta lidhur atë me një titull specifik përmes ID-së së tij.
+
+**Shembull:**
+
+```html
+<table>
+  <tr>
+    <th id="diameter">Diameter measured in earths</th>
+    <th id="mass">Mass measured in earths</th>
+  </tr>
+  <tr>
+    <td headers="diameter mass">.38</td>
+    <td headers="mass">.11</td>
+  </tr>
+</table>
+```
+
+**Shënim:** Për shkak të mbështetjes së pasigurt nga lexuesit e ekranit, përdorimi i **`scope`** është shpesh më i preferuar.
+
+### **Grupimi i Rreshtave dhe Kolonave**
+
+Për të rritur qartësinë semantike të tabelës, përdoren grupime të rreshtave dhe kolonave:
+
+- **`<thead>`, `<tbody>`, `<tfoot>`:** Grupojnë rreshtat e titujve, trupit dhe fundin e tabelës.
+- **`<colgroup>`, `<col>`:** Grupojnë dhe stilizojnë kolona të caktuara.
+
+**Shembull:**
+
+```html
+<table>
+  <thead>
+    <tr>
+      <th>Planet</th>
+      <th>Diameter (km)</th>
+      <th>Mass (10^24 kg)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Earth</td>
+      <td>12742</td>
+      <td>5.97</td>
+    </tr>
+    <tr>
+      <td>Mars</td>
+      <td>6779</td>
+      <td>0.642</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3">Data sourced from NASA</td>
+    </tr>
+  </tfoot>
+</table>
+```
+
+### **Burime për Tabela të Aksesueshme**
+
+Për më shumë informacion mbi krijimin e tabelave të aksesueshme, shikoni udhëzimet nga:
+
+- [WebAIM: Creating Accessible Tables](https://webaim.org/techniques/tables/data)
+- [W3C: Table Descriptions Techniques](https://www.w3.org/TR/html5/tabular-data.html#table-descriptions-techniques)
+
+Këto burime ofrojnë udhëzime të avancuara për krijimin e tabelave që plotësojnë nevojat e të gjithë përdoruesve.
+
+## **Grupet e Rreshtave dhe Kolonave**
+
+Tabelat e përdorura në botën reale shpesh janë më komplekse sesa shembujt bazë të paraqitur gjatë leksionit. Për të menaxhuar dhe stiluar këto struktura komplekse në mënyrë efektive, HTML ofron elementë për **grupimin e rreshtave** dhe **grupimin e kolonave**, që ndihmojnë në organizimin semantik dhe funksionalitetin e përmirësuar.
+
+### **Elementët e Grupimit të Rreshtave**
+
+Me anë të **`<thead>`**, **`<tbody>`** dhe **`<tfoot>`**, ju mund të ndani rreshtat e tabelës në grupe që përfaqësojnë pjesën e kokës (header), trupin dhe fundin (footer) të një tabele. Këto elemente mund të ndihmojnë për:
+
+- Përsëritjen e kokës dhe fundit të tabelës në faqet e printuara.
+- Aplikimin e stileve specifike për pjesë të ndryshme të tabelës.
+
+#### **Struktura e Grupimit të Rreshtave**
+
+Renditja e grupeve në tabelë është gjithmonë si më poshtë:
+
+1. **`<thead>`**: Përmban kokën e tabelës (zakonisht titujt e kolonave).
+2. **`<tbody>`**: Përmban të dhënat kryesore të tabelës.
+3. **`<tfoot>`**: Përmban fundin e tabelës (shpesh përmbledhje ose fusnota).
+
+```html
+<table>
+  <thead>
+    <tr>
+      <th>Kolona 1</th>
+      <th>Kolona 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Të dhëna 1</td>
+      <td>Të dhëna 2</td>
+    </tr>
+    <tr>
+      <td>Të dhëna 3</td>
+      <td>Të dhëna 4</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="2">Fusnotë</td>
+    </tr>
+  </tfoot>
+</table>
+```
+
+#### **Përfitimet e Grupimit të Rreshtave**
+
+- **Përsëritje automatike**: Disa shfletues mund të përsërisin kokën dhe fundin kur tabela shpërndahet në disa faqe.
+- **Stilim më i saktë**: Mund të aplikoni CSS vetëm për grupe të caktuara.
+
+### **Elementët e Grupimit të Kolonave**
+
+Përveç grupimit të rreshtave, HTML lejon grupimin semantik të kolonave duke përdorur **`colgroup`** dhe **`col`**.
+
+#### **Si funksionon `colgroup`**
+
+Elementi **`colgroup`** shfaqet në fillim të tabelës (pas titullit, nëse ka një të tillë) dhe përfaqëson një grup kolonash. Ai mund të përdoret për:
+
+- Vendosjen e ID-ve ose klasave për grupe kolonash.
+- Aplikimin e stileve të personalizuara në grupe specifike kolonash.
+
+```html
+<table>
+  <colgroup>
+    <col span="2" class="highlight">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Kolona 1</th>
+      <th>Kolona 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Të dhëna 1</td>
+      <td>Të dhëna 2</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+#### **Elementi `col`**
+
+Elementi **`col`** shërben për të identifikuar kolonat individuale brenda një grupi kolonash. Ju mund të shtoni atribute si **klasa** ose **id** për t’i stiluar ato me CSS.
+
+## **Attributes të Vjetra: Gjerësia, Hapësira dhe Stilet**
+
+Në të kaluarën, HTML përdorte disa **atribute të integruara** për të kontrolluar **pamjen dhe sjelljen** e tabelave. Megjithatë, këto janë tani të vjetëruara dhe janë zëvendësuar me CSS për një qasje më të standardizuar dhe fleksibile. Këtu është një pasqyrë e përdorimit të tyre të vjetër dhe mënyra e zëvendësimit me CSS.
+
+**Shiko skedarin [`old_codes.html`](code/old_codes.html)**
+
+### 1. Gjerësia dhe Hapësira (`width`, `cellpadding`, `cellspacing`)
+
+#### **Kodi i Vjetër:**
+
+```html
+<table width="400" cellpadding="10" cellspacing="5">
+  <tr>
+    <th width="150"></th>
+    <th>Withdrawn</th>
+    <th>Credit</th>
+    <th width="150">Balance</th>
+  </tr>
+  <tr>
+    <th>January</th>
+    <td>250.00</td>
+    <td>660.50</td>
+    <td>410.50</td>
+  </tr>
+  <tr>
+    <th>February</th>
+    <td>135.55</td>
+    <td>895.20</td>
+    <td>1170.15</td>
+  </tr>
+</table>
+```
+
+- **`width`**: Përcaktonte gjerësinë e tabelës ose qelizave individuale në pikselë.
+- **`cellpadding`**: Shton hapësirë të brendshme midis përmbajtjes dhe kufirit të qelizës.
+- **`cellspacing`**: Krijon hapësirë midis qelizave.
+
+### **2. Kufiri dhe Ngjyra e Sfondit (`border`, `bgcolor`)**
+
+#### **Kodi i Vjetër**
+
+```html
+<table border="2" bgcolor="#efefef">
+  <tr>
+    <th width="150"></th>
+    <th>Withdrawn</th>
+    <th>Credit</th>
+    <th width="150" bgcolor="#cccccc">Balance</th>
+  </tr>
+  <tr>
+    <th>January</th>
+    <td>250.00</td>
+    <td>660.50</td>
+    <td bgcolor="#cccccc">410.50</td>
+  </tr>
+  <tr>
+    <th>February</th>
+    <td>135.55</td>
+    <td>895.20</td>
+    <td bgcolor="#cccccc">1170.15</td>
+  </tr>
+</table>
+```
+
+- **`border`**: Vendoste trashësinë e kufirit të tabelës dhe qelizave.
+- **`bgcolor`**: Vendoste ngjyrën e sfondit për tabelën ose qelizat individuale duke përdorur një kod hexadecimal.
+
+## Përmbledhje e Leksionit
+
+Në këtë leksion, kemi mbuluar temat kryesore të imazheve dhe tabelave në HTML. Ja disa pika kryesore:
+
+### Imazhet në HTML
+
+- **Formate të mbështetura**: PNG, JPEG, GIF, WebP, JPEG-XR, dhe SVG.
+- **Elementi `<img>`**: Përdoret për të shtuar imazhe në faqe me atribute si `src` dhe `alt`.
+- **Teksti alternativ (`alt`)**: I rëndësishëm për aksesueshmëri dhe SEO.
+- **Përdorimi i `srcset` dhe `sizes`**: Për imazhe responsive që përshtaten me pajisje të ndryshme.
+- **Elementi `<picture>`**: Për drejtim artistik dhe ndryshim të përmbajtjes së imazhit bazuar në madhësinë e ekranit.
+- **SVG**: Imazhe vektoriale që ruajnë cilësinë në çdo madhësi dhe mund të manipulohen me CSS dhe JavaScript.
+
+### Tabelat në HTML
+
+- **Struktura minimale**: Përdorimi i elementeve `<table>`, `<tr>`, `<th>`, dhe `<td>`.
+- **Zgjerimi i qelizave**: Përdorimi i atributeve `colspan` dhe `rowspan` për të shtrirë qelizat mbi disa kolona ose rreshta.
+- **Aksesueshmëria**: Përdorimi i elementit `<caption>`, atributeve `scope` dhe `headers` për të përmirësuar përvojën e leximit për përdoruesit me aftësi të kufizuara.
+- **Grupimi i rreshtave dhe kolonave**: Përdorimi i elementeve `<thead>`, `<tbody>`, `<tfoot>`, `<colgroup>`, dhe `<col>` për organizim më të mirë.
+- **Attributes të vjetra**: Si `width`, `cellpadding`, `cellspacing`, `border`, dhe `bgcolor` janë zëvendësuar nga CSS për stilizim më të mirë.
+
+Këto koncepte janë thelbësore për krijimin e faqeve të internetit tërheqëse dhe funksionale, duke siguruar që përmbajtja të jetë e aksesueshme dhe e optimizuar për të gjitha pajisjet.
+
+## Ushtrime Praktike
+
+### Ushtrimi 1: Shtoni një Imazh në HTML
+
+1. Krijoni një skedar HTML të quajtur `ushtrimi1.html`.
+2. Shtoni një imazh të quajtur `flower.jpg` nga dosja `images`.
+3. Përdorni atributin `alt` për të përshkruar imazhin.
+
+**Zgjidhja:**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ushtrimi 1</title>
+</head>
+<body>
+  <img src="images/flower.jpg" alt="Një lule e bukur">
+</body>
+</html>
+```
+
+### Ushtrimi 2: Krijoni një Tabelë të Thjeshtë
+
+1. Krijoni një skedar HTML të quajtur `ushtrimi2.html`.
+2. Krijoni një tabelë me tre kolona: "Emri", "Mosha", dhe "Qyteti".
+3. Shtoni dy rreshta me të dhëna për dy persona.
+
+**Zgjidhja:**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ushtrimi 2</title>
+</head>
+<body>
+  <table border="1">
+    <tr>
+      <th>Emri</th>
+      <th>Mosha</th>
+      <th>Qyteti</th>
+    </tr>
+    <tr>
+      <td>Arben</td>
+      <td>25</td>
+      <td>Tiranë</td>
+    </tr>
+    <tr>
+      <td>Elena</td>
+      <td>30</td>
+      <td>Durrës</td>
+    </tr>
+  </table>
+</body>
+</html>
+```
+
+### Ushtrimi 3: Përdorni `srcset` për Imazhe Responsive
+
+1. Krijoni një skedar HTML të quajtur `ushtrimi3.html`.
+2. Shtoni një imazh të quajtur `mountain.jpg` me tre madhësi të ndryshme: `mountain-480.jpg`, `mountain-960.jpg`, dhe `mountain-1280.jpg`.
+3. Përdorni atributin `srcset` për të bërë imazhin responsive.
+
+**Zgjidhja:**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ushtrimi 3</title>
+</head>
+<body>
+  <img src="images/mountain.jpg" 
+     alt="Një mal i bukur" 
+     srcset="images/mountain-480.jpg 480w, images/mountain-960.jpg 960w, images/mountain-1280.jpg 1280w" 
+     sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw">
+</body>
+</html>
+```
+
+### Ushtrimi 4: Krijoni një Tabelë me `colspan` dhe `rowspan`
+
+1. Krijoni një skedar HTML të quajtur `ushtrimi4.html`.
+2. Krijoni një tabelë që përmban një orar të thjeshtë me dy ditë dhe tre orë.
+3. Përdorni `colspan` dhe `rowspan` për të zgjeruar qelizat.
+
+**Zgjidhja:**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ushtrimi 4</title>
+</head>
+<body>
+  <table border="1">
+    <tr>
+      <th></th>
+      <th>9am</th>
+      <th>10am</th>
+      <th>11am</th>
+    </tr>
+    <tr>
+      <th>Monday</th>
+      <td colspan="2">Math</td>
+      <td>Art</td>
+    </tr>
+    <tr>
+      <th>Tuesday</th>
+      <td rowspan="2">Gym</td>
+      <td>Science</td>
+      <td>History</td>
+    </tr>
+    <tr>
+      <th>Wednesday</th>
+      <td>English</td>
+      <td>Music</td>
+    </tr>
+  </table>
+</body>
+</html>
+```
+
+### Ushtrimi 5: Përdorni SVG në HTML
+
+1. Krijoni një skedar HTML të quajtur `ushtrimi5.html`.
+2. Shtoni një imazh SVG të quajtur `circle.svg` brenda dokumentit HTML.
+3. Stilizoni SVG-në me CSS për të ndryshuar ngjyrën e rrethit.
+
+**Zgjidhja:**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ushtrimi 5</title>
+  <style>
+    svg {
+      fill: blue;
+    }
+  </style>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="40"/>
+  </svg>
+</body>
+</html>
+```
