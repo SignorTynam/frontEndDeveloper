@@ -1,64 +1,74 @@
 # Leksioni 4: Imazhet dhe Tabelat në HTML
 
+## Çfarë do të mësojmë në këtë leksion?
+
+Në këtë leksion, do të mësojmë rreth përdorimit të imazheve dhe tabelave në HTML. Do të shqyrtojmë formatet e ndryshme të imazheve të mbështetura nga web-i dhe si t'i shtojmë ato në dokumentet HTML duke përdorur elementin `<img>`. Gjithashtu, do të mësojmë rreth teknikave për të bërë imazhet responsive dhe për të përmirësuar aksesueshmërinë e tyre.
+
+Përveç kësaj, do të eksplorojmë krijimin dhe stilizimin e tabelave në HTML, duke përdorur elementet bazë si `<table>`, `<tr>`, `<th>`, dhe `<td>`. Do të mësojmë si të zgjasim qelizat mbi disa kolona ose rreshta me atributet `colspan` dhe `rowspan`, si dhe si të përmirësojmë aksesueshmërinë e tabelave duke përdorur elementin `<caption>` dhe atributet `scope` dhe `headers`.
+
+Në fund, do të diskutojmë rreth përdorimit të imazheve vektoriale (SVG) dhe avantazhet e tyre në krahasim me imazhet raster. Do të mësojmë si të përfshijmë SVG-të në dokumentet HTML dhe si t'i stilizojmë ato me CSS.
+
+Ky leksion do t'ju japë njohuritë e nevojshme për të krijuar faqe interneti tërheqëse dhe funksionale, duke përdorur imazhe dhe tabela në mënyrë efektive.
+
 ## Imazhet në HTML
 
-Para se të kalojmë te elementi `<img>`, është e rëndësishme të kuptoni se nuk mund të përdorni çdo imazh në një faqe interneti; imazhi duhet të jetë në një nga formatet e mbështetura nga web-i.  
+Para se të kalojmë te elementi `<img>`, është e rëndësishme të kuptoni se nuk mund të përdorni çdo imazh në një faqe interneti; imazhi duhet të jetë në një nga formatet e mbështetura nga web-i.
 
-### Formate të mbështetura  
+### Formate të mbështetura
 
-- **Imazhe raster (bitmapped)**: Këto janë imazhe të përbëra nga pikselë (shihni shembullin në Figurën 1). Për t’i përdorur këto në një faqe interneti, ato duhet të ruhen në formate si:  
-  - PNG  
-  - JPEG  
-  - GIF  
-  - WebP  
-  - JPEG-XR  
-  Formate si WebP dhe JPEG-XR janë më të reja dhe më të optimizuara, duke fituar popullaritet gradualisht.  
+- **Imazhe raster (bitmapped)**: Këto janë imazhe të përbëra nga pikselë (shihni shembullin në Figurën 1). Për t’i përdorur këto në një faqe interneti, ato duhet të ruhen në formate si:
 
+  - PNG
+  - JPEG
+  - GIF
+  - WebP
+  - JPEG-XR
+    Formate si WebP dhe JPEG-XR janë më të reja dhe më të optimizuara, duke fituar popullaritet gradualisht.
 - **Imazhe vektoriale**: Për ikona dhe ilustrime, përdoret formati **SVG**. SVG është shumë i fuqishëm dhe kemi një kapitull të dedikuar, por në këtë kapitull do të shohim si t’i shtojmë ato në dokumentet HTML.
 
 ![Figura 1](images/1.png)
 
 *Figura 1 - Imazhet Bitmap vs Imazhet Vektoriale*
 
-### Konvertimi i Formateve të tjera  
+### Konvertimi i Formateve të tjera
 
-Nëse keni një imazh burimor në një format tjetër (p.sh., TIFF, BMP, ose EPS), duhet ta konvertoni atë në një format të mbështetur nga web-i. Në rastet kur formati origjinal duhet ruajtur, mund ta ofroni imazhin si një skedar të jashtëm përmes një lidhjeje, si në shembullin:  
+Nëse keni një imazh burimor në një format tjetër (p.sh., TIFF, BMP, ose EPS), duhet ta konvertoni atë në një format të mbështetur nga web-i. Në rastet kur formati origjinal duhet ruajtur, mund ta ofroni imazhin si një skedar të jashtëm përmes një lidhjeje, si në shembullin:
 
 ```html
 <a href="architecture.eps">Shkarkoni vizatimin</a>
-```  
+```
 
-### Emërtimi dhe Konfigurimi i Serverit  
+### Emërtimi dhe Konfigurimi i Serverit
 
-- Sigurohuni që skedarët e imazheve të kenë prapashtesa të duhura, si:  
-  - `.png`, `.jpg`, `.jpeg`, `.gif`, `.webp`, `.svg`.  
+- Sigurohuni që skedarët e imazheve të kenë prapashtesa të duhura, si:
+  - `.png`, `.jpg`, `.jpeg`, `.gif`, `.webp`, `.svg`.
 - Serverët zakonisht janë të konfiguruar për formatet PNG, JPEG, dhe GIF, por për SVG ose formate të reja mund të kërkohet një konfigurim shtesë.
 
-### Zgjedhja e Imazheve për Faqen Tuaj  
+### Zgjedhja e Imazheve për Faqen Tuaj
 
-- **Përdorni imazhe cilësore**: Imazhet e mira mund ta bëjnë një faqe të duket më profesionale dhe tërheqëse.  
-- **Bleni fotografi stoku**: Shmangni shkeljen e të drejtave të autorit duke përdorur imazhe nga burime të besueshme, si:  
-  - [www.istockphoto.com](http://www.istockphoto.com)  
-  - [www.gettyimages.com](http://www.gettyimages.com)  
-  - [www.fotolia.com](http://www.fotolia.com)  
+- **Përdorni imazhe cilësore**: Imazhet e mira mund ta bëjnë një faqe të duket më profesionale dhe tërheqëse.
+- **Bleni fotografi stoku**: Shmangni shkeljen e të drejtave të autorit duke përdorur imazhe nga burime të besueshme, si:
+  - [www.istockphoto.com](http://www.istockphoto.com)
+  - [www.gettyimages.com](http://www.gettyimages.com)
+  - [www.fotolia.com](http://www.fotolia.com)
   - [www.unsplash.com](http://www.unsplash.com)
 
-### Organizimi i Imazheve në Faqe  
+### Organizimi i Imazheve në Faqe
 
-- **Ruani imazhet në një dosje të dedikuar**: Kjo e bën menaxhimin e skedarëve më të lehtë ndërsa faqja juaj rritet. P.sh., mund të përdorni strukturën:  
+- **Ruani imazhet në një dosje të dedikuar**: Kjo e bën menaxhimin e skedarëve më të lehtë ndërsa faqja juaj rritet. P.sh., mund të përdorni strukturën:
 
   ```plaintext
   /images  
       /interface  
       /products  
       /news  
-  ```  
+  ```
 
-Në platformat CMS, ka vegla që e bëjnë menaxhimin e imazheve më të lehtë dhe organizojnë skedarët automatikisht.  
+Në platformat CMS, ka vegla që e bëjnë menaxhimin e imazheve më të lehtë dhe organizojnë skedarët automatikisht.
 
-### Elementi `<img>` në HTML  
+### Elementi `<img>` në HTML
 
-Tani që dimë bazat, mund të kalojmë te elementi `<img>` dhe atributet e tij kryesore, të cilat do t’i eksplorojmë më thellë në këtë kapitull. Praktikisht, elementi `<img>` i thotë browser-it: *“Vendos një imazh këtu.”* Ky element është përdorur për të shtuar grafikë në faqe dhe mund të vendoset direkt në rrjedhën e tekstit.  
+Tani që dimë bazat, mund të kalojmë te elementi `<img>` dhe atributet e tij kryesore, të cilat do t’i eksplorojmë më thellë në këtë kapitull. Praktikisht, elementi `<img>` i thotë browser-it: *“Vendos një imazh këtu.”* Ky element është përdorur për të shtuar grafikë në faqe dhe mund të vendoset direkt në rrjedhën e tekstit.
 
 **Shembull:** Shiko skedarin [`imazhet.html`](code/imazhet.html)
 
@@ -66,12 +76,12 @@ Tani që dimë bazat, mund të kalojmë te elementi `<img>` dhe atributet e tij 
 <p>Këtë verë, provoni të bëni pica <img src="pizza.png" alt=""> në zgarën tuaj.</p>
 ```
 
-Kur browser-i has elementin `<img>`, ai dërgon një kërkesë në server për të marrë skedarin e imazhit dhe e shfaq atë në faqe. Në rrjete të shpejta, ky proces ndodh pothuajse menjëherë. Në rrjete të ngadalta, si ato mobile ose dial-up, ngarkimi i imazheve mund të zgjasë më shumë.  
+Kur browser-i has elementin `<img>`, ai dërgon një kërkesë në server për të marrë skedarin e imazhit dhe e shfaq atë në faqe. Në rrjete të shpejta, ky proces ndodh pothuajse menjëherë. Në rrjete të ngadalta, si ato mobile ose dial-up, ngarkimi i imazheve mund të zgjasë më shumë.
 
-### **Atributet e Duhura të `<img>`**  
+### **Atributet e Duhura të `<img>`**
 
-1. **`src`**: Tregon vendndodhjen e imazhit (URL-në).  
-2. **`alt`**: Jep tekst alternativ që shfaqet nëse imazhi nuk ngarkohet.  
+1. **`src`**: Tregon vendndodhjen e imazhit (URL-në).
+2. **`alt`**: Jep tekst alternativ që shfaqet nëse imazhi nuk ngarkohet.
 
 #### **Shembull:**
 
@@ -79,43 +89,41 @@ Kur browser-i has elementin `<img>`, ai dërgon një kërkesë në server për t
 <img src="icon.gif" alt="Një ikonë e thjeshtë">
 ```
 
-### **Karakteristikat e Elementit `<img>`**  
+### **Karakteristikat e Elementit `<img>`**
 
-- **Element bosh**: Nuk ka përmbajtje brenda tij, vetëm atribute.  
-- **Element inline**: Qëndron në të njëjtën linjë me tekstin, duke ndjekur rrjedhën e tij. Në dritare më të ngushta, rreshtat me imazhe përshtaten automatikisht me gjerësinë e re.  
-- **Element i zëvendësuar**: Gjatë shfaqjes, zëvendësohet nga skedari i jashtëm (imazhi).  
-- **Përdorimi i CSS**: Mund të ndryshoni shfaqjen e imazheve, t’i lundroni në të djathtë ose të majtë, të shtoni kufij, ose të rregulloni hapësirën rreth tyre.  
+- **Element bosh**: Nuk ka përmbajtje brenda tij, vetëm atribute.
+- **Element inline**: Qëndron në të njëjtën linjë me tekstin, duke ndjekur rrjedhën e tij. Në dritare më të ngushta, rreshtat me imazhe përshtaten automatikisht me gjerësinë e re.
+- **Element i zëvendësuar**: Gjatë shfaqjes, zëvendësohet nga skedari i jashtëm (imazhi).
+- **Përdorimi i CSS**: Mund të ndryshoni shfaqjen e imazheve, t’i lundroni në të djathtë ose të majtë, të shtoni kufij, ose të rregulloni hapësirën rreth tyre.
 
-### **Vendndodhja e Imazhit me `src`**  
+### **Vendndodhja e Imazhit me `src`**
 
-- Nëse imazhi është në të njëjtën dosje me dokumentin HTML:  
+- Nëse imazhi është në të njëjtën dosje me dokumentin HTML:
 
   ```html
   <img src="icon.gif" alt="Ikona">
   ```
-
-- Nëse është në një nën-dosje:  
+- Nëse është në një nën-dosje:
 
   ```html
   <img src="/images/arrow.gif" alt="Shigjeta">
   ```
-
-- Nëse imazhi është nga një faqe tjetër (jo e rekomanduar):  
+- Nëse imazhi është nga një faqe tjetër (jo e rekomanduar):
 
   ```html
   <img src="http://www.example.com/images/smile.gif" alt="Buzëqeshje">
-  ```  
+  ```
 
-#### **Kujdes**  
+#### **Kujdes**
 
-- Sigurohuni që imazhet që përdorni të jenë pronë juaja, të keni leje për përdorim, ose të jenë në domenin publik.  
-- **Mos përdorni hotlinking** (lidhjen direkte me një imazh nga një server tjetër) përveç rasteve kur keni leje eksplicite.  
+- Sigurohuni që imazhet që përdorni të jenë pronë juaja, të keni leje për përdorim, ose të jenë në domenin publik.
+- **Mos përdorni hotlinking** (lidhjen direkte me një imazh nga një server tjetër) përveç rasteve kur keni leje eksplicite.
 
-### **Përdorimi i Cache për Shpejtësi**  
+### **Përdorimi i Cache për Shpejtësi**
 
 Kur një browser shkarkon një imazh, ai e ruan atë përkohësisht në disk (cache). Kjo shpejton shfaqjen e faqes herën tjetër dhe redukton trafikun në server.
 
-- Përdorni të njëjtin URL për imazhet e përsëritura në një faqe për të përfituar nga cache.  
+- Përdorni të njëjtin URL për imazhet e përsëritura në një faqe për të përfituar nga cache.
 
 **Shembull:**
 
@@ -126,9 +134,9 @@ Kur një browser shkarkon një imazh, ai e ruan atë përkohësisht në disk (ca
 
 Imazhi shkarkohet vetëm një herë dhe përdoret nga cache për thirrjet e tjera.
 
-### **Teksti Alternativ me `alt`**  
+### **Teksti Alternativ me `alt`**
 
-Atributi `alt` në elementin `<img>` ofron një përshkrim tekstual të imazhit për përdoruesit që nuk mund ta shohin atë. Kjo përfshin përdoruesit e lexuesve të ekranit, motorët e kërkimit dhe ata që kanë çaktivizuar imazhet në browser-at e tyre.  
+Atributi `alt` në elementin `<img>` ofron një përshkrim tekstual të imazhit për përdoruesit që nuk mund ta shohin atë. Kjo përfshin përdoruesit e lexuesve të ekranit, motorët e kërkimit dhe ata që kanë çaktivizuar imazhet në browser-at e tyre.
 
 **Shembull:**
 
@@ -136,40 +144,38 @@ Atributi `alt` në elementin `<img>` ofron një përshkrim tekstual të imazhit 
 <p>Nëse je <img src="happy.gif" alt="i lumtur"> dhe e di këtë, duartrokit!</p>
 ```
 
-**Kur është i domosdoshëm atributi `alt`?**  
+**Kur është i domosdoshëm atributi `alt`?**
 
-1. **Përmbajtje informuese:** Nëse imazhi jep informacion të vlefshëm, teksti alternativ duhet të përshkruajë funksionin ose përmbajtjen e tij.  
+1. **Përmbajtje informuese:** Nëse imazhi jep informacion të vlefshëm, teksti alternativ duhet të përshkruajë funksionin ose përmbajtjen e tij.
 
    ```html
    <a href="aplikim.pdf">Aplikim për shkollë të mesme</a> 
    <img src="images/pdflogo.png" alt="Skedar PDF">
    ```
-
-2. **Funksioni si link:** Kur një imazh përdoret si lidhje, `alt` përshkruan destinacionin e linkut.  
+2. **Funksioni si link:** Kur një imazh përdoret si lidhje, `alt` përshkruan destinacionin e linkut.
 
    ```html
    <a href="http://learningwebdesign.com">
        <img src="/images/LWD_cover.png" alt="Faqja e Learning Web Design">
    </a>
    ```
-
-3. **Dekorativ:** Nëse imazhi është thjesht dekorativ dhe nuk shton informacion të rëndësishëm, vlera e `alt` mund të lihet bosh.  
+3. **Dekorativ:** Nëse imazhi është thjesht dekorativ dhe nuk shton informacion të rëndësishëm, vlera e `alt` mund të lihet bosh.
 
    ```html
    <img src="/images/dekor.png" alt="">
    ```
 
-### **Këshilla për Përdorimin e `alt`**  
+### **Këshilla për Përdorimin e `alt`**
 
-- **Evito përshkrime si “imazh i” ose “grafik i.”** Është e qartë që bëhet fjalë për një imazh.  
-- **Përmbajtje specifike:** Nëse është e rëndësishme, përfshini llojin e imazhit, p.sh., “fotografi,” “diagram,” “vizatim.”  
-- **Mos përdorni `alt` për të rishkruar informacionin që është tashmë i qartë në tekst.**  
+- **Evito përshkrime si “imazh i” ose “grafik i.”** Është e qartë që bëhet fjalë për një imazh.
+- **Përmbajtje specifike:** Nëse është e rëndësishme, përfshini llojin e imazhit, p.sh., “fotografi,” “diagram,” “vizatim.”
+- **Mos përdorni `alt` për të rishkruar informacionin që është tashmë i qartë në tekst.**
 
-### **Vendosja e Përmasave me `width` dhe `height`**  
+### **Vendosja e Përmasave me `width` dhe `height`**
 
-Atributet `width` dhe `height` përcaktojnë gjerësinë dhe lartësinë e imazhit në pikselë.  
+Atributet `width` dhe `height` përcaktojnë gjerësinë dhe lartësinë e imazhit në pikselë.
 
-- Këto ndihmojnë browser-in të rezervojë hapësirën për imazhin gjatë ngarkimit të faqes, duke e bërë shfaqjen më të shpejtë.  
+- Këto ndihmojnë browser-in të rezervojë hapësirën për imazhin gjatë ngarkimit të faqes, duke e bërë shfaqjen më të shpejtë.
 
 **Shembull:**
 
@@ -177,14 +183,14 @@ Atributet `width` dhe `height` përcaktojnë gjerësinë dhe lartësinë e imazh
 <img src="logo.png" alt="Logo e faqes" width="150" height="50">
 ```
 
-#### **Kujdes me përmasat**  
+#### **Kujdes me përmasat**
 
-- Sigurohuni që përmasat e specifikuara përputhen me përmasat reale të imazhit.  
+- Sigurohuni që përmasat e specifikuara përputhen me përmasat reale të imazhit.
 - Përndryshe, imazhi do të shtrihet ose tkurret dhe mund të duket i shtrembëruar ose i turbullt.
 
-Në zhvillimin modern të web-it:  
+Në zhvillimin modern të web-it:
 
-- **Mos përdorni `width` dhe `height` për të ndryshuar përmasat.** Përdorni CSS ose një program për redaktimin e imazheve.  
+- **Mos përdorni `width` dhe `height` për të ndryshuar përmasat.** Përdorni CSS ose një program për redaktimin e imazheve.
 - **Për imazhe responsive:** Përdorni teknika si `max-width` në CSS për të përshtatur madhësinë e imazhit sipas pajisjes.
 
 Këto praktika ndihmojnë në ruajtjen e cilësisë së imazheve dhe përmirësojnë performancën e faqes.
@@ -193,12 +199,12 @@ Këto praktika ndihmojnë në ruajtjen e cilësisë së imazheve dhe përmirëso
 
 ### Rreshtimi Horizontal (Kodi i Vjetër)
 
-**Atributi `align`** më parë përdorej për të përcaktuar si do të rrjedhë teksti përreth një imazhi. Ky atribut është hequr në HTML5 dhe tani është e rekomanduar përdorimi i **CSS** për të rreshtuar imazhet. Megjithatë, është e dobishme të kuptoni se si përdorej në kodin më të vjetër pasi mund ta hasni ende në faqet ekzistuese ose në mjetet e redaktimit vizual.  
+**Atributi `align`** më parë përdorej për të përcaktuar si do të rrjedhë teksti përreth një imazhi. Ky atribut është hequr në HTML5 dhe tani është e rekomanduar përdorimi i **CSS** për të rreshtuar imazhet. Megjithatë, është e dobishme të kuptoni se si përdorej në kodin më të vjetër pasi mund ta hasni ende në faqet ekzistuese ose në mjetet e redaktimit vizual.
 
 **Vlerat për rreshtimin horizontal:**
 
-- **`left`**: Imazhi vendoset në të majtë dhe teksti rrjedh në anën e djathtë.  
-- **`right`**: Imazhi vendoset në të djathtë dhe teksti rrjedh në anën e majtë.  
+- **`left`**: Imazhi vendoset në të majtë dhe teksti rrjedh në anën e djathtë.
+- **`right`**: Imazhi vendoset në të djathtë dhe teksti rrjedh në anën e majtë.
 
 **Shembull:** Shiko skedarin [`align.html`](code/align.html)
 
@@ -216,12 +222,12 @@ Këto rezultate duken më të rregullta krahasuar me vendosjen e një rreshti te
 
 #### Rreshtimi Vertikal (Kodi i Vjetër)
 
-Atributi `align` gjithashtu përdorej për të rreshtuar një imazh vertikalisht krahas tekstit përreth. Edhe ky atribut është hequr në HTML5, dhe tani përdoret CSS për këtë qëllim.  
+Atributi `align` gjithashtu përdorej për të rreshtuar një imazh vertikalisht krahas tekstit përreth. Edhe ky atribut është hequr në HTML5, dhe tani përdoret CSS për këtë qëllim.
 
 **Vlerat për rreshtimin vertikal:**
 
-- **`top`**: Rreshti i parë i tekstit përafrohet me majën e imazhit.  
-- **`middle`**: Rreshti i parë përafrohet me qendrën vertikale të imazhit.  
+- **`top`**: Rreshti i parë i tekstit përafrohet me majën e imazhit.
+- **`middle`**: Rreshti i parë përafrohet me qendrën vertikale të imazhit.
 - **`bottom`**: Rreshti i parë përafrohet me fundin e imazhit.
 
 **Shembull:**
@@ -247,31 +253,32 @@ Për një qasje më moderne dhe fleksibël, rekomandohet përdorimi i CSS (vetit
 
 ### Rregulla për Përdorimin e Imazheve në Uebfaqe
 
-1. **Ruani imazhet në formatin e duhur**  
-   - JPEG, GIF, ose PNG janë formatet më të zakonshme.  
+1. **Ruani imazhet në formatin e duhur**
+
+   - JPEG, GIF, ose PNG janë formatet më të zakonshme.
    - Formati i gabuar mund të ndikojë negativisht në cilësi dhe shpejtësi të ngarkimit.
+2. **Ruani imazhet në madhësinë e duhur**
 
-2. **Ruani imazhet në madhësinë e duhur**  
-   - Madhësia e imazhit duhet të përputhet me përmasat ku do të shfaqet.  
+   - Madhësia e imazhit duhet të përputhet me përmasat ku do të shfaqet.
+3. **Ruani imazhet me rezolucion të përshtatshëm**
 
-3. **Ruani imazhet me rezolucion të përshtatshëm**  
    - Rezolucioni për imazhet në ueb duhet të jetë 72 ppi për të shmangur skedarë të mëdhenj që ngarkohen ngadalë.
 
 ### Punimi me Imazhe Transparente
 
-- **GIF Transparente**: Përshtatet për pjesë të drejta dhe plotësisht transparente.  
-- **PNG Transparente**: Mbështet skaje diagonale, rrethoresh, dhe transparencë gjysmë të tejdukshme.  
+- **GIF Transparente**: Përshtatet për pjesë të drejta dhe plotësisht transparente.
+- **PNG Transparente**: Mbështet skaje diagonale, rrethoresh, dhe transparencë gjysmë të tejdukshme.
 
 ### Punimi me **Animacione GIF**
 
-**Animacionet GIF** përdorin një sekuencë kornizash për të krijuar animacione të thjeshta.  
+**Animacionet GIF** përdorin një sekuencë kornizash për të krijuar animacione të thjeshta.
 Ato janë të dobishme për ilustrime të thjeshta, por jo ideale për fotografi për shkak të kufizimeve në ngjyrë dhe cilësi.
 
 #### Si funksionojnë
 
-1. Një **animacion GIF** përbëhet nga disa korniza që shfaqen njëra pas tjetrës.  
-   - Shembull: Një pikë portokalli që rrotullohet rreth një rrethi.  
-2. Çdo kornizë shton madhësinë e skedarit, duke ndikuar në kohën e shkarkimit të figurës.  
+1. Një **animacion GIF** përbëhet nga disa korniza që shfaqen njëra pas tjetrës.
+   - Shembull: Një pikë portokalli që rrotullohet rreth një rrethi.
+2. Çdo kornizë shton madhësinë e skedarit, duke ndikuar në kohën e shkarkimit të figurës.
 3. Mjetet si Adobe Photoshop ose faqe të tjera online mund të ndihmojnë për krijimin e tyre.
 
 **Shembull përdorimi:**
@@ -284,45 +291,45 @@ Ato janë të dobishme për ilustrime të thjeshta, por jo ideale për fotografi
 
 ### **Rezolucioni i Imazheve**
 
-Rezolucioni i imazheve për uebfaqe zakonisht duhet të jetë **72 ppi (pixels per inch)**.  
+Rezolucioni i imazheve për uebfaqe zakonisht duhet të jetë **72 ppi (pixels per inch)**.
 
-- Kjo është rezolucioni maksimal që ekranet kompjuterike shfaqin për imazhet në ueb.  
-- **Rezolucion më i lartë = Skedar më i madh** (ngarkim më i ngadalshëm i faqes).  
+- Kjo është rezolucioni maksimal që ekranet kompjuterike shfaqin për imazhet në ueb.
+- **Rezolucion më i lartë = Skedar më i madh** (ngarkim më i ngadalshëm i faqes).
 
 #### Dallimet mes rezolucioneve
 
-- **300 dpi (dots per inch)**: Imazhe me cilësi të lartë për printime.  
-- **72 ppi**: Rezolucion i optimizuar për ekranet digjitale.  
+- **300 dpi (dots per inch)**: Imazhe me cilësi të lartë për printime.
+- **72 ppi**: Rezolucion i optimizuar për ekranet digjitale.
 
 **Shembull krahasimi madhësish:**
 
-- JPEG me **300 dpi**: 1.5 MB.  
-- JPEG me **72 ppi**: 368 KB.  
+- JPEG me **300 dpi**: 1.5 MB.
+- JPEG me **72 ppi**: 368 KB.
 
 Pra, për përdorim në ueb, gjithmonë duhet të ulni rezolucionin për të përmirësuar performancën e faqes suaj.
 
 ### **Imazhet Vektoriale**
 
-**Imazhet vektoriale** krijohen nga pikë dhe linja mbi një rrjet.  
+**Imazhet vektoriale** krijohen nga pikë dhe linja mbi një rrjet.
 
-- **Avantazhi kryesor:** Mund të rrisni madhësinë e tyre pa humbur cilësinë.  
+- **Avantazhi kryesor:** Mund të rrisni madhësinë e tyre pa humbur cilësinë.
 - Përdorime tipike: Logo, ilustrime, dhe diagrame.
 
 #### Si përdoren në ueb
 
-1. **Bitmap i eksportuar:** Deri vonë, imazhet vektoriale eksportoheshin si JPEG ose PNG për përdorim në ueb.  
-2. **Formati SVG:** Formati i ri **Scalable Vector Graphics** lejon shfaqjen e vektorit direkt në uebfaqe.  
+1. **Bitmap i eksportuar:** Deri vonë, imazhet vektoriale eksportoheshin si JPEG ose PNG për përdorim në ueb.
+2. **Formati SVG:** Formati i ri **Scalable Vector Graphics** lejon shfaqjen e vektorit direkt në uebfaqe.
    - Mbështetja për SVG po rritet, por disa browser të vjetër ende kanë kufizime.
 
 ### **Cropping e Imazheve**
 
-**Crop** është procesi i prerjes së një imazhi për t'i dhënë përmasat e duhura.  
+**Crop** është procesi i prerjes së një imazhi për t'i dhënë përmasat e duhura.
 
 - Kur e kryeni këtë proces, kini kujdes që të mos humbisni detaje të rëndësishme.
 
 #### Shembuj të dobishëm
 
-- **Portret:** Ilustrimi i një gjirafe është i përshtatshëm në pozicion portret. Nëse krojhet në një formë peizazhi, humbasim kokën ose këmbët e saj.  
+- **Portret:** Ilustrimi i një gjirafe është i përshtatshëm në pozicion portret. Nëse krojhet në një formë peizazhi, humbasim kokën ose këmbët e saj.
 - **Peizazh:** Ilustrimi i një elefanti përshtatet më mirë në pozicion peizazhi. Nëse krojhet në formë portreti, humbasim bishtin ose trungun.
 
 ![Figura 3](images/3.png)
@@ -339,8 +346,8 @@ Pra, për përdorim në ueb, gjithmonë duhet të ulni rezolucionin për të pë
 
 #### PNG Transparente
 
-- Mbështet skaje diagonale, rrethoresh, dhe transparencë gjysmë të tejdukshme.  
-- Ka mbështetje më të mirë për efekte si hijet.  
+- Mbështet skaje diagonale, rrethoresh, dhe transparencë gjysmë të tejdukshme.
+- Ka mbështetje më të mirë për efekte si hijet.
 
 ## Imazhe Responsive në HTML
 
@@ -429,18 +436,18 @@ Shpjegim:
 ### Metodat për të përfshirë SVG-të
 
 1. **Duke përdorur elementin `img`**:
-   - **Markup**:  
+
+   - **Markup**:
 
      ```html
      <img src="images/circle.svg" alt="SVG Example">
      ```
-
    - **Avantazhet**: E thjeshtë për t'u përdorur dhe mbështetet nga të gjithë browser modernë.
    - **Kundërshtitë**: Ka mundësi të kufizuara për stilizim dhe ndërveprim. Nuk mund të aksesoni ose manipuloni elementët brenda SVG-së me JavaScript. Nuk mund të aplikoni CSS për elementët e brendshëm të SVG-së.
    - **Mbështetje në browser**: E mbështetur nga të gjithë browser-it modernë, por jo nga versionet e vjetra të Internet Explorer (8 dhe më të hershme) dhe disa browser të vjetër celularë.
-
 2. **SVG Inline (brenda HTML-së)**:
-   - **Markup**:  
+
+   - **Markup**:
 
      ```html
      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
@@ -448,12 +455,11 @@ Shpjegim:
          <!-- Elementë të tjerë SVG këtu -->
      </svg>
      ```
-
    - **Avantazhet**: Mundësia e përdorimit të të gjitha mundësive të SVG-së. Kur SVG-ja është brenda dokumentit HTML, të gjithë elementët janë pjesë e strukturës kryesore të DOM. Kjo do të thotë se mund të aksesoni dhe manipuloni objektet SVG me JavaScript, duke i bërë ato të reagojnë ndaj ndërveprimeve të përdoruesve. Gjithashtu, mund të stilizoni elementët brenda SVG-së me CSS.
    - **Kundërshtitë**: Kodi i imazheve SVG mund të bëhet i gjatë dhe i vështirë për t'u menaxhuar, duke çuar në dokumente HTML të fryra dhe të vështira për t'u lexuar. Ky opsion gjithashtu nuk mund të përdoret për imazhe të mëdha që përdoren në faqe të shumta, sepse ato nuk mund të ruhen veçmas nga dokumenti HTML.
    - **Mbështetje në browser**: E mbështetur nga browser modernë, me përjashtim të versioneve të vjetra të Internet Explorer (8 dhe më të hershme), Safari (5 dhe më të hershme), dhe browser mobilë Android dhe iOS të vjetër.
-
 3. **Duke përdorur elementin `object`**:
+
    - **Markup**:
 
      ```html
@@ -461,12 +467,11 @@ Shpjegim:
          <img src="pizza.png" alt="pizza">
      </object>
      ```
-
    - **Avantazhet**: SVG mund të ngarkohet si një skedar i veçantë dhe mund të përdoret për të aksesuar skedarë të jashtëm si CSS dhe JavaScript. Ky opsion gjithashtu ofron mundësinë për të përdorur përmbajtje rezervë në rast se SVG nuk mund të shfaqet.
    - **Kundërshtitë**: Nuk mund të përdorni CSS nga dokumenti i jashtëm për të stilizuar elementët brenda SVG-së. Ka mundësi për sjellje të çuditshme në disa browser, ndaj është e rëndësishme të testoni mirë.
    - **Mbështetje në browser**: Zakonisht mbështetet, por mund të ketë disa çështje me browser më të vjetër.
-
 4. **SVG si Imazh Background në CSS**:
+
    - **Markup**:
 
      ```css
@@ -474,7 +479,6 @@ Shpjegim:
          background-image: url('images/decorative.svg');
      }
      ```
-
    - **Avantazhet**: Lehtë për t'u implementuar si një imazh dekorativ në sfond. SVG mund të rritet dhe të shkallëzohet me layout-in.
    - **Kundërshtitë**: E kufizuar për përdorim si sfond dhe nuk mund të manipulohen si SVG inline.
 
@@ -907,7 +911,7 @@ Renditja e grupeve në tabelë është gjithmonë si më poshtë:
 
 #### **Përfitimet e Grupimit të Rreshtave**
 
-- **Përsëritje automatike**: Disa shfletues mund të përsërisin kokën dhe fundin kur tabela shpërndahet në disa faqe.
+- **Përsëritje automatike**: Disa browser mund të përsërisin kokën dhe fundin kur tabela shpërndahet në disa faqe.
 - **Stilim më i saktë**: Mund të aplikoni CSS vetëm për grupe të caktuara.
 
 ### **Elementët e Grupimit të Kolonave**
