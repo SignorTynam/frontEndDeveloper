@@ -15,17 +15,26 @@
 |  1  | [Hyrje në Front End Developer. Bazat në HTML](leksioni1/README.md) | [Leksioni 1](https://www.youtube.com/watch?v=KwvW_h_mIiI&list=PLYO89vdz7M65HgP1yPnRqPHliRdWRlyHg&index=1&t=3s) | 10 Nëntor 2024 |
 |  2  | [Bazat në HTML (2). Elemenëtë bazë semantikë](leksioni2/README.md) | [Leksioni 2](https://www.youtube.com/watch?v=5lN9WYEzw9c) | 12 Nëntor 2024 |
 |  3  | [Listat dhe links në HTML](leksioni3/README.md) | [Leksioni 3](https://www.youtube.com/watch?v=2v_-9mB8Pto&list=PLYO89vdz7M65HgP1yPnRqPHliRdWRlyHg&index=3&t=2051s) | 17 Nëntor 2024 |
-|  4  | [Imazhet dhe Tabelat në HTML](leksioni4/README.md) | ~~[Leksioni4]()~~ | ~~21 Nëntor 2024~~ |
-| 5 | | | |
+|  4  | [Imazhet dhe Tabelat në HTML](leksioni4/README.md) | [Leksioni 4](https://youtu.be/faMovp72FM8) | 24 Nëntor 2024 |
+| 5 | ~~[Format në HTML]()~~ | ~~Leksioni 5~~ | |
 
 ## Laboratoret e zhvilluara
 
+### Laboratoret për tu zhvilluar në shtëpi
+
 | No. | Tema e laboratorit     | Data e caktimit | Data e dorezimit |
 |-----|------------------------|-----------------|------------------|
-| 1   | Krijimi i një CV-je (1) | 2024-11-12      | [nuk eshte dorezuar] |
-| 2   | Krijimi i një CV-je (2) | 2024-11-17      | [nuk eshte dorezuar] |
+| 1   | Krijimi i një CV-je (1) | 12 Nëntor 2024 | [nuk eshte dorezuar] |
+| 2   | Krijimi i një CV-je (2) | 17 Nëntor 2024 | [nuk eshte dorezuar] |
 
 <br>
+
+### Laboratoret të zhvilluar në klasë
+
+| No. | Tema e laboratorit     | Data e zhvillimit | Data e dorezimit |
+|-----|------------------------|-----------------|------------------|
+| 1   | Git. Konfigurimi i GitHub | 2024-11-12      | [nuk eshte dorezuar] |
+| 2   | Krijimi i një CV-je (2) | 2024-11-17      | [nuk eshte dorezuar] |
 
 - **Laboratori 1 -** Krijo një CV duke përdorur të gjitha elementët që kemi marrë gjatë *Leksionit 1* dhe *Leksionit 2.*
 - **Laboratori 2 -** Përditëso CV-in e laboratorit 1 duke përdorur elementët e reja që janë trajtuar në *Leksionin 3.*
