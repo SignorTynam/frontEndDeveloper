@@ -31,13 +31,10 @@
 
 ### Laboratoret të zhvilluar në klasë
 
-| No. | Tema e laboratorit     | Data e zhvillimit | Data e dorezimit |
-|-----|------------------------|-----------------|------------------|
-| 1   | Git. Konfigurimi i GitHub | 2024-11-12      | [nuk eshte dorezuar] |
-| 2   | Krijimi i një CV-je (2) | 2024-11-17      | [nuk eshte dorezuar] |
+| No. | Tema | Linku Regjistrimi | Data e Zhvillimit |
+|-----|------|-------------------|-------------------|
+|  1  | [Git. Konfigurimi i GitHub]() | [Laboratori 1](https://youtu.be/NkmgdVJ4bSE) | 24 Nëntor 2024 |
 
-- **Laboratori 1 -** Krijo një CV duke përdorur të gjitha elementët që kemi marrë gjatë *Leksionit 1* dhe *Leksionit 2.*
-- **Laboratori 2 -** Përditëso CV-in e laboratorit 1 duke përdorur elementët e reja që janë trajtuar në *Leksionin 3.*
 
 ## Çfarë bën një web dizajner?
 
