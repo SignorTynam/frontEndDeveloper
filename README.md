@@ -17,7 +17,8 @@
 |  3  | [Listat dhe links në HTML](leksioni3/README.md) | [Leksioni 3](https://www.youtube.com/watch?v=2v_-9mB8Pto&list=PLYO89vdz7M65HgP1yPnRqPHliRdWRlyHg&index=3&t=2051s) | 17 Nëntor 2024 |
 |  4  | [Imazhet dhe Tabelat në HTML](leksioni4/README.md) | [Leksioni 4](https://youtu.be/faMovp72FM8) | 24 Nëntor 2024 |
 | 5 | [Format në HTML (1)](https://youtu.be/DrVJOJDEMm0?si=MXh3BDwT6QPzXD3r) | [Leksioni 5](leksioni5/README.md) | 21 Dhjetor 2024 |
-| 5 | [Format në HTML (2)](https://youtu.be/DZQv_yNv55s?si=reO7yGPDnon5ZfiP) | [Leksioni 5](leksioni5/README.md) | 08 Janar 2025 |
+| 6 | [Format në HTML (2)](https://youtu.be/DZQv_yNv55s?si=reO7yGPDnon5ZfiP) | [Leksioni 5](leksioni5/README.md) | 08 Janar 2025 |
+| 7 | ~~[Elementët multimedial]()~~ | ~~[Leksioni 6]~~ | 11 Janar 2025 |
 
 ## Laboratoret e zhvilluara
 
