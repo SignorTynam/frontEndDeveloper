@@ -27,14 +27,11 @@
 | 1   | Krijimi i një CV-je (1) | 12 Nëntor 2024 | [nuk eshte dorezuar] |
 | 2   | Krijimi i një CV-je (2) | 17 Nëntor 2024 | [nuk eshte dorezuar] |
 
-<br>
-
 ### Laboratoret të zhvilluar në klasë
 
 | No. | Tema | Linku Regjistrimi | Data e Zhvillimit |
 |-----|------|-------------------|-------------------|
-|  1  | [Git. Konfigurimi i GitHub]() | [Laboratori 1](https://youtu.be/NkmgdVJ4bSE) | 24 Nëntor 2024 |
-
+|  1  | Git. Konfigurimi i GitHub | [Laboratori 1](https://youtu.be/NkmgdVJ4bSE) | 24 Nëntor 2024 |
 
 ## Çfarë bën një web dizajner?
 
