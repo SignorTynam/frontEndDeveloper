@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Format</title>
+</head>
+<body>
+
+    <form method="get" action="" id="forma1">
+        <label for="emri">Emri:</label>
+        <input type="text" name="emri" value="Alion" id="emri" required readonly>
+
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" value="12312431231" name="password" id="password">
+        
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" value="alion@gmail.com" name="email" id="email">
+
+        <br>
+
+        <label for="tel">Tel:</label>
+        <input type="tel" value="535468486" name="tel" id="tel">
+
+        <br>
+
+        <label for="url">URL:</label>
+        <input type="url" name="url" value="https://www.google.com" id="url">
+
+        <br>
+
+        <p>Shkollimi: <input type="text" list="edulevel" name="education" value="PhD"></p>
+
+        <datalist id="edulevel">
+            <option value="Bachelor">
+            <option value="Master">
+            <option value="PhD">
+        </datalist>
+
+        <input type="submit" value="Login">
+        <input type="reset" value="Fshi">
+    </form>
+
+
+    <form method="get" action="">
+        
+        <label for="mosha">Mosha:</label><br>
+
+        <input type="radio" name="mosha" value="19-24" id="mosha" required> 19-24<br>
+        <input type="radio" name="mosha" value="25-30" id="mosha" required> 25-30<br>
+        <input type="radio" name="mosha" value="31-36" id="mosha" required> 31-36<br>
+        <input type="radio" name="mosha" value="37-42" id="mosha" required> 37-42<br>
+
+        <br>
+
+        <label for="gjuhet">Gjuhet e programimi qe di:</label><br>
+
+        <input type="checkbox" name="gjuhet" value="Java" id="gjuhet"> Java <br>
+        <input type="checkbox" name="gjuhet" value="C++" id="gjuhet"> C++ <br>
+        <input type="checkbox" name="gjuhet" value="Python" id="gjuhet"> Python <br>
+        <input type="checkbox" name="gjuhet" value="C#" id="gjuhet"> C# <br>
+        <input type="checkbox" name="gjuhet" value="JavaScript" id="gjuhet"> JavaScript <br>
+
+        <br>
+
+        <label for="filmat">Filmat qe keni pare:</label>
+
+        <select name="filmat" id="filmat" multiple size="8">
+            <optgroup label="Aksion">
+                <option value="Die Hard">Die Hard</option>
+                <option value="Terminator">Terminator</option>
+                <option value="Rambo">Rambo</option>
+            </optgroup>
+            <optgroup label="Komedi">
+                <option value="Dumb and Dumber">Dumb and Dumber</option>
+                <option value="Ace Ventura">Ace Ventura</option>
+                <option value="The Mask">The Mask</option>
+            </optgroup>
+            <optgroup label="Horror">
+                <option value="The Ring">The Ring</option>
+                <option value="The Grudge">The Grudge</option>
+                <option value="The Exorcist">The Exorcist</option>
+            </optgroup>
+        </select>
+
+        <br><br>
+
+        <label for="cv">CV:</label>
+        <input type="file" name="cv" id="cv">
+
+        <br>
+
+        <input type="hidden" name="hidden" value="https://www.google.com">
+
+        <br>
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <form action="" method="get">
+
+        <input type="date"><br>
+        <input type="time"><br>
+        <input type="datetime-local"><br>
+        <input type="month"><br>
+        <input type="week"><br>
+        <input type="number" name="guests" min="1" max="10" id=""><br>
+        <input type="range" min="0" max="10" step="1"><br>
+        <input type="color" name="" id=""><br>
+        <progress max="100">0</progress><br>
+        <meter min="0" max="100" value="50"></meter>
+
+    </form>
+
+
+    <fieldset action="">
+        <legend>Personal Information:</legend>
+        <form action="" method="get">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </fieldset>
+
+</body>
+</html>
