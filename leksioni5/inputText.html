@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Input</title>
+</head>
+<body>
+    <form action="" method="post" id="">
+        <!-- Elementi input perdoret per te marre te dhena nga perdoruesi.
+        Input eshte nje element inline dhe nuk ka nevoje per tag mbylles.
+        Atributi type i input tregon tipin e te dhenave qe do te pranohen.
+        Atributi name i input tregon emrin e te dhenave qe do te pranohen.
+        Atributi value i input tregon vleren fillestare te te dhenave qe do te pranohen. -->
+
+        <!-- Tipi text perdoret per te marre te dhena tekstuale nga perdoruesi -->
+        <input type="text" name="emri" id="emri" value="Alion"> <br>
+
+        <!-- Ne server kur klikohet butoni submit dergohetn nje kopje name=value. 
+         Kur kemi nje tip text (ose te familjes se teksteve), atributi value nuk specifikohet sepse eshte perdoruesi ai
+         qe do ti jap vlere ketij inputi. Keshtu qe input-i i meposhtem eshte me i sakte: -->
+
+        <input type="text" name="mbiemri" id="mbiemri"> <br>
+
+        <!-- Atributi minlength percakton numrin minimal te karaktereve ne nje input -->
+        <!-- Atributi maxlength percakton numrin maksimal te karaktereve ne nje input -->
+        <input type="text" name="ngjyra" id="ngjyra" minlength="3" maxlength="10"> <br>
+
+        <!-- Elementi textarea sherben per te vendosur text me permbajtje shume te madhe.
+        P.sh mund ta perdorim ku duam te publikojme lajmin e dites ne portalin e administratorit.
+        Ose mund te perdoret kur duam te bejme komente ne nje postim te caktuar. -->
+        <!-- Atributi rows dhe cols perdoren per te percaktuar madhesin e kesaj siperfaqe -->
+        <textarea name="komente" id="komente" rows="10" cols="45"></textarea> <br>
+
+        <!-- Atributi readonly dhe disables perdoren qe nje input te mos jete i modifikueshem ose i editueshem -->
+        <!-- Nese duam te dergojme te dhena nepermjet ketyre fushave te plotesuara, duhet te perdorim
+         atributin readonly sepse readonly te lejon qe te perdoresh ne kontekste te tjera ate fushe
+         ndersa disable e konfiguron si nje fushe out of service. -->
+        <input type="text" name="emri" id="emri" value="Alion" readonly> <br>
+        <input type="text" name="emri" id="emri" value="Alion" disabled> <br>
+
+        <!-- Atributi placeholder tregon nje tekst qe shfaqet ne input para se te vendoset ndonje vlere -->
+        <input type="text" name="emri" id="emri" placeholder="Vendosni emrin tuaj"> <br>
+
+        <!-- Tipi password eshte nje input qe shfaq nje kuti per te vendosur fjalekalimin. -->
+        <input type="password" name="fjalekalimi" id="fjalekalimi" placeholder="Vendosni fjalekalimin tuaj"> <br>
+
+        <!-- Tipi email eshte nje input qe shfaq nje kuti per te vendosur email-in. -->
+        <input type="email" name="email" id="email" placeholder="Vendosni email-in tuaj"> <br>
+
+        <!-- Tipi tel eshte nje input qe shfaq nje kuti per te vendosur numrin e telefonit. -->
+        <input type="tel" name="telefoni" id="telefoni" placeholder="Vendosni numrin e telefonit tuaj"> <br>
+
+        <!-- Tipi url eshte nje input qe shfaq nje kuti per te vendosur URL-in. -->
+        <input type="url" name="url" id="url" placeholder="Vendosni URL-in tuaj"> <br>
+
+        <!-- Tipi search eshte nje input qe shfaq nje kuti per te vendosur nje kerkim. -->
+        <input type="search" name="kerkim" id="kerkim" placeholder="Kerko ketu"> <br>
+
+        <!-- Elementi datalist eshte nje element qe mundeson te krijojme nje liste opsionesh per nje input. -->
+        <!-- Atributi list duhet te kete nje vlere te njejte me atributin id te datalist sepse list
+         kerkon nje element qe ka nje id me ate vlere qe list ka. -->
+        <!-- Datalist eshte nje elemente qe do te beje grupimin e te gjithave opsioneve te listes duke perdorur
+            option per te renditur secilin opsion.
+         -->
+        <p>Selekto universitetin ku do te studiosh: <input type="text" list="eduLevel" name="education"></p>
+        <datalist id="eduLevel">
+            <option value="Universiteti i Prishtines">
+            <option value="Universiteti i Mitrovices">
+            <option value="Universiteti i Gjakoves">
+            <option value="Universiteti i Pejes">
+            <option value="Universiteti i Prizrenit">            
+        </datalist>
+
+        <!-- Elementi datalist eshte nje element qe mundeson te krijojme nje liste opsionesh per nje input. -->
+        <p>Selekto universitetin ku do te studiosh: <input type="text" list="eduLevel2" name="education"></p>
+        <datalist id="eduLevel2">
+            <option value="unibo">Universiteti i Bologna</option>
+            <option value="unimi">Universiteti i Milano</option>
+            <option value="unipi">Universiteti i Pizes</option>
+            <option value="unisi">Universiteti i Sienas</option>
+            <option value="unifi">Universiteti i Firences</option>
+        </datalist>
+
+        <!-- Submit perdore per te derguar te dhenat ne server -->
+        <input type="submit">
+
+        <!-- Reset perdore per te fshire te dhenat nga forma -->
+        <input type="reset">
+    </form>
+</body>
+</html>

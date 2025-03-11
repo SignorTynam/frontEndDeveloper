@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menute ne HTML</title>
+</head>
+<body>
+    
+    <!-- Elementi select mundeson zgjedhjen e nje opsioni nga nje liste 
+    opsionesh. Per te krijuar nje element select perdoret etiketa
+    <select> dhe per opsionet perdoret etiketa <option>. -->
+
+    <p>Sa ben 2+2?
+        <select>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </p>
+
+    <!-- Per te selektuar disa opsione nga nje liste perdoret atributi
+    multiple. -->
+
+    <p>Zgjidh disa ngjyra:
+        <select multiple>
+            <option value="red">E kuqe</option>
+            <option value="green">E gjelber</option>
+            <option value="blue">E kaltër</option>
+            <option value="yellow">E verdhë</option>
+            <option value="black">E zezë</option>
+        </select>
+    </p>
+
+    <!-- Per te vendosur nje opsion si opsion i pare perdoret atributi
+    selected. -->
+
+    <p>Zgjidh nje qytet:
+        <select>
+            <option value="Tirana">Tirana</option>
+            <option value="Durrësi">Durrësi</option>
+            <option value="Vlorë">Vlorë</option>
+            <option value="Shkodra">Shkodra</option>
+            <option value="Fieri">Fieri</option>
+            <option value="Elbasani" selected>Elbasani</option>
+            <option value="Korça">Korça</option>
+        </select>
+    </p>
+
+    <!-- Per te vendosur nje opsion si opsion i padisponueshem perdoret
+    atributi disabled. -->
+
+    <p>Zgjidh nje qytet:
+        <select>
+            <option value="Tirana">Tirana</option>
+            <option value="Durrësi">Durrësi</option>
+            <option value="Vlorë">Vlorë</option>
+            <option value="Shkodra">Shkodra</option>
+            <option value="Fieri">Fieri</option>
+            <option value="Elbasani" disabled>Elbasani</option>
+            <option value="Korça">Korça</option>
+        </select>
+    </p>
+
+    <!-- Per te vendosur nje opsion si opsion i fshehur perdoret atributi
+    hidden. -->
+
+    <p>Zgjidh nje qytet:
+        <select>
+            <option value="Tirana">Tirana</option>
+            <option value="Durrësi">Durrësi</option>
+            <option value="Vlorë">Vlorë</option>
+            <option value="Shkodra">Shkodra</option>
+            <option value="Fieri">Fieri</option>
+            <option value="Elbasani" hidden>Elbasani</option>
+            <option value="Korça">Korça</option>
+        </select>
+    </p>
+
+    <!-- Per te limituar numrin e opsioneve qe mund te zgjidhen nga nje
+    liste perdoret atributi size. -->
+
+    <form action="" method="get">
+        <p>Zgjidh disa ngjyra:
+            <select size="3" multiple>
+                <option value="red">E kuqe</option>
+                <option value="green">E gjelber</option>
+                <option value="blue">E kaltër</option>
+                <option value="yellow">E verdhë</option>
+                <option value="black">E zezë</option>
+            </select>
+        </p>
+    
+        <input type="submit" value="Dërgo">    
+    </form>
+
+    <!-- Elementi optgroup mundeson grupimin e opsioneve ne nje liste. -->
+    
+    <p>Zgjidh nje qytet:
+        <select>
+            <!-- atributi label i etiketes optgroup percakton emrin e grupit -->
+            <optgroup label="Qytetet e Shqipërisë">
+                <option value="Tirana">Tirana</option>
+                <option value="Durrësi">Durrësi</option>
+                <option value="Vlorë">Vlorë</option>
+                <option value="Shkodra">Shkodra</option>
+                <option value="Fieri">Fieri</option>
+                <option value="Elbasani">Elbasani</option>
+                <option value="Korça">Korça</option>
+            </optgroup>
+            <optgroup label="Qytetet e Kosovës">
+                <option value="Prishtina">Prishtina</option>
+                <option value="Peja">Peja</option>
+                <option value="Gjakova">Gjakova</option>
+                <option value="Gjilani">Gjilani</option>
+                <option value="Ferizaj">Ferizaj</option>
+                <option value="Mitrovica">Mitrovica</option>
+                <option value="Prizreni">Prizreni</option>
+            </optgroup>
+        </select>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input File</title>
+</head>
+<body>
+    <!-- Tipi file mundeson zgjedhjen e nje file nga kompjuteri i perdoruesit. 
+    Per te krijuar nje element input file perdoret etiketa input me 
+    atributin type="file". -->
+
+    <!-- Atributi value nuk mund te perdoret per inputin e tipit file. -->
+
+    <p>Ngarko CV-ne:</p>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" id="file" name="file">
+    </form>
+
+    <!-- Atributi accept mundeson percaktimin e tipit te file qe mund te
+    ngarkohet. -->
+
+    <p>Ngarko nje foto:</p>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" id="photo" name="photo" accept="image/*">
+    </form>
+</body>
+</html>

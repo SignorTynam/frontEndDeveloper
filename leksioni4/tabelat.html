@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelat</title>
+</head>
+<body>
+    
+    <!-- Ne HTML per te krijuar nje tabele perdoret tag-u <table> -->
+    <!-- Tabela ka disa elemente: -->
+    <!-- <table>: percakton fillimin dhe mbarimin e tabeles -->
+    <!-- <tr>: percakton nje rresht ne tabele -->
+    <!-- <th>: percakton nje qelize te tabeles si titull -->
+    <!-- <td>: percakton nje qelize te tabeles si body -->
+    <!-- <caption>: percakton nje titull per tabele -->
+
+    <h2>Tabelat ne HTML</h2>
+
+    <h4>Shembulli 1</h4>
+    
+    <!-- HAPJA E TABELES -->
+    <table>
+
+        <!-- RRESHTI I PARE ESHTE HEADER -->
+         <tr>
+            <!-- CDO QELIZE SI HEADER PERCAKTOHET ME <th> -->
+                <th>Emri</th>
+                <th>Mbiemri</th>
+                <th>Mosha</th>
+         </tr>
+
+         <!-- RRESHTI I DYTE -->
+        <tr>
+            <!-- CDO QELIZE SI BODY PERCAKTOHET ME <td> -->
+            <td>John</td>
+            <td>Doe</td>
+            <td>30</td>
+        </tr>
+
+        <!-- RRESHTI I TRETE -->
+        <tr>
+            <td>Alion</td>
+            <td>Emini</td>
+            <td>23</td>
+        </tr>
+
+    </table>
+    <!-- MBYLLJA E TABELES -->
+
+    <h4>Shembulli 2</h4>
+
+    <!-- Atributi colspan i <td> dhe <th> perdoret per te percaktuar sa kolona do te zgjerohet nje qelize (shtrirje horizontale). -->
+    <!-- Atributi border i <table> perdoret per te percaktuar gjeresine e kufinjve te tabeles. -->
+    <table border="1">
+        <caption>Emrat e studenteve</caption>
+        <tr>
+            <th colspan="2">Emri dhe Mbiemri</th>
+            <th>Mosha</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td colspan="2">Alion Emini</td>
+            <td>23</td>
+        </tr>
+    </table>
+
+    <h4>Shembulli 3</h4>
+    <!-- Atributi rowspan i <td> dhe <th> perdoret per te percaktuar sa rreshta do te zgjerohet nje qelize (shtrirje vertikale). -->
+    
+    <table border="1">
+        <tr>
+            <th>Emri</th>
+            <th>Mbiemri</th>
+            <th>Mosha</th>
+        </tr>
+        <tr>
+            <td rowspan="2">John</td>
+            <td>Doe</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Smith</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+    <h4>Shembulli 4</h4>
+    <!-- Per te grupuar rreshta ne perdorim elementet <thead> <tbody> <tfoot> -->
+    <!-- <thead>: percakton fillimin e grupit te rreshtave te tabeles -->
+    <!-- <tbody>: percakton grupin e rreshtave te tabeles -->
+    <!-- <tfoot>: percakton fundin e grupit te rreshtave te tabeles -->
+
+    <!-- Atributi bgcolor i <table> perdoret per te percaktuar ngjyren e sfondit te tabeles. -->
+    <table border="1" bgcolor="lightgray">
+        <thead>
+            <tr>
+                <th>Emri</th>
+                <th>Mbiemri</th>
+                <th width="150">Mosha</th>      <!-- Atributi width i <th> perdoret per te percaktuar gjeresine e qelizes -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Alion</td>
+                <td>Emini</td>
+                <td>23</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Totali: 2</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

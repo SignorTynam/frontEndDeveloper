@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputet Radio</title>
+</head>
+<body>
+    
+
+    <!-- Tipi radio i inputeve mund të përdoret për të zgjedhur një opsion 
+    nga disa opsione. Nëse dëshironi të zgjidhni vetëm një opsion nga 
+    disa opsione, atëherë radio input është zgjidhja e duhur. -->
+
+    <!-- Atributi name ne radio input është i rëndësishëm, pasi përdoret 
+    për të grupuar radio inputet së bashku. Nëse radio inputet kanë
+    të njëjtin atribut name, vetëm një opsion mund të zgjidhet nga
+    përdoruesi. -->
+
+    <!-- Atributi value ne rastin e inputeve radio është i rëndësishëm,
+    pasi vlera e zgjedhur nga përdoruesi do të dërgohet në server
+    fale ketij atributi. -->
+
+    <p>Zgjidhni gjinin: </p>
+    <form action="" method="post">
+        <input type="radio" name="gjinia" value="mashkull"> Mashkull <br>
+        <input type="radio" name="gjinia" value="femer"> Femer <br>
+        <input type="radio" name="gjinia" value="tjeter"> Tjeter <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Nese atributi name nuk eshte i njejte per radio inputet, atehere
+    mund te zgjidhen me shume se nje opsion nga perdoruesi. -->
+
+    <p>Zgjidhni gjinin: </p>
+    <form action="" method="post">
+        <input type="radio" name="gjinia1" value="mashkull"> Mashkull <br>
+        <input type="radio" name="gjinia2" value="femer"> Femer <br>
+        <input type="radio" name="gjinia3" value="tjeter"> Tjeter <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Atributi checked mund të përdoret për të kontrolluar nëse një 
+    radio input duhet të jetë i zgjedhur në fillim. Nëse atributi
+    checked është i pranishëm, radio input do të jetë i zgjedhur
+    në fillim. -->
+
+    <p>Zgjidhni gjinin: </p>
+    <form action="" method="post">
+        <input type="radio" name="gjinia4" value="mashkull" checked> Mashkull <br>
+        <input type="radio" name="gjinia4" value="femer"> Femer <br>
+        <input type="radio" name="gjinia4" value="tjeter"> Tjeter <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

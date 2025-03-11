@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stilimi i tabelave</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            color: #111111;
+            /* background-color: #f1f1f1; */
+        }
+
+        table.tabele {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        th, td {
+            padding: 7px 10px 10px 10px;
+        }
+
+        th {
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 90%;
+            border-bottom: 2px solid #111;
+            border-top: 1px solid #999;
+            text-align: left;
+        }
+
+        tr.even {
+            background-color: #efefef;
+        }
+
+        tr:hover {
+            background-color: #c3e6e5;
+        }
+
+        .money {
+            text-align: right;
+        }
+
+        table.one {
+            /* width: 100%; */
+            margin: 0 auto;
+            border: 1px solid #111;
+        }
+
+        table.one td {
+            border: 1px solid #111;
+            padding: 15px;
+            text-align: center;
+        }
+
+        table.one {
+            /* empty-cells: show; */
+            empty-cells: hide;
+            border-spacing: 5px 15px;
+            border-collapse: collapse;
+            /* border-collapse: separate; */
+        }
+    </style>
+</head>
+<body>
+    <h1>Stilimi i tabelave</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, modi dolore ut laboriosam fugiat voluptas eligendi expedita! Voluptatum praesentium ut consequuntur autem sit id ex sint nobis, amet rem accusantium!</p>
+
+    <table class="tabele">
+        <tr>
+            <th>Author</th>
+            <th>Title</th>
+            <th class="money">Reserve Price</th>
+            <th class="money">Current Bird</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>How to make money</td>
+            <td class="money">$100</td>
+            <td class="money">$50</td>
+        </tr>
+        <tr class="even">
+            <td>Jane Doe</td>
+            <td>How to save money</td>
+            <td class="money">$200</td>
+            <td class="money">$150</td>
+        </tr>
+        <tr>
+            <td>John Smith</td>
+            <td>Investing 101</td>
+            <td class="money">$300</td>
+            <td class="money">$250</td>
+        </tr>
+        <tr class="even">
+            <td>Jane Smith</td>
+            <td>Advanced Investing</td>
+            <td class="money">$400</td>
+            <td class="money">$350</td>
+        </tr>
+        <tr>
+            <td>John Brown</td>
+            <td>Real Estate Basics</td>
+            <td class="money">$500</td>
+            <td class="money">$450</td>
+        </tr>
+        <tr class="even">
+            <td>Jane Brown</td>
+            <td>Real Estate Advanced</td>
+            <td class="money">$600</td>
+            <td class="money">$550</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h1>Tabelat empty</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt corporis aspernatur illo excepturi? Molestias facere pariatur, maxime, odit id laborum dolorem deleniti commodi, ipsum nam illum minima voluptatibus blanditiis provident!</p>
+
+    <table class="one">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+        </tr>
+    </table>
+
+</body>
+</html>

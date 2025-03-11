@@ -1,0 +1,73 @@
+body {
+    /* background-image: url("foto1.jpeg"); */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* background-position: center 30%; */
+    /* background-size: contain; */
+
+    /* background: url("foto1.jpeg") no-repeat fixed center 30%; */
+
+    background:
+        url("uno.png") left top no-repeat,
+        url("due.png") center center no-repeat,
+        url("tre.png") right bottom no-repeat;
+    ;
+}
+
+p {
+    font-size: 17px;
+}
+
+p[title="ligj"] {
+    border: 4px solid;
+    padding: 35px;
+    color: #e15d5d;
+    background-color: rgb(70, 9, 9);
+    /* background-clip: border-box; */
+    /* background-clip: padding-box; */
+    background-clip: content-box;
+    /* opacity: 0.7; */
+}
+
+p[title="njoftim"] {
+    border: 4px dashed;
+    padding: 35px;
+    color: #0e3b58;
+    background-color: rgba(58, 172, 263, 0.5);
+    /* background-clip: border-box; */
+    /* background-clip: padding-box; */
+    background-clip: content-box;
+    /* opacity: 0.7; */
+}
+
+p[title]::before {
+    content: "NJOFTIM";
+    display: block;
+    font-size: 20px;
+    color: #0b2383;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+p[title]::after {
+    content: "Ky vendim hyn ne fuqi menjehere!";
+    display: block;
+    font-size: 16px;
+    color: #0b2383;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+div {
+    border: 5px dashed #0b2383;
+    height: 350px;
+    /* background-repeat: no-repeat; */
+    padding: 20px;
+    /* background-origin: border-box; */
+    /* background-origin: padding-box; */
+    background-origin: content-box;
+
+}

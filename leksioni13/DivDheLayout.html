@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout ne HTML</title>
+    <style>
+        .header, .footer {
+            background-color: gray;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .sidebar {
+            background-color: lightgray;
+            padding: 10px;
+            width: 30%;
+        }
+
+        .content {
+            background-color: lightblue;
+            padding: 10px;
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        Ky eshte nje header
+    </div>
+
+    <div class="main">
+        <div class="sidebar">
+            Kjo eshte nje sidebar
+        </div>
+        <div class="content">
+            Kjo eshte nje content
+        </div>
+    </div>
+
+    <div class="footer">
+        Ky eshte nje footer
+    </div>
+    
+</body>
+</html>

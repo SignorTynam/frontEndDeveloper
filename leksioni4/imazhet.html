@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imazhet</title>
+</head>
+<body>
+    <!-- Imazhet i ndajme ne Raste dhe Vektoriale -->
+    <!-- Imazhet raster jane imazhe qe perbehen nga piksela, ndersa imazhet vektoriale jane imazhe qe perbehen nga vektore. -->
+
+    <!-- Formatet e imazheve raster:
+     JPG, PNG, GIF, WebP, TIFF, JPEG...-->
+
+    <!-- Formatet e imazheve vektoriale:
+        SVG, EPS, PDF, AI, CDR...-->
+
+    <!-- Imazhet raster jane te pershtatshme per imazhe me ngjyra, fotografite, imazhet me detaje te vogla dhe imazhet me gradient.
+    Imazhet vektoriale jane te pershtatshme per logot, ikonat, shenjat, shkronjat dhe imazhet me forma te thjeshta. -->
+
+    <!-- Ne HTML ne mund te percaktojme imazhet me elementin <img> -->
+    <!-- Atribute te elementit <img>:
+    src: percakton rrugen e imazhit
+    alt: percakton tekstin qe do te shfaqet ne vend te imazhit
+    width: percakton gjeresine e imazhit
+    height: percakton lartesine e imazhit -->
+
+    <!-- Shembulli 1: -->
+    <img src="image/lule.jpg" alt="Lule">
+
+    <!-- Shembulli 2: -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/2006-10-18Dahlia03m.jpg/1200px-2006-10-18Dahlia03m.jpg" alt="Lule">
+
+    <!-- Shembulli 3: -->
+    <img src="image/lule.jpg" alt="Lule" width="200">
+
+    <!-- Imazhet SVG jane imazhe vektoriale dhe ka disa menyra sesi mund ta ngarkojme ne nje faqe HTML -->
+    
+    <!-- Shembulli 1: -->
+    <img src="image/libri.svg" width="100" alt="Logo">
+
+    <!-- Shembulli 2: -->
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+    </svg>
+
+    <!-- Atributet qe jane perdorur:
+    cx: percakton koordinaten x te qendres se rrethit
+    cy: percakton koordinaten y te qendres se rrethit
+    r: percakton gjeresine e rrethit
+    stroke: percakton ngjyren e kufinjve te rrethit
+    stroke-width: percakton gjeresine e kufinjve te rrethit
+    fill: percakton ngjyren e mbushjes se rrethit -->
+
+    <!-- Shembulli 3: -->
+    <svg width="100" height="100">
+        <rect width="100" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+    </svg>
+
+    <!-- Shembulli 4: -->
+    <svg width="100" height="100">
+        <line x1="0" y1="0" x2="100" y2="100" stroke="rgb(255,0,0)" stroke-width="2" />
+    </svg>
+
+    <!-- Shembulli 5: -->
+    <svg width="100" height="100">
+        <polyline points="20,20 40,25 60,40 80,120 120,140" fill="none" stroke="black" stroke-width="3" />
+    </svg>
+
+    <!-- Shembulli 6: -->
+    <svg width="150" height="150">
+        <polygon points="20,20 40,25 60,40 80,120 120,140" fill="lime" stroke="purple" stroke-width="1" />
+    </svg>
+
+    <!-- Shembulli 7: -->
+    <svg width="100" height="100">
+        <ellipse cx="50" cy="50" rx="40" ry="20" fill="red" />
+    </svg>
+
+    <!-- Shembulli 8: -->
+    <svg width="100" height="100">
+        <text x="0" y="15" fill="red">I am SVG</text>
+    </svg>
+
+    <!-- Shembulli 9: -->
+    <svg width="100" height="100">
+        <path d="M10 80 Q 95 10 180 80" stroke="black" fill="transparent" />
+    </svg>
+
+    <!-- Shembulli 10: -->
+    <svg width="100" height="100" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="50" fill="#FDD835" />
+        <circle cx="35" cy="40" r="5" fill="#000000" />
+        <circle cx="65" cy="40" r="5" fill="#000000" />
+        <path d="M 35 65 Q 50 80 65 65" stroke="#000000" stroke-width="5" fill="none" />
+    </svg>
+
+</body>
+</html>

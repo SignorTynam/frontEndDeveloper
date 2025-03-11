@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+
+    <!-- Display eshte nje nga property me te rendesishem
+     ne CSS pasi kontrollon se si nje elemenet HTML
+     shfaqene faqen e internetit.
+     block → zë një rresht të plotë.
+     inline → qëndron në të njëjtin rresht me të tjerët.
+     inline-block → në rresht, por mund të ketë gjerësi/lartësi.
+     none → fsheh elementin.
+     flex → krijon një rresht fleksibël.
+     grid → krijon një rrjet me rreshta dhe kolona.
+    -->
+
+    <style>
+
+        
+
+        .bllok {
+            display: block;
+            width: 200px;
+            background-color: lightgray;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .inline {
+            display: inline;
+            background-color: yellow;
+            /* width: 100px; NUK APLIKOHET sepse elementet inline nuk mund te kene vetite e elementeve block */
+        }
+
+        .inline-block {
+            display: inline-block;
+            width: 100px;
+            background-color: lightblue;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .fshehur {
+            display: none;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+
+        .kuti {
+            width: 100px;
+            height: 50px;
+            background-color: lightcoral;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            line-height: 50px;
+            border: 1px solid black;
+        }
+
+        .container2 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        .kuti2 {
+            background-color: lightcoral;
+            padding: 10px;
+            text-align: center;
+            line-height: 50px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- DISPAY: BLOCK -->
+    <div class="bllok">
+        <h1>Elementi Block</h1>
+        <p>Elementi block eshte nje element qe zene gjithe hapesiren e disponueshme ne faqe dhe fillon ne nje rresht te ri. </p>
+    </div>
+
+    <div class="bllok">
+        <h1>Elementi Block</h1>
+        <p>Elementi block eshte nje element qe zene gjithe hapesiren e disponueshme ne faqe dhe fillon ne nje rresht te ri. </p>
+    </div>
+
+    <!-- DISPLAY INLINE -->
+    <span class="inline">Element 1</span>
+    <span class="inline">Element 2</span>
+    <span class="inline">Element 3</span>
+
+    <!-- DIV SI INLINE -->
+    <div class="inline">Bllok si inline</div>
+    <div class="inline">Bllok si inline</div>
+
+    <!-- SPAN SI BLOCK -->
+    <span class="bllok">Span si block</span>
+    <span class="bllok">Span si block</span>
+
+    <!-- DISPLAY: INLINE BLOCK -->
+    <div class="inline-block">
+        1
+    </div>
+    <div class="inline-block">
+        2
+    </div>
+    <div class="inline-block">
+        3
+    </div>
+    <div class="inline-block">
+        4
+    </div>
+
+    <!-- DISPLAY NONE -->
+    <div class="fshehur">
+        Ky element eshte fshehur
+    </div>
+
+    <!-- DISPLAT: FLEX -->
+    <div class="container">
+        <div class="kuti">
+            1
+        </div>
+        <div class="kuti">
+            2
+        </div>
+        <div class="kuti">
+            3
+        </div>
+    </div>
+
+    <!-- DISPLAY GRID -->
+
+    <div class="container2">
+        <div class="kuti2">
+            1
+        </div>
+        <div class="kuti2">
+            2
+        </div>
+        <div class="kuti2">
+            3
+        </div>
+        <div class="kuti2">
+            4
+        </div>
+        <div class="kuti2">
+            5
+        </div>
+        <div class="kuti2">
+            6
+        </div>
+    </div>
+</body>
+</html>

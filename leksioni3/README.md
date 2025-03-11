@@ -415,7 +415,7 @@ Në këtë shembull, do të shtojmë një lidhje eksternale për **"The Food Net
 3. **Rezultati**:
    Tani, kur dikush klikoni ose prek tekstin **"The Food Network"**, ata do të drejtohen në faqen përkatëse të **<www.foodnetwork.com>**.
 
-### Linkimi brenda faaqes suaj
+### Linkimi brenda faqes suaj
 
 Në ndërtimin e një faqeje web, shpesh do të lidheni nga një faqe e faqes tuaj në tjetrën—nga faqja kryesore në faqet e seksioneve, nga faqet e seksioneve në faqet me përmbajtje, etj. Në këto raste, **mund të përdorni një URL relative** që referohet në një dokument të pranishëm në serverin tuaj.
 

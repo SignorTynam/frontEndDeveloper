@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feature Forms</title>
+</head>
+<body>
+    
+    <!-- Elementi label sherben per te vendosur nje etikete per nje input 
+    field. Kjo etikete mund te jete e shkruar ne menyre te thjeshte 
+    ose te permbaje nje tekst me te gjate qe shpjegon se cfare duhet 
+    te vendoset ne input field.-->
+
+    <!-- Per te lidhur nje label me nje input field, atributi for i label
+    duhet te jete i njejte me id e input field. Kjo quhet Lidhja Explicit -->
+
+    <form action="featureForms.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username">
+        <input type="submit">
+    </form>
+    
+    <!-- Lidhja implicit kryhet duke vendosur id e input field ne atributin
+    id te label. -->
+
+    <!-- NUK PERDORET -->
+
+    <form action="">
+        <label id="emri">Emri:</label>
+        <input type="text" name="emri" id="emri">
+    </form>
+
+    <!-- POR PERDORET KJO FORME -->
+
+    <form action="">
+        <label>Emri: <input type="text" name="emri"></label>
+    </form>
+
+    <br><br><br>
+
+    <!-- Elementi fieldset sherben per te grupuar elementet e formes ne
+    nje grup te vetem. -->
+
+    <form action="">
+        <fieldset>
+            <!-- legend eshte nje etikete qe vendoset brenda fieldset dhe 
+            sherben per ti dhene nje titull grupit te elementeve te 
+            formes. -->
+            <legend>Personal Information</legend>
+            <label>Emri: <input type="text" name="emri"></label>
+            <label>Mbiemri: <input type="text" name="mbiemri"></label>
+        </fieldset>
+    </form>
+
+</body>
+</html>

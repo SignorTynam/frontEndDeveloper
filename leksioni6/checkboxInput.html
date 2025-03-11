@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox Input</title>
+</head>
+<body>
+    
+    <!-- Checkbox jane inpute qe mund te zgjidhen me shume se nje opsion nga perdoruesi. 
+    Nese deshironi te zgjidhni me shume se nje opsion nga disa opsione, atehere checkbox input 
+    eshte zgjidhja e duhur. -->
+
+    <!-- Atributi name ne checkbox input eshte i rendesishem, pasi perdoret per te grupuar
+    checkbox inputet së bashku. Nese checkbox inputet kane te njejtin atribut name,
+    me shume se nje opsion mund te zgjidhet nga perdoruesi. -->
+
+    <!-- Atributi value ne rastin e inputeve checkbox eshte i rendesishem, pasi vlera e zgjedhur
+    nga perdoruesi do te dergohet ne server fale ketij atributi. -->
+
+    <p>Zgjidhni gjuhet qe i njihni: </p>
+    <form action="" method="post">
+        <input type="checkbox" name="gjuha" value="anglisht"> Anglisht <br>
+        <input type="checkbox" name="gjuha" value="spanjisht"> Spanjisht <br>
+        <input type="checkbox" name="gjuha" value="italisht"> Italisht <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Nese atributi name nuk eshte i njejte per checkbox inputet, atehere mund te zgjidhen
+    me shume se nje opsion nga perdoruesi por ne server nuk do te identifikohen si nje grup i vetem -->
+
+    <p>Zgjidhni gjuhet qe i njihni: </p>
+    <form action="" method="post">
+        <input type="checkbox" name="gjuha1" value="anglisht"> Anglisht <br>
+        <input type="checkbox" name="gjuha2" value="spanjisht"> Spanjisht <br>
+        <input type="checkbox" name="gjuha3" value="italisht"> Italisht <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Atributi checked mund te perdoret per te kontrolluar nese nje checkbox input duhet 
+     te jete i zgjedhur ne fillim. Nese atributi checked eshte i pranishem, checkbox input do te 
+     jete i zgjedhur ne fillim. 
+    -->
+
+    <p>Zgjidhni gjuhet qe i njihni: </p>
+    <form action="" method="post">
+        <input type="checkbox" name="gjuha4" value="anglisht" checked> Anglisht <br>
+        <input type="checkbox" name="gjuha4" value="spanjisht"> Spanjisht <br>
+        <input type="checkbox" name="gjuha4" value="italisht"> Italisht <br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

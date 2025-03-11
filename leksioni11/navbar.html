@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul.navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 20px 20px;
+            text-align: center;
+            background-color: #074892;
+
+            /* box-shadow: 25px 6px gray; horizontal offset, vertical offset */
+            /* box-shadow: 0 5px 30px #074892; horizontal offset, vertical offset, blur radius */
+            /* box-shadow: 0 5px 30px 10px #074892; horizontal offset, vertical offset, blur radius, spread radius */
+            box-shadow: inset 0 5px 30px 10px red; /* horizontal offset, vertical offset, blur radius, spread radius */
+        }
+
+        nav ul.navbar li {
+            display: inline;
+        }
+
+        nav ul.navbar li a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        nav ul.navbar li a:hover {
+            color: #074892;
+            background-color: #ffffff !important;
+            box-shadow: 0 5px 30px 10px #074892; /* horizontal offset, vertical offset, blur radius, spread radius */
+
+        }
+
+        nav ul.navbar li a:active {
+            text-decoration: underline;
+        }
+
+        nav ul.navbar li a:visited {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <!-- Submit perdore per te derguar te dhenat ne server -->
+        <!-- Atributi value ne nje tip submit tregon tekstin qe do te shfaqet ne buton -->
+        <input type="submit" value="KLKIKO PER TE DERGUAR">
+
+        <!-- Reset perdore per te fshire te dhenat nga forma -->
+        <!-- Atributi value ne nje tip reset tregon tekstin qe do te shfaqet ne buton -->
+        <input type="reset" value="KLKIKO PER TE FSHIRE">
+
+        <!-- Input i tipit button nuk ben asnje veprim pervecse nese i jepet nje event me JavaScript -->
+        <!-- Atributi value ne nje tip button tregon tekstin qe do te shfaqet ne buton -->
+        <!-- Atributi onclick i button tregon nje event qe do te ndodhe kur klikohet butoni -->
+        <input type="button" value="KLKIKO PER TE SHFAQUR NJE ALERT" onclick="showAlert()">
+ 
+        <!-- Elementi button eshte nje element qe shfaq nje buton ne faqe
+        Atributi onclick i button tregon nje event qe do te ndodhe kur klikohet butoni -->
+        <button onclick="showAlert()">ME KLIKO. BEJ TE NJEJTEN GJE</button>
+
+        <!-- Kodi ne JS vendoset brenda elementit script -->
+        <script>
+            // Ky eshte nje funksion qe shfaq nje mesazh
+            function showAlert() {
+                // document.write shkruan ne faqe dhe cdo permbajtje tjeter ne faqe do te fshihet
+                document.write("Hello World!");
+            }
+        </script>
+</body>
+</html>

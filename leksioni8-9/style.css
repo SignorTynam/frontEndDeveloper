@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'SmoochSansRegular';
+    src: url(fonts/SmoochSans-Regular.ttf);
+}
+
+* {
+    margin: 0 12px;
+    font-family: 'SmoochSansRegular';
+    font-weight: 200;
+    color: rgb(5, 58, 93);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-decoration: blink;
+    line-height: 1.5em;
+    text-indent: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+}
+
+h1.shtetet {
+    color: white;
+    background-color: green;
+    font-family: 'Courier New', Courier, monospace;
+    font: bold italic small-caps 20px SmoochSansRegular;
+}
+
+.qytetet {
+    color: green;
+    font-size: 20px;
+    font-variant: small-caps;
+    text-transform: lowercase;
+}
+
+img.FotoQytete {
+    float: right;
+    margin: 0 12px;
+    width: 40%;
+}

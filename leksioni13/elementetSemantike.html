@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementet semantike</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: yellow;
+        }
+
+        .imazhe {
+            background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
+            background-size: cover;
+            height: 300px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        main h1 {
+            border-left: #333 3px solid;
+            padding-left: 10px;
+        }
+
+        a {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        section {
+            padding: 20px;
+            width: 45%;
+        }
+
+        section.even {
+            padding: 20px;
+            background-color: #f4f4f4;
+            width: 55%;
+        }
+
+        section h2 {
+            border-left: #333 3px solid;
+            padding-left: 10px;
+        }
+
+        aside {
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        aside h2 {
+            border-left: #fff 3px solid;
+            padding-left: 10px;
+        }
+
+        aside a {
+            background-color: white;
+            color: #333;
+            padding: 10px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        figure {
+            display: inline-block;
+            margin: 20px;
+        }
+
+        figcaption {
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .sections {
+            display: flex;
+            justify-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- HEADER perdoret per te vendosur logon, menute, titujt etj -->
+    <header>
+        <h1>Miresevini ne faqen tone</h1>
+        <!-- NAV perdoret per te vendosur menune, lidhjet e menuse -->
+        <nav>
+            <ul>
+                <li><a href="#">Kryefaqja</a></li>
+                <li><a href="#">Rreth nesh</a></li>
+                <li><a href="#">Produktet</a></li>
+                <li><a href="#">Kontakti</a></li>
+            </ul>
+        </nav>
+        <div class="imazhe"></div>
+    </header>
+
+    <!-- MAIN perdoret per te mbajtur permbajtjen kryesore te faqes web -->
+    <main>
+        <h1>Artikulli kryesore</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, voluptates, quae, quibusdam quia</p>
+        <a href="#">Shiko me shume</a>
+    </main>
+
+    <div class="sections">
+        <!-- SECTION perdore per te ndare permbajtjen ne seksione te ndryshme -->
+        <section class="even">
+            <h2>Rreth Nesh</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, voluptates, quae, quibusdam quia</p>
+            <a href="#">Shiko me shume</a>
+        </section>
+
+        <section>
+            <h2>Produktet</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, voluptates, quae, quibusdam quia</p>
+            <a href="#">Shiko me shume</a>
+        </section>
+    </div>
+
+    <!-- ASIDE Përdoret për përmbajtje shtesë si reklama, lidhje të tjera ose informacione anësore -->
+    <aside>
+        <h2>Reklama</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, voluptates, quae, quibusdam quia</p>
+        <a href="#">Shiko me shume</a>
+    </aside>
+
+    <!-- FIGURE  Përdoret për të vendosur një imazh me një përshkrim-->
+    <figure>
+        <img src="https://www.w3schools.com/w3images/forestbridge.jpg" alt="Nje urë në pyll" width="300">
+        <figcaption>Urë në pyll</figcaption>
+    </figure>
+
+    <figure>
+        <img src="https://www.w3schools.com/w3images/forestbridge.jpg" alt="Nje urë në pyll" width="300">
+        <figcaption>Urë në pyll</figcaption>
+    </figure>
+
+    <!-- FOOTER  Përdoret për informacionin e fundit të faqes si të drejtat e autorit, kontaktet, etj-->
+    <footer>
+        <p>&copy; 2020 - Të gjitha të drejtat e rezervuara</p>
+    </footer>
+
+</body>
+</html>

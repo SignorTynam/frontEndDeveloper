@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Input</title>
+</head>
+<body>
+    
+    <!-- Inputet e tipi hidden perdoren kur duhet te dergohen disa te dhena
+    ne server, por nuk duhet te shfaqen ne faqe. Per te krijuar nje
+    input hidden perdoret etiketa input me atributin type="hidden". -->
+
+    <form action="/submit" method="post">
+        <input type="hidden" name="username" value="admin">
+        <input type="hidden" name="password" value="admin123">
+        <input type="file" id="file" name="file">
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Sebashku me skedarin qe ngarkohen perdoruesi do te dergohet edhe
+    te dhenat e sakta te username dhe password ne server. -->
+</body>
+</html>

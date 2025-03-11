@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stilimi i listave</title>
+    <style>
+        ul {
+            list-style-type: circle;
+            /* list-style-type: square; */
+            /* list-style-type: disc; */
+        }
+
+        ol {
+            /* list-style-type: upper-roman; */
+            /* list-style-type: lower-roman; */
+            list-style-type: upper-alpha;
+            /* list-style-type: lower-alpha; */
+            /* list-style-type: decimal; */
+        }
+
+        ul.ulImazhe {
+            /* Kur fotoja eshte e madhe nuk sygjerohet kjo metode */
+            /* list-style-image: url('imazhe/bullet.jpg'); */
+            /* list-style-position: inside; */
+            /* list-style-position: outside; */
+
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        ul.ulImazhe li {
+            /* Kjo metode perdore kur fotoja eshte e madhe dhe nuk duhet modifikuar */
+            background-image: url('imazhe/bullet.jpg');
+            background-size: 14px 14px;
+            background-repeat: no-repeat;
+            padding-left: 20px;
+            background-position: left center;
+        }
+
+        li {
+            margin: 10px 10px 10px 10px;
+        }
+
+        ul.ulShort {
+            list-style: circle inside;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- LISTAT E PARENDITURA -->
+    <h2>Lista e studenteve</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae accusamus ipsum inventore, cupiditate voluptates quia vitae quibusdam nemo? At, vero. Nihil doloribus saepe quae ad eius labore vel aperiam distinctio.</p>
+    <ul>
+        <li>Studenti 1</li>
+        <li>Studenti 2</li>
+        <li>Studenti 3</li>
+        <li>Studenti 4</li>
+        <li>Studenti 5</li>
+    </ul>
+
+    <hr>
+
+    <!-- LISTAT E RENDITURA -->
+    <h2>Lista e studenteve</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae accusamus ipsum inventore, cupiditate voluptates quia vitae quibusdam nemo? At, vero. Nihil doloribus saepe quae ad eius labore vel aperiam distinctio.</p>
+    <ol>
+        <li>Studenti 1</li>
+        <li>Studenti 2</li>
+        <li>Studenti 3</li>
+        <li>Studenti 4</li>
+        <li>Studenti 5</li>
+    </ol>
+
+    <hr>
+
+    <!-- LISTAT E PARENDITURA ME FOTO -->
+    <h2>Lista e studenteve</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae accusamus ipsum inventore, cupiditate voluptates quia vitae quibusdam nemo? At, vero. Nihil doloribus saepe quae ad eius labore vel aperiam distinctio.</p>
+    <ul class="ulImazhe">
+        <li>Studenti 1</li>
+        <li>Studenti 2</li>
+        <li>Studenti 3</li>
+        <li>Studenti 4</li>
+        <li>Studenti 5</li>
+    </ul>
+
+    
+
+    <!-- LISTAT E PARENDITURA SHORTHAND -->
+    <h2>Lista e studenteve</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae accusamus ipsum inventore, cupiditate voluptates quia vitae quibusdam nemo? At, vero. Nihil doloribus saepe quae ad eius labore vel aperiam distinctio.</p>
+    <ul class="ulShort">
+        <li>Studenti 1</li>
+        <li>Studenti 2</li>
+        <li>Studenti 3</li>
+        <li>Studenti 4</li>
+        <li>Studenti 5</li>
+    </ul>
+</body>
+</html>

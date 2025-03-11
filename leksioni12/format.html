@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stili i formave</title>
+
+    <style>
+        input {
+            font-size: 120%;
+            color: #5a5854;
+            background-color: #f2f2f2;
+            border: 1px solid #bdbdbd;
+            border-radius: 5px;
+            padding: 5px 5px 5px 30px;
+            background-repeat:  no-repeat;
+            background-position: 8px 9px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input:focus {
+            background-color: #fff;
+            border: 1px solid #b1e1e4 !important;
+        }
+
+        input#email {
+            background-image: url('imazhe/email.png');
+            background-size: 20px 20px;
+            background-position: left center;
+            background-repeat: no-repeat;
+            background-position-x: 10px;
+        }
+
+        input#twitter {
+            background-image: url('imazhe/twitter.png');
+            background-size: 20px 20px;
+            background-position: left center;
+            background-repeat: no-repeat;
+            background-position-x: 10px;
+        }
+
+        input#url {
+            background-image: url('imazhe/web.png');
+            background-size: 20px 20px;
+            background-position: left center;
+            background-repeat: no-repeat;
+            background-position-x: 10px;
+        }
+
+        input#submit {
+            color: #444;
+            text-shadow: 0px 1px 1px #fff;
+            border-bottom: 2px solid #fff;
+            background: linear-gradient(to bottom, #beeae9, #a8cfce);
+            border-radius: 5px;
+            padding: 5px 20px;
+            border: 1px solid #66a2a2;            
+        }
+
+        input#submit:hover {
+            background: linear-gradient(to bottom, #a8cfce, #beeae9);
+        }
+
+        fieldset {
+            width: 350px;
+            border: 1px solid #dcdcdc;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 0 auto;
+            /* text-align: right; */
+        }
+
+        legend {
+            background-color: #efefef;
+            border: 1px solid #dcdcdc;
+            border-radius: 10px;
+            padding: 5px 10px;
+            /* font-size: 120%; */
+            font-weight: bold;
+            text-align: left;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stilimi i formave</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse veritatis repellendus eveniet minus ipsum atque ducimus quibusdam aliquam eligendi deserunt repellat molestiae recusandae, ad aut numquam voluptates! Vitae, quaerat molestias.</p>
+    <form action="POST">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="twitter">Twitter:</label>
+        <input type="text" id="twitter" name="twitter"><br><br>
+
+        <label for="url">Website:</label>
+        <input type="url" id="url" name="url"><br><br>
+
+        <input type="submit" id="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <h1>Stilimi i formave me fieldset </h1>
+    <form action="POST">
+        <fieldset>
+            <legend>Form with Fieldset</legend>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email2"><br><br>
+
+            <label for="twitter2">Twitter:</label>
+            <input type="text" id="twitter" name="twitter2"><br><br>
+
+            <label for="url2">Website:</label>
+            <input type="url" id="url" name="url"><br><br>
+
+            <input type="submit" id="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>

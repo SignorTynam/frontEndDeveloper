@@ -3,35 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Links in HTML</title>
+    <title>Links ne HTML</title>
 </head>
 <body>
+    <!-- Links ne HTML specifikon me tag-un a. Link perdoret per te referuar vizitorin e faqes ne nje faqe tjeter (qofte ne websitin tone ose ne nje tjeter) -->
 
-    <h2>Links in HTML</h2>
-    <p>Here are some links to other pages:</p>
-    <ul>
-        <li><a href="https://www.google.com">Google</a></li>
-        <li><a href="https://www.facebook.com">Facebook</a></li>
-        <li><a href="https://www.twitter.com">Twitter</a></li>
-    </ul>
+    <!-- Per te krijuar nje link ne HTML perdoret tag-u a -->
+    <!-- href atributi i tagut a qe specifikon adresen e faqes ku do te shkoje vizitori -->
+    <!-- href atributi i tagut a mund te jete i plote (me adresen e plote te faqes) ose i pjesshem (me adresen relative te faqes) -->
+    <!-- href atributi i tagut a mund te jete i zbrazet (nese nuk do te shkoje ne faqe tjeter) -->
 
-    <h2>Links to Local Files</h2>
-    <p>Here are some links to local files:</p>
-    <ul>
-        <li><a href="leksioni3/links.html">Links</a></li>
-        <li><a href="leksioni3/listat_ul.html">Unordered List</a></li>
-    </ul>
+    <h2>Shembuj</h2>
+    <a href="#">Hap faqen aktuale</a>          <!-- href atributi i zbrazet: hapet faqja aktuale -->
+    <a href="https://www.google.com">Shko ne Google.com</a>       <!-- href atributi i plote: hapet faqja e caktuar -->
 
-    <h2>Links with Attributes</h2>
-    <p>Here are some links with additional attributes:</p>
-    <ul>
-        <li><a href="https://www.example.com" target="_blank" rel="noopener noreferrer">Example</a></li>
-        <li><a href="https://www.wikipedia.org" title="Wikipedia">Wikipedia</a></li>
-        <li><a href="mailto:someone@example.com">Send Email</a></li>
-    </ul>
+    <br>
 
+    <!-- Linkimi brenda nje direktorie -->
+    <h2>SEANCA 3</h2>
+    <a href="listat_ul.html">Listat ul</a>
+    <a href="listat_ol.html">Listat ol</a>
 
-    <!-- rel="noopener noreferrer" ensures that the new page cannot access the original page and that the Referer header is not sent. -->
-    
+    <br>
+
+    <!-- Linkimi ne faqe te ndryshme -->
+    <h2>SEANCA 2</h2>
+    <a href="../Seanca2/citimet.html">Citimet</a>
+
+    <!-- Atributi target -->
+    <!-- target atributi i tagut a specifikon se ku do te hapet faqja e re -->
+
+    <a href="listat_ol.html" target="_blank">Listat ol</a>
+
+    <!-- Atributi mailto: -->
+    <!-- atributi mund te permbaje edhe adresa e email-it -->
+    <a href="mailto:alion@gmail.com">Shkruaj nje email</a>
+
+    <!-- Atributi tel -->
+    <!-- atributi mund te permbaje edhe numrin e telefonit -->
+    <a href="tel:+38344123456">Thirr</a>
 </body>
 </html>
