@@ -1,0 +1,93 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Stilizim */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background: #232f3e;
+    color: white;
+}
+
+.logo {
+    width: 120px;
+}
+
+.search input {
+    padding: 0.5rem;
+    width: 200px;
+}
+
+.user-auth {
+    display: flex;;
+}
+
+.user-auth a {
+    padding: 1rem;
+}
+
+/* Nav */
+nav ul {
+    display: flex;
+    background: #131921;
+    padding: 1rem;
+    list-style: none;
+}
+
+nav li {
+    margin-right: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Produkte */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.price {
+    color: #B12704;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+/* Footer */
+footer {
+    background: #232f3e;
+    color: white;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
