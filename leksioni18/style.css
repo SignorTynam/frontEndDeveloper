@@ -1,0 +1,85 @@
+:root {
+    --primary-color: #246dec;
+    --secondary-color: #2f3542;
+}
+
+ul li a.nav-link:hover {
+    text-decoration: underline;
+}
+
+input.form-control {
+    border-color: var(--primary-color);
+}
+
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('image/1.jpg') center/cover;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.service-card {
+    transition: transform 0.3s;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.team-member img {
+    transition: transform 0.3s;
+}
+.team-member:hover img {
+    transform: scale(1.05);
+}
+
+.stat-item {
+    background: var(--primary-color);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.testimonial-card {
+    border-left: 4px solid var(--primary-color);
+}
+
+.pricing-card {
+    border: 2px solid #eee;
+    transition: all 0.3s;
+}
+.pricing-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.portfolio-filter button.active {
+    background: var(--primary-color) !important;
+    color: white !important;
+}
+.modal-content {
+    border-radius: 15px;
+    overflow: hidden;
+}
+.modal-header {
+    background: var(--primary-color);
+    color: white;
+}
+.social-login .btn {
+    min-width: 120px;
+}
+.input-group-text {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    width: 45px;
+    justify-content: center;
+}
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(36,109,236,0.25);
+}

@@ -6,85 +6,7 @@
     <title>TechVision Solutions</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        :root {
-            --primary-color: #246dec;
-            --secondary-color: #2f3542;
-        }
-
-        .hero-section {
-            height: 100vh;
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                        url('https://source.unsplash.com/1600x900/?technology') center/cover;
-            display: flex;
-            align-items: center;
-            color: white;
-        }
-
-        .service-card {
-            transition: transform 0.3s;
-            border: none;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        .service-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .team-member img {
-            transition: transform 0.3s;
-        }
-        .team-member:hover img {
-            transform: scale(1.05);
-        }
-
-        .stat-item {
-            background: var(--primary-color);
-            color: white;
-            padding: 2rem;
-            border-radius: 10px;
-            text-align: center;
-        }
-
-        .testimonial-card {
-            border-left: 4px solid var(--primary-color);
-        }
-
-        .pricing-card {
-            border: 2px solid #eee;
-            transition: all 0.3s;
-        }
-        .pricing-card:hover {
-            border-color: var(--primary-color);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        .portfolio-filter button.active {
-            background: var(--primary-color) !important;
-            color: white !important;
-        }
-        .modal-content {
-        border-radius: 15px;
-        overflow: hidden;
-    }
-    .modal-header {
-        background: var(--primary-color);
-        color: white;
-    }
-    .social-login .btn {
-        min-width: 120px;
-    }
-    .input-group-text {
-        background: var(--primary-color);
-        color: white;
-        border: none;
-        width: 45px;
-        justify-content: center;
-    }
-    .form-control:focus {
-        border-color: var(--primary-color);
-        box-shadow: 0 0 0 0.25rem rgba(36,109,236,0.25);
-    }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar">
 
@@ -102,7 +24,6 @@
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item dropdown">
@@ -182,11 +103,11 @@
                 <div class="col-lg-6">
                     <div class="row g-4">
                         <div class="col-6">
-                            <img src="https://source.unsplash.com/random/601x600/?office" 
+                            <img src="image/1.jpg" 
                                  class="img-fluid rounded" alt="Office">
                         </div>
                         <div class="col-6">
-                            <img src="https://source.unsplash.com/random/600x601/?meeting" 
+                            <img src="image/2.jpg" 
                                  class="img-fluid rounded" alt="Meeting">
                         </div>
                     </div>
@@ -222,8 +143,64 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary p-3 rounded-circle me-3">
+                                    <i class="fas fa-code fa-2x text-white"></i>
+                                </div>
+                                <h3 class="mb-0">Web Development</h3>
+                            </div>
+                            <p>Custom website development from simple landing pages to complex web applications.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-angle-right me-2 text-primary"></i>E-commerce Solutions</li>
+                                <li><i class="fas fa-angle-right me-2 text-primary"></i>CMS Integration</li>
+                                <li><i class="fas fa-angle-right me-2 text-primary"></i>API Development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary p-3 rounded-circle me-3">
+                                    <i class="fas fa-code fa-2x text-white"></i>
+                                </div>
+                                <h3 class="mb-0">Web Development</h3>
+                            </div>
+                            <p>Custom website development from simple landing pages to complex web applications.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-angle-right me-2 text-primary"></i>E-commerce Solutions</li>
+                                <li><i class="fas fa-angle-right me-2 text-primary"></i>CMS Integration</li>
+                                <li><i class="fas fa-angle-right me-2 text-primary"></i>API Development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 
                 <!-- Add other service cards similarly -->
+            </div>
+            <div class="row g-4 mt-4">
+                <div class="card mb-3 col-md-6">
+                    <img src="image/1.jpg" class="card-img-top pt-3" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                 <div class="card col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                    <img src="image/1.jpg" class="card-img-bottom pb-3" alt="...">
+                </div>
             </div>
         </div>
     </section>
@@ -308,7 +285,7 @@
         </div>
     </section>
 
-    <!-- Login Modal -->
+<!-- Login Modal -->
 <div class="modal fade" id="loginModal" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -354,7 +331,18 @@
                         </button>
                     </div>
                 </div>
+                <div class="text-center mt-3">
+                    <p>Don't have an account? 
+                        <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#signupModal">
+                            Register here
+                        </a>
+                    </p>
+                </div>
             </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>        
         </div>
     </div>
 </div>
