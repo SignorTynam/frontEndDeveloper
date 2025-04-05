@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operatoret</title>
+</head>
+<body>
+    
+    <script>
+        let x = 4;
+        let y = 5;
+
+        // Arithmetic Operators
+        document.write("x + y = " + (x + y) + "<br>");
+        document.write("x - y = " + (x - y) + "<br>");
+        document.write("x * y = " + (x * y) + "<br>");
+        document.write("x / y = " + (x / y) + "<br>");
+        document.write("x % y = " + (x % y) + "<br>");
+        document.write("x ** y = " + (x ** y) + "<br>");
+
+        // Increment and Decrement Operators
+        document.write("x++ = " + (x++) + "<br>");
+        document.write("x = " + x + "<br>");
+        document.write("++x = " + (++x) + "<br>");
+        document.write("x = " + x + "<br>");
+
+        document.write("x-- = " + (x--) + "<br>");
+        document.write("x = " + x + "<br>");
+        document.write("--x = " + (--x) + "<br>");
+        document.write("x = " + x + "<br>");
+
+        // Assignment Operators
+        document.write("x += y = " + (x += y) + "<br>");    // x = x + y
+        document.write("x -= y = " + (x -= y) + "<br>");    // x = x - y
+        document.write("x *= y = " + (x *= y) + "<br>");    // x = x * y
+        document.write("x /= y = " + (x /= y) + "<br>");    // x = x / y
+        document.write("x %= y = " + (x %= y) + "<br>");    // x = x % y
+        document.write("x **= y = " + (x **= y) + "<br>");   // x = x ** y
+
+        x = "7";
+        y = 1;
+        // Comparison Operators
+        document.write("x == y = " + (x == y) + "<br>");
+        document.write("x === y = " + (x === y) + "<br>");
+        document.write("x != y = " + (x != y) + "<br>");
+        document.write("x !== y = " + (x !== y) + "<br>");
+        document.write("x > y = " + (x > y) + "<br>");
+        document.write("x < y = " + (x < y) + "<br>");
+        document.write("x >= y = " + (x >= y) + "<br>");
+        document.write("x <= y = " + (x <= y) + "<br>");
+
+        // Logical Operators
+        document.write("x && y = " + (x > 5 && y < 4) + "<br>");
+
+        /*
+        TRUTH TABLE
+        x     y     x && y
+        true  true  true
+        true  false false
+        false true  false
+        false false false
+        */
+
+        document.write("x || y = " + (x > 5 || y < 4) + "<br>");
+
+        /*
+        TRUTH TABLE
+        x     y     x || y
+        true  true  true
+        true  false true
+        false true  true
+        false false false
+        */
+
+        document.write("!x = " + (!x) + "<br>");
+    </script>
+
+</body>
+</html>

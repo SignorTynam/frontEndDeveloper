@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List App</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Font Awesome për ikona (opsionale) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Skedari ynë CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-light">
+  <div class="container py-5">
+    <div class="card shadow-lg">
+      <div class="card-body">
+        <h2 class="card-title text-center mb-4">To-Do List</h2>
+        <!-- Input për shtimin e detyrave -->
+        <div class="input-group mb-3">
+          <input type="text" id="task-input" class="form-control" placeholder="Shkruaj detyrën..." aria-label="Task">
+          <button class="btn btn-primary" id="add-task-btn" type="button">Shto</button>
+        </div>
+        <!-- Lista e detyrave -->
+        <ul id="task-list" class="list-group"></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skedari ynë JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

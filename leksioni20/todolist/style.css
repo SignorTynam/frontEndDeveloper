@@ -1,0 +1,26 @@
+/* Sfondi dhe stilizimi i përgjithshëm */
+body {
+    background: #f8f9fa;
+    min-height: 100vh;
+  }
+  
+  /* Stilizimi i kartës kryesore */
+  .card {
+    border: none;
+    border-radius: 10px;
+  }
+  
+  /* Stilizimi i listës së detyrave */
+  .list-group-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1.25rem;
+  }
+  
+  /* Stilizimi i butonave dhe elementeve brenda listës */
+  .list-group-item span {
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+  
